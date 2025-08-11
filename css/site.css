@@ -183,5 +183,5 @@ ul{padding-left:20px}
 @media (max-width: 768px) {
   .float-right, .float-left { float: none; display: block; margin: 0 auto 1rem auto; }
 }
-.profile-photo { max-width: 120px; height: auto; }
+.profile-photo { max-width: 100px; height: auto; }
 .rcc-logo { max-width: 180px; height: auto; }
