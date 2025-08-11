@@ -150,3 +150,17 @@ ul{padding-left:20px}
   max-width: 100%;
   height: auto;
 }
+
+
+/* Wrapped image on Meet Aaron (top-left) */
+.meet-headshot{float:left; width:220px; height:auto; margin:4px 16px 12px 0; border-radius:10px}
+/* RCC badge centered at bottom of content */
+.rcc-badge{display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; margin:24px auto 6px auto; text-align:center}
+.rcc-badge img{max-width:200px; height:auto; display:block}
+.rcc-badge .caption{font-size:9pt; line-height:1.3; opacity:.95}
+/* Home page logo above footer on right side */
+.home-tail-logo{float:right; width:200px; height:auto; margin:8px 0 0 16px}
+@media (max-width: 700px){
+  .meet-headshot{float:none; display:block; margin:0 auto 12px auto; width:180px}
+  .home-tail-logo{float:none; display:block; margin:12px auto 0 auto; width:160px}
+}
