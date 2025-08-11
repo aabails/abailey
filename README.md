@@ -1,17 +1,9 @@
 
-# Aaron Bailey Counselling – Static Clone (Google Sites-style)
+# Static Clone – v2
 
-This build mirrors the menu, header/banner, and CTA of https://www.abailey.ca.
+Changes in this build:
+- Footer upgraded to match live site sections (Contact, Location, Quick Links)
+- Contact info removed from Home page; CTA remains
 
-## Upload these exact image filenames to `/images`:
-- banner.jpg
-- logo.png
-- headshot.jpg
-- rcc-logo.png
-- office-1.jpg
-- office-2.jpg
-
-## Deploy
-1) Push to a GitHub repo.
-2) Netlify ➜ New site from Git ➜ pick repo ➜ no build command (static).
-3) Netlify Forms will autoscan the contact form.
+Upload images to `/images/`:
+- banner.jpg, logo.png, headshot.jpg, rcc-logo.png, office-1.jpg, office-2.jpg

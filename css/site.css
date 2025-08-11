@@ -33,10 +33,16 @@ h1,h2,h3{line-height:1.2}
 img{max-width:100%; height:auto; display:block}
 ul{padding-left:20px}
 
-.footer{border-top:1px solid var(--border); padding:24px 0; background:#fff; margin-top:20px}
+.footer{border-top:1px solid var(--border); background:#fff; margin-top:20px}
+.footer-grid{display:grid; gap:18px; padding:28px 0; grid-template-columns: 1fr 1fr 1fr}
+.footer-col h4{margin:0 0 8px; font-size:16px}
+.footer-col a{color:#202124; text-decoration:none}
+.footer-col a:hover{text-decoration:underline}
+.footer-bottom{padding:14px 0; border-top:1px solid var(--border)}
 
 @media (max-width:900px){
   .nav{display:none}
   .hamburger{display:block}
   body.nav-open .nav{display:flex; position:absolute; right:24px; top:64px; flex-direction:column; background:#fff; border:1px solid var(--border); border-radius:12px; padding:10px 12px; box-shadow:0 12px 30px rgba(0,0,0,.08)}
+  .footer-grid{grid-template-columns:1fr}
 }

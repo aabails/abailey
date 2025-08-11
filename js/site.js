@@ -1,1 +1,1 @@
-// no extra JS required; menu is pure CSS + class toggle
+// menu toggle handled by body class
