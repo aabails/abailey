@@ -150,3 +150,28 @@ ul{padding-left:20px}
   max-width: 100%;
   height: auto;
 }
+
+/* Added for consistent banner text */
+.banner, .hero, header .banner {
+  color: #fff;
+  text-align: center;
+}
+.banner h1, .banner h2, .banner p, .banner a { color: #fff; }
+
+/* Mobile menu open state */
+[data-menu] { display: none; }
+[data-menu].open { display: block; }
+
+/* Constrain logo size */
+.site-logo img { max-width: 160px; height: auto; }
+
+
+/* === audit patch: banner text, mobile menu open, logo sizing === */
+.banner, .hero, header .banner { color: #fff; text-align: center; }
+.banner h1, .banner h2, .banner p, .banner a { color: #fff; }
+
+[data-menu] { display: none; }
+[data-menu].open { display: block; }
+
+.site-logo img { max-width: 160px; height: auto; }
+
