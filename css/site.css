@@ -290,3 +290,6 @@ input:focus, textarea:focus, select:focus{
 
 /* ensure floats (map/headshot) play nicely with prose */
 .prose::after{ content:""; display: table; clear: both; }
+
+/* Symbol-only callout title styling */
+.callout .title{ display:inline-flex; align-items:center; justify-content:center; font-size:1.1rem; }
