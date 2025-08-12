@@ -293,3 +293,26 @@ input:focus, textarea:focus, select:focus{
 
 /* Symbol-only callout title styling */
 .callout .title{ display:inline-flex; align-items:center; justify-content:center; font-size:1.1rem; }
+
+
+/* Keep highlight quote on one line on wider screens */
+@media (min-width: 720px){
+  .prose blockquote.one-line{ white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+}
+
+
+/* Fern bullet list inside callouts */
+
+
+/* SVG leaf bullets for callouts */
+.callout .fern-list{ list-style: none; padding-left: 0; margin: .4rem 0 .2rem; }
+.callout .fern-list li{ position: relative; padding-left: 1.35rem; margin: .35rem 0; }
+.callout .fern-list li::before{
+  content: "";
+  position: absolute;
+  left: 0; top: .1rem;
+  width: 1rem; height: 1rem;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2024%2024%27%3E%0A%20%20%3Cpath%20fill%3D%27%239ac3a3%27%20d%3D%27M20.8%203.2c-5.2-.6-9%201.3-11.3%203.6C7.2%209.1%206.2%2012%206%2013.4c-.1.7.6%201.3%201.3%201.2c1.4-.2%204.3-1.2%206.6-3.5c2.3-2.3%204.2-6.1%203.6-11.3zM5%2014.5c-.9.2-1.5.4-2%20.7C2.4%2015.5%202%2016%202%2016.6c0%20.7.6%201.4%201.4%201.4c.6%200%201.1-.4%201.4-1c.3-.5.5-1.1.7-2l6.9%206.9c.4.4%201%20.4%201.4%200s.4-1%200-1.4L5%2014.5z%27/%3E%0A%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+}
