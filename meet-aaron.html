@@ -29,7 +29,7 @@
 <span class="brand-text">Aaron Bailey Counselling</span>
 </a>
 <button aria-label="Open menu" class="hamburger" onclick="document.body.classList.toggle('nav-open')">☰</button>
-<nav class="nav"><a class="nav-link" href="/">Home</a><a class="nav-link" href="/counselling.html">Counselling</a><a class="nav-link" href="/teen-counselling-victoria.html">Teen Counselling</a><a class="nav-link" href="/rates-services.html">Rates &amp; Services</a><a class="nav-link" href="/resources.html">Resources</a><a class="nav-link" href="/meet-aaron.html">Meet Aaron</a><a class="nav-link" href="/contact.html">Contact</a></nav>
+<nav class="nav"><button aria-controls="site-menu" aria-expanded="false" class="menu-toggle"><span aria-hidden="true" class="menu-icon">☰</span><span class="sr-only">Menu</span></button><ul id="site-menu"><li><a class="nav-link" href="/">Home</a></li><li><a class="nav-link" href="/counselling.html">Counselling</a></li><li><a class="nav-link" href="/teen-counselling-victoria.html">Teen Counselling</a></li><li><a class="nav-link" href="/rates-services.html">Rates &amp; Services</a></li><li><a class="nav-link" href="/resources.html">Resources</a></li><li><a class="nav-link" href="/meet-aaron.html">Meet Aaron</a></li><li><a class="nav-link" href="/contact.html">Contact</a></li></ul><button aria-controls="site-menu" aria-label="Close menu" class="menu-close">✕</button></nav>
 </div>
 </div>
 <header class="hero topbar">
@@ -44,7 +44,6 @@
 </div>
 </div>
 <main class="wrap content"><div class="prose"><img alt="Photo of Aaron Bailey, RCC" class="img-float-left" src="/images/headshot.jpg"/><p>Aaron is a trauma-informed and solution-focused therapist doing work with youth and adults to support them in taking control over any aspect of their lives and developing a deeper understanding of how to reach their fullest potential. Aaron loves working with people and has been working in an educational setting with children and teens for over 10 years. His approach to counselling involves fostering trusting relationships through a calm and genuine approach.</p><blockquote class="one-line">We’ll go at your pace. Sessions focus on what feels most useful to you.</blockquote><p>He works with individuals to overcome obstacles life throws their way by honouring their story, supporting their desire for change, and looking inwards at strengths, experiences, and resources. Working outdoors and being active whenever possible are key components of his practice, as the healing effects of nature are key in supporting mental wellbeing and health.</p><p>Aaron was born and raised in Victoria and spends much of his time outdoors, being active and with his family. He particularly enjoys being on or near the ocean and in the forest. He completed his Master's in Education - Counselling at City University of Seattle and holds the designation of Registered Clinical Counsellor.</p><p>Aaron has experience working with people of all ages, but specifically youth ages 10 to 18 with anxiety, ADHD, OCD, identity exploration, family changes, grief and loss, educational concerns, substance use, and sense of purpose, among many other topics.</p><div class="rcc-box"><img alt="Registered Clinical Counsellor (RCC)" src="/images/rcc-logo.png"/><div class="caption">Registered Clinical Counsellor (RCC), BCACC</div></div></div>
-
 </main>
 <footer class="footer">
 <div class="wrap">
@@ -72,5 +71,39 @@
 </div>
 </footer>
 <script src="/js/site.js"></script>
-</body>
+<script data-role="mobile-menu">
+document.addEventListener('DOMContentLoaded', function(){
+  var nav = document.querySelector('nav.nav');
+  if(!nav) return;
+  var toggle = nav.querySelector('.menu-toggle');
+  var menu = nav.querySelector('ul');
+  var closeBtn = nav.querySelector('.menu-close');
+  if(!toggle || !menu) return;
+  function closeMenu(){
+    menu.classList.remove('active');
+    toggle.setAttribute('aria-expanded','false');
+    if(closeBtn) closeBtn.blur();
+  }
+  toggle.addEventListener('click', function(){
+    var open = menu.classList.toggle('active');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if(open && closeBtn){ closeBtn.focus(); }
+  });
+  if(closeBtn){
+    closeBtn.addEventListener('click', closeMenu);
+  }
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', closeMenu);
+  });
+  window.addEventListener('resize', function(){
+    if(window.innerWidth > 860){ closeMenu(); }
+  });
+  document.addEventListener('click', function(e){
+    if(!nav.contains(e.target)){ closeMenu(); }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ closeMenu(); }
+  });
+});
+</script></body>
 </html>

@@ -431,3 +431,88 @@ a{ border-bottom: none; }
 }
 .rcc-box img{ max-width: 120px; height: auto; display: block; margin: 0 auto .35rem; }
 .rcc-box .caption{ font-size: .9rem; color: var(--muted); }
+
+
+/* --- Mobile nav polish (2025-08-12) --- */
+nav.nav{ position: relative; display:flex; align-items:center; justify-content:center; gap:14px; }
+nav.nav .menu-toggle{ display:none; background:none; border:1px solid #e5efe7; padding:8px 10px; border-radius:10px; }
+nav.nav .menu-toggle:focus{ outline:2px solid #9ac3a3; outline-offset:2px; }
+nav.nav .menu-icon{ font-size: 20px; line-height: 1; }
+nav.nav .sr-only{ position:absolute; left:-9999px; }
+
+nav.nav ul{ display:flex; gap:12px; list-style:none; margin:0; padding:0; }
+
+@media (max-width: 860px){
+  nav.nav{ justify-content: space-between; }
+  nav.nav .menu-toggle{ display:inline-flex; }
+  nav.nav ul{
+    position: absolute;
+    top: 52px; /* approx header height */
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    background: var(--card, #fff);
+    border: 1px solid #e5efe7;
+    border-radius: 12px;
+    margin: 0 12px;
+    padding: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    z-index: 999;
+  }
+  nav.nav ul.active{ display:flex; }
+  nav.nav ul li{ padding: 6px 4px; text-align:center; }
+  nav.nav ul li a{ display:block; padding: 10px; }
+}
+
+
+/* --- Mobile nav slide + close (2025-08-12) --- */
+@media (max-width: 860px){
+  nav.nav{ justify-content: space-between; }
+  nav.nav .menu-toggle{ display:inline-flex; }
+  nav.nav ul{
+    position: absolute;
+    top: 52px;
+    left: 0;
+    right: 0;
+    /* animation-ready state */
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: max-height .28s ease, opacity .24s ease, transform .28s ease;
+    flex-direction: column;
+    background: var(--card, #fff);
+    border: 1px solid #e5efe7;
+    border-radius: 12px;
+    margin: 0 12px;
+    padding: 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    z-index: 999;
+    pointer-events: none;
+  }
+  nav.nav ul.active{
+    max-height: 80vh;
+    opacity: 1;
+    transform: translateY(0);
+    padding: 8px;
+    pointer-events: auto;
+  }
+  nav.nav ul li{ padding: 6px 4px; text-align:center; }
+  nav.nav ul li a{ display:block; padding: 10px; }
+  nav.nav .menu-close{
+    position: absolute;
+    top: 56px;
+    right: 20px;
+    display: none;
+    background: #ffffff;
+    border: 1px solid #e5efe7;
+    border-radius: 12px;
+    padding: 6px 10px;
+    line-height: 1;
+    box-shadow: 0 6px 16px rgba(0,0,0,.06);
+    z-index: 1000;
+  }
+  nav.nav ul.active ~ .menu-close{ display:inline-block; }
+}

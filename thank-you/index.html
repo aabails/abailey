@@ -50,4 +50,38 @@
 </div>
 <div class="copyright">© 2025 Aaron Bailey Counselling</div>
 </div>
-</footer></body></html>
+</footer><script data-role="mobile-menu">
+document.addEventListener('DOMContentLoaded', function(){
+  var nav = document.querySelector('nav.nav');
+  if(!nav) return;
+  var toggle = nav.querySelector('.menu-toggle');
+  var menu = nav.querySelector('ul');
+  var closeBtn = nav.querySelector('.menu-close');
+  if(!toggle || !menu) return;
+  function closeMenu(){
+    menu.classList.remove('active');
+    toggle.setAttribute('aria-expanded','false');
+    if(closeBtn) closeBtn.blur();
+  }
+  toggle.addEventListener('click', function(){
+    var open = menu.classList.toggle('active');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if(open && closeBtn){ closeBtn.focus(); }
+  });
+  if(closeBtn){
+    closeBtn.addEventListener('click', closeMenu);
+  }
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', closeMenu);
+  });
+  window.addEventListener('resize', function(){
+    if(window.innerWidth > 860){ closeMenu(); }
+  });
+  document.addEventListener('click', function(e){
+    if(!nav.contains(e.target)){ closeMenu(); }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ closeMenu(); }
+  });
+});
+</script></body></html>
