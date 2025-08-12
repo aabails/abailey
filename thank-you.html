@@ -19,6 +19,14 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D9R50PPY0C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D9R50PPY0C');
+</script>
 </head><body class="thankyou-page"><header class="hero topbar">
 <img alt="Forest banner" class="hero-bg" src="/images/banner.jpg"/>
 <div class="hero-overlay">
@@ -50,4 +58,17 @@
 </div>
 <div class="copyright">© 2025 Aaron Bailey Counselling</div>
 </div>
-</footer></body></html>
+</footer>
+<!-- GA4 lead conversion: fires on thank-you page -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  // Ensure event fires after page load (GA script is async)
+  window.addEventListener('load', function(){
+    gtag('event', 'generate_lead', {
+      event_source: 'contact_thank_you'
+    });
+  });
+</script>
+
+</body></html>
