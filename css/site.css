@@ -316,3 +316,9 @@ input:focus, textarea:focus, select:focus{
   background-repeat: no-repeat;
   background-size: 1rem 1rem;
 }
+
+
+/* --- Nav smoothing (2025-08-12) --- */
+nav.nav{ display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 14px; }
+nav.nav .nav-link{ display: inline-flex; align-items: center; justify-content: center; padding: 10px 12px; line-height: 1; text-decoration: none; color: inherit; }
+nav.nav .nav-link:hover{ text-decoration: underline; text-underline-offset: 3px; }
