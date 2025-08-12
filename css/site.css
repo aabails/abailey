@@ -411,3 +411,8 @@ a{ border-bottom: none; }
 .form-panel{ margin: 0 auto .25rem; padding-bottom: .75rem; }
 .form-panel .contact-form input[type="submit"]{ margin-bottom: 0; display: inline-block; }
 .form-panel .contact-form > *:last-child{ margin-bottom: 0 !important; }
+
+
+/* Thank You page hardening */
+.thankyou-page header .btn{ display: none !important; }
+.thankyou-page main .btn{ background: #78b487; border-color: #78b487; color: #fff !important; }
