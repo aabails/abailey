@@ -1,0 +1,3 @@
+http://abailey.ca/* https://abailey.ca/:splat 301!
+http://www.abailey.ca/* https://abailey.ca/:splat 301!
+https://www.abailey.ca/* https://abailey.ca/:splat 301!
