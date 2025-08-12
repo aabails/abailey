@@ -405,3 +405,9 @@ nav.nav .nav-link:hover{
 
 /* Ensure no double underline from any legacy border-bottom on links */
 a{ border-bottom: none; }
+
+
+/* Tighten bottom space under the contact form submit */
+.form-panel{ margin: 0 auto .25rem; padding-bottom: .75rem; }
+.form-panel .contact-form input[type="submit"]{ margin-bottom: 0; display: inline-block; }
+.form-panel .contact-form > *:last-child{ margin-bottom: 0 !important; }
