@@ -416,3 +416,18 @@ a{ border-bottom: none; }
 /* Thank You page hardening */
 .thankyou-page header .btn{ display: none !important; }
 .thankyou-page main .btn{ background: #78b487; border-color: #78b487; color: #fff !important; }
+
+
+/* RCC logo box on Meet Aaron */
+.rcc-box{
+  background: var(--card);
+  border: 1px solid #e5efe7;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 12px 14px;
+  max-width: 360px;
+  margin: 1rem auto;
+  text-align: center;
+}
+.rcc-box img{ max-width: 120px; height: auto; display: block; margin: 0 auto .35rem; }
+.rcc-box .caption{ font-size: .9rem; color: var(--muted); }
