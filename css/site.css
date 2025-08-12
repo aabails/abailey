@@ -593,3 +593,21 @@ body.nav-open .nav-backdrop{
   /* Center floated images on small screens so text has full width */
   .float-left{ float: none; display: block; margin: 0 auto 1rem; }
 }
+
+
+/* Desktop fix: let the 'one-line' callout wrap and sit below floats */
+.prose blockquote.one-line{
+  white-space: normal;
+  text-overflow: clip;
+  display: block;
+  clear: both;
+}
+
+
+/* Guard: blockquotes should not be overlapped by floated media */
+.prose blockquote{ clear: both; }
+
+
+/* Button visibility override (fix accidental global none) */
+.btn{ display: inline-block !important; }
+.btn{ vertical-align: middle; }
