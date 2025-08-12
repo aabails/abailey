@@ -484,7 +484,7 @@ a{ border-bottom: none; }
   body.nav-open{ overflow: hidden; } /* lock background scroll while menu open */
 
   /* Tiny "X" button in the top-right of the dropdown */
-  .nav-close{ display:block;
+  .nav-close{ display:block; display:block;
     position: absolute;
     top: 6px;
     right: 10px;
@@ -497,7 +497,8 @@ a{ border-bottom: none; }
   }
 }
 
-/* Desktop defaults: hide mobile-only controls */
-.hamburger, .nav-close { display: none; }
-
+/* Desktop-only: hide mobile-only controls */
+@media (min-width: 901px){
+  .hamburger, .nav-close { display: none; }
+}
 /* Mobile overrides live below (already present) */
