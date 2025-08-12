@@ -502,3 +502,17 @@ a{ border-bottom: none; }
   .hamburger, .nav-close { display: none; }
 }
 /* Mobile overrides live below (already present) */
+
+
+/* --- Fix: mobile menu overlay + scrollable --- */
+@media (max-width: 900px){
+  /* Make sure menu sits above banners/hero sections */
+  .nav{ z-index: 9999; }
+
+  /* Allow scrolling inside the dropdown when it's open */
+  body.nav-open .nav{
+    max-height: calc(100dvh - 64px);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
