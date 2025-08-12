@@ -432,182 +432,35 @@ a{ border-bottom: none; }
 .rcc-box img{ max-width: 120px; height: auto; display: block; margin: 0 auto .35rem; }
 .rcc-box .caption{ font-size: .9rem; color: var(--muted); }
 
-/* === Mobile menu: slide-down + close button === */
-@media (max-width: 900px){
-  .hamburger{ display:block; }
 
-  /* Start hidden so we can animate without layout jump */
-  .nav{
-    position: fixed;
-    z-index: 30;
-    top: 64px; /* height of .topbar */
-    left: 0;
-    right: 0;
-    display: block;
-    background: #fff;
-    border-bottom: 1px solid var(--border);
-    padding: 8px 16px;
-
-    /* animation states */
-    transform: translateY(-12px);
-    opacity: 0;
-    visibility: hidden;
-    max-height: 0;
-    overflow: hidden;
-    transition:
-      transform .2s ease,
-      opacity .2s ease,
-      visibility 0s linear .2s,
-      max-height .2s ease;
-  }
-
-  .nav a{
-    display: block;
-    padding: 12px 8px;
-    text-decoration: none;
-    color: inherit;
-    font-weight: 600;
-  }
-
-  body.nav-open .nav{
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-    max-height: 60vh;
-    transition:
-      transform .2s ease,
-      opacity .2s ease,
-      visibility 0s,
-      max-height .2s ease;
-  }
-
-  body.nav-open{ overflow: hidden; } /* lock background scroll while menu open */
-
-  /* Tiny "X" button in the top-right of the dropdown */
-  .nav-close{ display:block; display:block;
-    position: absolute;
-    top: 6px;
-    right: 10px;
-    border: 0;
-    background: transparent;
-    font-size: 22px;
-    line-height: 1;
-    padding: 4px;
-    cursor: pointer;
-  }
+/* Button clipping fix: ensure full border radius shows */
+.btn, .btn-light{
+  box-sizing: border-box;
+  line-height: 1.3;
+  overflow: visible;
 }
+/* Make paragraph containers not clip inline content */
+.prose p{ overflow: visible; }
 
-/* Desktop-only: hide mobile-only controls */
+
+/* Ensure space below CTA buttons inside prose */
+.prose p:has(> a.btn), .prose p:has(> a.btn-light){
+  margin-bottom: 1.2rem;
+}
+/* Fallback for older browsers */
+.prose a.btn, .prose a.btn-light{ margin-bottom: 2px; display:inline-block; }
+
+
+/* Meet Aaron photo: slightly larger on desktop */
 @media (min-width: 901px){
-  .hamburger, .nav-close { display: none; }
-}
-/* Mobile overrides live below (already present) */
-
-
-/* --- Fix: mobile menu overlay + scrollable --- */
-@media (max-width: 900px){
-  /* Make sure menu sits above banners/hero sections */
-  .nav{ z-index: 9999; }
-
-  /* Allow scrolling inside the dropdown when it's open */
-  body.nav-open .nav{
-    max-height: calc(100dvh - 64px);
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-  }
+  .profile-photo{ max-width: 140px; }
 }
 
 
-/* --- Mobile menu hard overlay & stacking-context escape --- */
-@media (max-width: 900px){
-  .topbar{ position: relative; z-index: 2147483646; }
-  /* Ensure the menu overlays banners, sticky headers, heroes, etc. */
-  .nav{
-    position: fixed;
-    z-index: 2147483647 !important;
-  }
-  /* When open, allow the dropdown itself to scroll while the page stays locked */
-  body.nav-open .nav{
-    max-height: calc(100dvh - 64px);
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  /* If any ancestor had transforms that created a stacking context, neutralize when open */
-  body.nav-open .topbar,
-  body.nav-open .topbar .wrap{
-    transform: none !important;
-    will-change: auto !important;
-    z-index: 2147483646 !important;
-    position: relative;
-  }
-}
-
-/* --- Mobile menu backdrop (dimming layer) --- */
-@media (max-width: 900px){
-  .nav-backdrop{
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,.38);
-    z-index: 2147483646; /* below menu (2147483647), above everything else */
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity .2s ease, visibility 0s linear .2s;
-  }
-  body.nav-open .nav-backdrop{
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transition: opacity .2s ease, visibility 0s;
-  }
-}
-
-/* --- Strong backdrop: global, with desktop guard --- */
-.nav-backdrop{
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0; /* fallback for older browsers */
-  inset: 0;
-  background: rgba(0,0,0,.45);
-  z-index: 2147483646; /* below menu (2147483647) */
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity .2s ease, visibility 0s linear .2s;
-}
-body.nav-open .nav-backdrop{
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-@media (min-width: 901px){
-  .nav-backdrop{ display: none; } /* never show on desktop */
-}
-
-/* === Responsive fix: prevent one-line quote from being truncated next to floated images === */
-@media (max-width: 760px){
-  .prose blockquote.one-line{
-    white-space: normal;       /* allow wrapping */
-    text-overflow: clip;       /* remove ellipsis */
-  }
-  .prose blockquote{ clear: both; } /* ensure it drops below any floats */
-  /* Center floated images on small screens so text has full width */
-  .float-left{ float: none; display: block; margin: 0 auto 1rem; }
-}
-
-
-/* Desktop fix: let the 'one-line' callout wrap and sit below floats */
+/* Blockquote readability on desktop */
 .prose blockquote.one-line{
   white-space: normal;
   text-overflow: clip;
   display: block;
   clear: both;
 }
-
-
-/* Guard: blockquotes should not be overlapped by floated media */
-.prose blockquote{ clear: both; }
-
-
-/* Button visibility override (fix accidental global none) */
-.btn{ display: inline-block !important; }
-.btn{ vertical-align: middle; }

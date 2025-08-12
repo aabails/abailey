@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://abailey.ca/sitemap.xml
