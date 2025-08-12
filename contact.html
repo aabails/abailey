@@ -23,14 +23,23 @@
 </head>
 <body class="contact-page">
 <div class="topbar">
-<div class="wrap">
-<a class="brand" href="/">
+  <div class="wrap">
+    <a class="brand" href="/">
 <img alt="Aaron Bailey Counselling logo" src="/images/logo.png"/>
 <span class="brand-text">Aaron Bailey Counselling</span>
 </a>
-<button aria-label="Open menu" class="hamburger" onclick="document.body.classList.toggle('nav-open')">☰</button>
-<nav class="nav"><button aria-controls="site-menu" aria-expanded="false" class="menu-toggle"><span aria-hidden="true" class="menu-icon">☰</span><span class="sr-only">Menu</span></button><ul id="site-menu"><li><a class="nav-link" href="/">Home</a></li><li><a class="nav-link" href="/counselling.html">Counselling</a></li><li><a class="nav-link" href="/teen-counselling-victoria.html">Teen Counselling</a></li><li><a class="nav-link" href="/rates-services.html">Rates &amp; Services</a></li><li><a class="nav-link" href="/resources.html">Resources</a></li><li><a class="nav-link" href="/meet-aaron.html">Meet Aaron</a></li><li><a class="nav-link" href="/contact.html">Contact</a></li></ul><button aria-controls="site-menu" aria-label="Close menu" class="menu-close">✕</button></nav>
-</div>
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">☰</button>
+    <nav id="site-menu" class="nav" role="navigation" aria-label="Primary">
+      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link" href="/counselling.html">Counselling</a>
+      <a class="nav-link" href="/teen-counselling-victoria.html">Teen Counselling</a>
+      <a class="nav-link" href="/rates-services.html">Rates &amp; Services</a>
+      <a class="nav-link" href="/resources.html">Resources</a>
+      <a class="nav-link" href="/meet-aaron.html">Meet Aaron</a>
+      <a class="nav-link" href="/contact.html">Contact</a>
+      <button class="nav-close" type="button" aria-label="Close menu">×</button>
+    </nav>
+  </div>
 </div>
 <header class="hero topbar">
 <img alt="Forest banner" class="hero-bg" src="/images/banner.jpg"/>
@@ -70,39 +79,5 @@
 </div>
 </footer>
 <script src="/js/site.js"></script>
-<script data-role="mobile-menu">
-document.addEventListener('DOMContentLoaded', function(){
-  var nav = document.querySelector('nav.nav');
-  if(!nav) return;
-  var toggle = nav.querySelector('.menu-toggle');
-  var menu = nav.querySelector('ul');
-  var closeBtn = nav.querySelector('.menu-close');
-  if(!toggle || !menu) return;
-  function closeMenu(){
-    menu.classList.remove('active');
-    toggle.setAttribute('aria-expanded','false');
-    if(closeBtn) closeBtn.blur();
-  }
-  toggle.addEventListener('click', function(){
-    var open = menu.classList.toggle('active');
-    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    if(open && closeBtn){ closeBtn.focus(); }
-  });
-  if(closeBtn){
-    closeBtn.addEventListener('click', closeMenu);
-  }
-  menu.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click', closeMenu);
-  });
-  window.addEventListener('resize', function(){
-    if(window.innerWidth > 860){ closeMenu(); }
-  });
-  document.addEventListener('click', function(e){
-    if(!nav.contains(e.target)){ closeMenu(); }
-  });
-  document.addEventListener('keydown', function(e){
-    if(e.key === 'Escape'){ closeMenu(); }
-  });
-});
-</script></body>
+</body>
 </html>

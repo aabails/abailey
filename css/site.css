@@ -432,87 +432,72 @@ a{ border-bottom: none; }
 .rcc-box img{ max-width: 120px; height: auto; display: block; margin: 0 auto .35rem; }
 .rcc-box .caption{ font-size: .9rem; color: var(--muted); }
 
+/* === Mobile menu: slide-down + close button === */
+@media (max-width: 900px){
+  .hamburger{ display:block; }
 
-/* --- Mobile nav polish (2025-08-12) --- */
-nav.nav{ position: relative; display:flex; align-items:center; justify-content:center; gap:14px; }
-nav.nav .menu-toggle{ display:none; background:none; border:1px solid #e5efe7; padding:8px 10px; border-radius:10px; }
-nav.nav .menu-toggle:focus{ outline:2px solid #9ac3a3; outline-offset:2px; }
-nav.nav .menu-icon{ font-size: 20px; line-height: 1; }
-nav.nav .sr-only{ position:absolute; left:-9999px; }
-
-nav.nav ul{ display:flex; gap:12px; list-style:none; margin:0; padding:0; }
-
-@media (max-width: 860px){
-  nav.nav{ justify-content: space-between; }
-  nav.nav .menu-toggle{ display:inline-flex; }
-  nav.nav ul{
-    position: absolute;
-    top: 52px; /* approx header height */
+  /* Start hidden so we can animate without layout jump */
+  .nav{
+    position: fixed;
+    z-index: 30;
+    top: 64px; /* height of .topbar */
     left: 0;
     right: 0;
-    display: none;
-    flex-direction: column;
-    background: var(--card, #fff);
-    border: 1px solid #e5efe7;
-    border-radius: 12px;
-    margin: 0 12px;
-    padding: 8px;
-    box-shadow: 0 8px 24px rgba(0,0,0,.08);
-    z-index: 999;
-  }
-  nav.nav ul.active{ display:flex; }
-  nav.nav ul li{ padding: 6px 4px; text-align:center; }
-  nav.nav ul li a{ display:block; padding: 10px; }
-}
-
-
-/* --- Mobile nav slide + close (2025-08-12) --- */
-@media (max-width: 860px){
-  nav.nav{ justify-content: space-between; }
-  nav.nav .menu-toggle{ display:inline-flex; }
-  nav.nav ul{
-    position: absolute;
-    top: 52px;
-    left: 0;
-    right: 0;
-    /* animation-ready state */
     display: block;
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 8px 16px;
+
+    /* animation states */
+    transform: translateY(-12px);
+    opacity: 0;
+    visibility: hidden;
     max-height: 0;
     overflow: hidden;
-    opacity: 0;
-    transform: translateY(-6px);
-    transition: max-height .28s ease, opacity .24s ease, transform .28s ease;
-    flex-direction: column;
-    background: var(--card, #fff);
-    border: 1px solid #e5efe7;
-    border-radius: 12px;
-    margin: 0 12px;
-    padding: 0;
-    box-shadow: 0 8px 24px rgba(0,0,0,.08);
-    z-index: 999;
-    pointer-events: none;
+    transition:
+      transform .2s ease,
+      opacity .2s ease,
+      visibility 0s linear .2s,
+      max-height .2s ease;
   }
-  nav.nav ul.active{
-    max-height: 80vh;
-    opacity: 1;
+
+  .nav a{
+    display: block;
+    padding: 12px 8px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+  }
+
+  body.nav-open .nav{
     transform: translateY(0);
-    padding: 8px;
-    pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+    max-height: 60vh;
+    transition:
+      transform .2s ease,
+      opacity .2s ease,
+      visibility 0s,
+      max-height .2s ease;
   }
-  nav.nav ul li{ padding: 6px 4px; text-align:center; }
-  nav.nav ul li a{ display:block; padding: 10px; }
-  nav.nav .menu-close{
+
+  body.nav-open{ overflow: hidden; } /* lock background scroll while menu open */
+
+  /* Tiny "X" button in the top-right of the dropdown */
+  .nav-close{ display:block;
     position: absolute;
-    top: 56px;
-    right: 20px;
-    display: none;
-    background: #ffffff;
-    border: 1px solid #e5efe7;
-    border-radius: 12px;
-    padding: 6px 10px;
+    top: 6px;
+    right: 10px;
+    border: 0;
+    background: transparent;
+    font-size: 22px;
     line-height: 1;
-    box-shadow: 0 6px 16px rgba(0,0,0,.06);
-    z-index: 1000;
+    padding: 4px;
+    cursor: pointer;
   }
-  nav.nav ul.active ~ .menu-close{ display:inline-block; }
 }
+
+/* Desktop defaults: hide mobile-only controls */
+.hamburger, .nav-close { display: none; }
+
+/* Mobile overrides live below (already present) */
