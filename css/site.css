@@ -582,3 +582,14 @@ body.nav-open .nav-backdrop{
 @media (min-width: 901px){
   .nav-backdrop{ display: none; } /* never show on desktop */
 }
+
+/* === Responsive fix: prevent one-line quote from being truncated next to floated images === */
+@media (max-width: 760px){
+  .prose blockquote.one-line{
+    white-space: normal;       /* allow wrapping */
+    text-overflow: clip;       /* remove ellipsis */
+  }
+  .prose blockquote{ clear: both; } /* ensure it drops below any floats */
+  /* Center floated images on small screens so text has full width */
+  .float-left{ float: none; display: block; margin: 0 auto 1rem; }
+}
