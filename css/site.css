@@ -516,3 +516,28 @@ a{ border-bottom: none; }
     -webkit-overflow-scrolling: touch;
   }
 }
+
+
+/* --- Mobile menu hard overlay & stacking-context escape --- */
+@media (max-width: 900px){
+  .topbar{ position: relative; z-index: 2147483646; }
+  /* Ensure the menu overlays banners, sticky headers, heroes, etc. */
+  .nav{
+    position: fixed;
+    z-index: 2147483647 !important;
+  }
+  /* When open, allow the dropdown itself to scroll while the page stays locked */
+  body.nav-open .nav{
+    max-height: calc(100dvh - 64px);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  /* If any ancestor had transforms that created a stacking context, neutralize when open */
+  body.nav-open .topbar,
+  body.nav-open .topbar .wrap{
+    transform: none !important;
+    will-change: auto !important;
+    z-index: 2147483646 !important;
+    position: relative;
+  }
+}
