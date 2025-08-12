@@ -216,3 +216,77 @@ main p { line-height: 1.65; margin: 0.75rem 0; }
 @media (max-width: 820px) {
   .map-float-left { float: none; width: 100%; margin: 0 0 1rem 0; }
 }
+
+/* Simple buttons */
+.btn{display:inline-block;padding:12px 18px;border-radius:10px;border:1px solid #6aa77a;background:#78b487;color:#fff;text-decoration:none;line-height:1.2}
+.btn:hover{filter:brightness(0.98)}
+.btn-light{background:#fff;color:#2c3e33;border-color:#9ac3a3}
+
+
+/* --- Calm prose theme (2025-08-12) --- */
+:root{
+  --bg: #f9fbf9;
+  --ink: #243229;
+  --muted: #596a60;
+  --accent: #6aa77a;
+  --accent-2: #9ac3a3;
+  --card: #ffffff;
+  --shadow: 0 8px 24px rgba(0,0,0,.06);
+}
+body{ background: var(--bg); color: var(--ink); }
+
+/* readable content wrapper; wrap text blocks with <div class="prose"> */
+.prose{ max-width: 740px; margin: 0 auto; padding: 1rem; }
+.prose p{ line-height: 1.75; font-size: 1.05rem; color: var(--ink); margin: .85rem 0; }
+.prose h1{ font-size: clamp(1.8rem, 2.4vw, 2.2rem); font-weight: 600; letter-spacing: .2px; margin: .2rem 0 .7rem; color: var(--ink); }
+.prose h2{ font-size: clamp(1.3rem, 1.8vw, 1.5rem); font-weight: 600; color: var(--ink); margin-top: 1.2rem; }
+.prose h3{ font-weight: 600; color: var(--ink); }
+.prose ul, .prose ol{ padding-left: 1.2rem; }
+.prose li{ margin: .4rem 0; color: var(--ink); }
+
+/* links: calm green, underline on hover/focus only */
+.prose a{ color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+.prose a:hover, .prose a:focus{ border-bottom-color: var(--accent); }
+
+/* callout for important notes */
+.callout{
+  background: var(--card);
+  border: 1px solid #e5efe7;
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: var(--shadow);
+  margin: 1rem 0;
+}
+.callout .title{ font-weight: 600; color: var(--muted); margin-bottom: .25rem; }
+
+/* calm blockquotes */
+.prose blockquote{
+  border-left: 3px solid var(--accent-2);
+  background: #f2f7f3;
+  padding: .8rem 1rem; margin: 1rem 0;
+  color: #2f4036;
+  border-radius: 0 12px 12px 0;
+}
+
+/* softer images */
+.prose img{ border-radius: 12px; box-shadow: var(--shadow); }
+
+/* gentle separators */
+.prose hr{ border: 0; height: 1px; background: #e9efe9; margin: 1.2rem 0; }
+
+/* welcoming form fields */
+input, textarea, select{
+  border: 1px solid #d7d7d7; border-radius: 10px; padding: 12px 14px;
+}
+input:focus, textarea:focus, select:focus{
+  border-color: var(--accent-2);
+  box-shadow: 0 0 0 3px rgba(154,195,163,.25);
+  outline: none;
+}
+
+/* buttons harmony */
+.btn{ border-radius: 10px; background: var(--accent); border: 1px solid var(--accent); color: #fff; }
+.btn-light{ background: #fff; color: #2c3e33; border-color: var(--accent-2); }
+
+/* ensure floats (map/headshot) play nicely with prose */
+.prose::after{ content:""; display: table; clear: both; }
