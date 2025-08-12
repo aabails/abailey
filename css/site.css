@@ -541,3 +541,23 @@ a{ border-bottom: none; }
     position: relative;
   }
 }
+
+/* --- Mobile menu backdrop (dimming layer) --- */
+@media (max-width: 900px){
+  .nav-backdrop{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.38);
+    z-index: 2147483646; /* below menu (2147483647), above everything else */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity .2s ease, visibility 0s linear .2s;
+  }
+  body.nav-open .nav-backdrop{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity .2s ease, visibility 0s;
+  }
+}
