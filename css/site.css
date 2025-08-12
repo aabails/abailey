@@ -397,3 +397,11 @@ nav.nav .nav-link:hover{
   margin-top:.8rem; padding:12px 18px; font-size:16px;
   border-radius:10px; border:1px solid #6aa77a; background:#78b487; color:#fff; cursor:pointer;
 }
+
+
+/* Contact page centering tweaks */
+.contact-page .contact-max{ max-width: 980px; margin-left:auto; margin-right:auto; }
+.contact-page .container{ padding-left: 1.5rem; padding-right: 1.5rem; }
+
+/* Ensure no double underline from any legacy border-bottom on links */
+a{ border-bottom: none; }
