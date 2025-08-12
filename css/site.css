@@ -464,3 +464,38 @@ a{ border-bottom: none; }
   display: block;
   clear: both;
 }
+
+
+/* Strong override: ensure the highlighted quote never truncates */
+.prose blockquote.one-line{
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  clear: both !important;
+}
+
+
+/* Strong CTA button fix */
+.prose .cta-row{ 
+  display:block; 
+  overflow: visible !important; 
+  line-height: normal; 
+  padding-bottom: .3rem; 
+}
+.prose .cta-row > a.btn, 
+.prose .cta-row > a.btn-light{
+  display: inline-flex !important;
+  align-items: center;
+  box-sizing: border-box;
+  line-height: 1.35;
+  border-radius: 12px;
+  overflow: visible !important;
+}
+/* Guard against accidental global 'display:none' */
+.btn{ display: inline-block !important; }
+
+
+/* Meet Aaron photo bump */
+@media (min-width: 901px){
+  .profile-photo{ max-width: 150px !important; }
+}
