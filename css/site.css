@@ -561,3 +561,24 @@ a{ border-bottom: none; }
     transition: opacity .2s ease, visibility 0s;
   }
 }
+
+/* --- Strong backdrop: global, with desktop guard --- */
+.nav-backdrop{
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0; /* fallback for older browsers */
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  z-index: 2147483646; /* below menu (2147483647) */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .2s ease, visibility 0s linear .2s;
+}
+body.nav-open .nav-backdrop{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+@media (min-width: 901px){
+  .nav-backdrop{ display: none; } /* never show on desktop */
+}
