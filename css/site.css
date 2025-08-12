@@ -322,3 +322,24 @@ input:focus, textarea:focus, select:focus{
 nav.nav{ display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 14px; }
 nav.nav .nav-link{ display: inline-flex; align-items: center; justify-content: center; padding: 10px 12px; line-height: 1; text-decoration: none; color: inherit; }
 nav.nav .nav-link:hover{ text-decoration: underline; text-underline-offset: 3px; }
+
+
+/* --- Nav polish (v8) --- */
+.topbar{ padding-top: 10px; padding-bottom: 10px; }
+nav.nav{ display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap; padding: 4px 0; }
+@media (min-width: 980px){
+  nav.nav{ flex-wrap:nowrap; gap:14px; }
+}
+nav.nav .nav-link{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding: 8px 10px;
+  line-height: 1;
+  text-decoration: none;
+  border-bottom: none !important;
+  white-space: nowrap;
+}
+nav.nav .nav-link:hover{
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  border-bottom: none !important;
+}
