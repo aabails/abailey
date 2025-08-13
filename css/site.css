@@ -594,3 +594,42 @@ a{ border-bottom: none; }
     z-index: 400;
   }
 }
+
+
+/* --- Mobile-first nav hard override (2025-08-12) --- */
+/* Always define base as 'mobile' first */
+.topbar { position: sticky; top: 0; z-index: 300; background: #fff; border-bottom: 1px solid var(--border); }
+
+/* Base mobile: hide nav by default, show hamburger */
+.nav { display: none !important; margin-left: auto; gap: 18px; }
+.hamburger { display: inline-block !important; margin-left: auto; background: transparent; border: 0; font-size: 28px; line-height: 1; }
+
+/* Open state (mobile) */
+body.nav-open .nav,
+.nav.open {
+  display: flex !important;
+  position: fixed;
+  right: 16px;
+  top: 64px;
+  flex-direction: column;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.08);
+  z-index: 400;
+}
+
+/* Desktop >= 901px */
+@media (min-width: 901px) {
+  .hamburger { display: none !important; }
+  .nav {
+    display: flex !important;
+    position: static !important;
+    flex-direction: row !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    padding: 0 !important;
+  }
+}
