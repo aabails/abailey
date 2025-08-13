@@ -571,58 +571,26 @@ a{ border-bottom: none; }
 }
 
 
+/* --- Mobile nav fix patch (2025-08-12) --- */
+.topbar { position: sticky; top: 0; z-index: 300; background: #fff; border-bottom: 1px solid var(--border); }
+.hamburger { display: none; margin-left: auto; background: transparent; border: 0; font-size: 28px; line-height: 1; }
+.nav { display: flex; gap: 18px; margin-left: auto; }
 
-/* === Mobile overlay menu (2025-08-12 fix) === */
-.mobile-nav {
-  position: fixed;
-  inset: 0;
-  z-index: 9999; /* above everything */
-  background: rgba(255,255,255,0.98);
-  transform: translateY(-100%);
-  transition: transform 240ms ease;
-  display: grid;
-  grid-template-rows: auto 1fr;
-  padding: 16px 20px;
+@media (max-width: 900px) {
+  .hamburger { display: block; }
+  .nav { display: none; }
+  body.nav-open .nav {
+    display: flex;
+    position: fixed;
+    right: 16px;
+    top: 64px;
+    flex-direction: column;
+    gap: 8px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+    z-index: 400;
+  }
 }
-.mobile-nav[hidden] { display: none !important; }
-
-body.nav-open .mobile-nav { transform: translateY(0); }
-
-.menu-close {
-  justify-self: end;
-  font-size: 28px;
-  line-height: 1;
-  width: 40px;
-  height: 40px;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-}
-
-.mobile-links {
-  list-style: none;
-  margin: 12px 0 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.mobile-links a {
-  text-decoration: none;
-  font-size: 1.125rem;
-  padding: 8px 0;
-  display: inline-block;
-  color: #202124;
-  font-weight: 600;
-}
-
-@media (max-width: 900px){
-  /* Keep desktop nav hidden on mobile; rely on overlay */
-  .nav{ display:none; }
-  .hamburger{ display:block; }
-  /* If older CSS tries to reveal .nav when nav-open, force it off */
-  body.nav-open .nav{ display:none !important; }
-}
-
-/* Prevent body scroll when overlay open */
-body.nav-open { overflow: hidden; }

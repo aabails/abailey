@@ -36,11 +36,11 @@
 <img alt="Aaron Bailey Counselling logo" src="/images/logo.png"/>
 <span class="brand-text">Aaron Bailey Counselling</span>
 </a>
-<button aria-label="Open menu" class="hamburger" onclick="document.body.classList.toggle('nav-open')">☰</button>
-<nav class="nav"><a class="nav-link" href="/">Home</a><a class="nav-link" href="/counselling.html">Counselling</a><a class="nav-link" href="/teen-counselling-victoria.html">Teen Counselling</a><a class="nav-link" href="/rates-services.html">Rates &amp; Services</a><a class="nav-link" href="/resources.html">Resources</a><a class="nav-link" href="/meet-aaron.html">Meet Aaron</a><a class="nav-link" href="/contact.html">Contact</a></nav>
+<button class="hamburger" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false" data-menu-toggle>☰</button>
+<nav id="primary-nav" class="nav" data-menu><a class="nav-link" href="/">Home</a><a class="nav-link" href="/counselling.html">Counselling</a><a class="nav-link" href="/teen-counselling-victoria.html">Teen Counselling</a><a class="nav-link" href="/rates-services.html">Rates &amp; Services</a><a class="nav-link" href="/resources.html">Resources</a><a class="nav-link" href="/meet-aaron.html">Meet Aaron</a><a class="nav-link" href="/contact.html">Contact</a></nav>
 </div>
 </div>
-<header class="hero topbar">
+<header class="hero">
 <img alt="Forest banner" class="hero-bg" src="/images/banner.jpg"/>
 <div class="hero-overlay">
 <h1 class="hero-title">Contact</h1>
@@ -77,6 +77,6 @@
 <div class="copyright">© 2025 Aaron Bailey Counselling</div>
 </div>
 </footer>
-<script src="/js/site.js"></script>
+<script src="/js/site.js" defer></script>
 </body>
 </html>
