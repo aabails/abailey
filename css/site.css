@@ -643,3 +643,72 @@ body.nav-open .nav,
 body{ font-family: var(--font-body); line-height: 1.65; }
 h1,h2,h3,h4,h5,h6{ font-family: var(--font-head); line-height: 1.2; }
 .hero-title{ font-family: var(--font-head); }
+
+
+/* === Mobile menu overlay (2025-08-13) === */
+/* Screenreader-only text utility */
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden;
+  clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
+
+/* Lock background scroll when menu is open */
+body.nav-open{ overflow:hidden; }
+
+/* Hamburger icon construction */
+.hamburger .burger{ display:inline-block; width:28px; height:22px; position:relative; }
+.hamburger .line{
+  position:absolute; left:0; right:0; height:2px; background: currentColor;
+  transition: transform .25s ease, opacity .2s ease, top .25s ease, bottom .25s ease;
+}
+.hamburger .line:nth-child(1){ top:0; }
+.hamburger .line:nth-child(2){ top:10px; }
+.hamburger .line:nth-child(3){ bottom:0; }
+
+/* Turn into an X when expanded */
+.hamburger[aria-expanded="true"] .line:nth-child(1){ top:10px; transform:rotate(45deg); }
+.hamburger[aria-expanded="true"] .line:nth-child(2){ opacity:0; }
+.hamburger[aria-expanded="true"] .line:nth-child(3){ bottom:auto; top:10px; transform:rotate(-45deg); }
+
+/* Mobile: full-screen vertical menu below sticky topbar */
+@media (max-width: 900px){
+  /* Hide nav by default; show hamburger */
+  .nav{ display:none !important; }
+  .hamburger{ display:inline-block !important; }
+
+  /* When open, make nav a full-viewport panel under the topbar */
+  body.nav-open .nav,
+  .nav.open{
+    display:flex !important;
+    position:fixed;
+    left:0; right:0; bottom:0;
+    top:64px; /* matches .topbar height */
+    background: var(--bg);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+    gap: 6px;
+    z-index: 400;
+    overflow:auto;
+  }
+  .nav .nav-link{
+    display:block;
+    padding:16px 8px;
+    font-size:20px;
+    font-weight:600;
+    text-decoration:none;
+    color:inherit;
+    border-bottom:1px solid var(--border);
+  }
+  .nav .nav-link:last-child{ border-bottom:none; }
+}
+
+/* Desktop restores inline nav */
+@media (min-width: 901px){
+  .hamburger{ display:none !important; }
+  .nav{
+    display:flex !important; position:static !important; flex-direction:row !important;
+    gap:14px; padding:0 !important; border:0 !important; box-shadow:none !important; background:transparent !important;
+  }
+  .nav .nav-link{ border-bottom:none; font-size:inherit; padding:8px 10px; }
+}
