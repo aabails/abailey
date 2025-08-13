@@ -1,16 +1,19 @@
-// Mobile menu: accessible toggle with link-close
+// Mobile menu: Safari-friendly toggle with reflow + accessible labels
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.querySelector('[data-menu-toggle]');
   const nav = document.querySelector('[data-menu]');
   if (!btn || !nav) return;
 
   const open = () => {
+    // Force reflow so Safari applies transitions
+    void nav.offsetHeight;
     document.body.classList.add('nav-open');
     nav.classList.add('open');
     btn.setAttribute('aria-expanded', 'true');
     btn.setAttribute('aria-label', 'Close menu');
   };
   const close = () => {
+    void nav.offsetHeight;
     document.body.classList.remove('nav-open');
     nav.classList.remove('open');
     btn.setAttribute('aria-expanded', 'false');
