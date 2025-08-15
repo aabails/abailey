@@ -835,3 +835,11 @@ body.nav-open{ overflow:hidden; }
   }
 }
 
+
+
+/* Normalize "My Space" images to equal size */
+.space-photos-container { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+.space-photo { width: 100%; height: auto; }
+@media (max-width: 800px){ .space-photos-container { grid-template-columns: 1fr; } }
+
+.space-photo { aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; }
