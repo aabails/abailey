@@ -843,3 +843,16 @@ body.nav-open{ overflow:hidden; }
 @media (max-width: 800px){ .space-photos-container { grid-template-columns: 1fr; } }
 
 .space-photo { aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; }
+
+/* === keep active menu item visible & clearly styled === */
+.nav-link[aria-current="page"],
+.nav-link.active,
+.nav-link.current {
+  color: #202124;            /* match normal link colour */
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  border-bottom: none;
+}
+
