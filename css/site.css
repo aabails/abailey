@@ -844,20 +844,14 @@ body.nav-open{ overflow:hidden; }
 
 .space-photo { aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; }
 
-/* === small RCC badge near brand === */
-.rcc-badge {
-  display: inline-block;
-  font-size: 12px;
-  line-height: 1;
-  padding: 3px 6px;
-  border-radius: 9999px;
-  border: 1px solid #d0d7de;
-  background: #f6f8fa;
-  color: #0b3d2e;
-  letter-spacing: .02em;
-  margin-left: 8px;
-  vertical-align: middle;
-}
-@media (max-width: 480px) {
-  .rcc-badge { font-size: 11px; padding: 2px 6px; margin-left: 6px; }
+/* keep active menu item visible & clearly styled */
+.nav-link[aria-current="page"],
+.nav-link.active,
+.nav-link.current {
+  color: #202124;
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  border-bottom: none;
 }
