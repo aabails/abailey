@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Blog | Aaron Bailey Counselling</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preload" as="image" href="/images/banner.webp">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/site.css">
+  <style>
+    .blog-list{display:grid;gap:1.25rem;margin:1.5rem 0;}
+    .post-card{border:1px solid #dcdcdc;border-radius:10px;padding:1rem;}
+    .post-card h3{margin:.2rem 0 .4rem 0;}
+    .post-meta{font-size:.9rem;opacity:.8;margin-bottom:.4rem;}
+    .post-excerpt{margin:0 0 .6rem 0;}
+    .post-card a{display:inline-block;border:1px solid #c9c9c9;padding:.5rem .8rem;border-radius:.5rem;text-decoration:none;}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Blog</h1>
+      <p>Notes on counselling, CBT, and practical tools for teens and young adults.</p>
+    </div>
+  </header>
+  <main class="container">
+    <div id="blog-list" class="blog-list" aria-live="polite"></div>
+  </main>
+  <script>
+    async function loadPosts(){
+      try{
+        const res = await fetch('/blog/posts.json', {cache:'no-store'});
+        const data = await res.json();
+        const list = document.getElementById('blog-list');
+        list.innerHTML = '';
+        data.sort((a,b)=> new Date(b.date) - new Date(a.date));
+        for(const post of data){
+          const card = document.createElement('article');
+          card.className = 'post-card';
+          card.innerHTML = `
+            <h3><a href="${post.url}">${post.title}</a></h3>
+            <div class="post-meta">${new Date(post.date).toLocaleDateString()}</div>
+            <p class="post-excerpt">${post.excerpt || ''}</p>
+            <a href="${post.url}">Read post</a>
+          `;
+          list.appendChild(card);
+        }
+      }catch(e){
+        document.getElementById('blog-list').textContent = 'Posts will appear here.';
+      }
+    }
+    loadPosts();
+  </script>
+</body>
+</html>
