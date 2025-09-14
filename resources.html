@@ -1,36 +1,99 @@
-<main class="container mx-auto px-4 py-8">
-  
-  <!-- Expandable Blog Section at the Top -->
-  <section class="mb-8">
-    <button 
-      class="w-full text-left bg-green-50 p-4 rounded-lg shadow-md hover:bg-green-100 transition"
-      onclick="document.getElementById('blog-section').classList.toggle('hidden')">
-      <h2 class="text-xl font-semibold">From the Blog</h2>
-      <p class="text-sm text-gray-600">Click to expand and explore latest posts</p>
-    </button>
+<!DOCTYPE html>
 
-    <div id="blog-section" class="hidden mt-4 space-y-4">
-      {{ range first 5 (where .Site.RegularPages "Section" "resources/blog") }}
-        <div class="border rounded-lg p-4 shadow-sm hover:shadow-md transition">
-          <a href="{{ .RelPermalink }}" class="text-lg font-medium text-green-800 hover:underline">
-            {{ .Title }}
-          </a>
-          <p class="text-gray-600 text-sm mt-1">{{ .Summary }}</p>
-          <p class="text-gray-400 text-xs mt-2">Published: {{ .Date.Format "Jan 2, 2006" }}</p>
-        </div>
-      {{ end }}
-
-      <div class="mt-6 text-center">
-        <a href="/resources/blog/" class="inline-block px-6 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition">
-          See all posts →
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Existing Resources Page Content -->
-  <h1 class="text-3xl font-bold mb-6">Resources</h1>
-  <div class="prose max-w-none">
-    {{ .Content }}
-  </div>
+<html lang="en">
+<head>
+<title>Resources | Aaron Bailey Counselling</title>
+<meta content="Page about Resources at Aaron Bailey Counselling." name="description"/>
+<link href="https://abailey.ca/resources.html" rel="canonical"/>
+<meta content="Resources | Aaron Bailey Counselling" property="og:title"/>
+<meta content="Helpful mental health resources and community supports curated by Aaron Bailey, RCC." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://abailey.ca/resources.html" property="og:url"/>
+<meta content="https://abailey.ca/images/banner.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Resources · Aaron Bailey Counselling</title>
+<meta content="Registered Clinical Counsellor in Brentwood Bay, BC (Greater Victoria). Youth and adult counselling, trauma-informed and solution-focused." name="description"/>
+<link as="style" href="/css/site.css" rel="preload"/>
+<link href="/css/site.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-D9R50PPY0C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D9R50PPY0C');
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&amp;family=Lora:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="/favicon.ico" rel="icon"/>
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<meta content="#FAF7F2" name="theme-color"/>
+<link href="/css/style.css" rel="stylesheet"/><meta content="youth counsellor, teen counselling, counselling Brentwood Bay, counselling Sidney, counselling Saanich, counselling Broadmead, counselling Royal Oak, counselling Victoria BC, anxiety, ADHD, OCD" name="keywords"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Aaron Bailey Counselling", "areaServed": "Greater Victoria, BC", "url": "https://www.abailey.ca/", "image": "https://www.abailey.ca/images/logo.png", "telephone": "+17785575504"}</script></head>
+<body>
+<div class="topbar">
+<div class="wrap">
+<a class="brand" href="/">
+<img alt="Aaron Bailey Counselling logo" class="brand-logo" decoding="async" height="2500" src="/images/logo.png" width="2500"/>
+<span aria-label="Site title" class="brand-text">
+<span class="brand-line">Aaron Bailey</span>
+<span class="brand-line">Counselling</span>
+</span>
+<span class="rcc-badge" aria-label="Registered Clinical Counsellor">RCC</span></a>
+<button aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu" class="hamburger" data-menu-toggle=""> <span class="sr-only"> <span class="label-open">Open Menu</span> <span class="label-close">Close Menu</span> </span> <span aria-hidden="true" class="burger"> <span class="line"></span> <span class="line"></span> <span class="line"></span> </span></button>
+<nav class="nav" data-menu="" id="primary-nav"><a class="nav-link" href="/">Home</a><a class="nav-link" href="/meet-aaron">Meet Aaron</a><a class="nav-link" href="/counselling">Counselling</a><a class="nav-link" href="/teen-counselling-victoria">Teen Counselling</a><a class="nav-link" href="/rates-services">Rates &amp; Services</a><a aria-current="page" class="nav-link" href="/resources">Resources</a><a class="nav-link" href="/contact">Contact</a></nav>
+</div>
+</div>
+<header class="hero"><picture><source srcset="/images/banner-1200.webp 1200w, /images/banner.webp 2400w" type="image/webp"/><img alt="Forest banner" class="hero-bg" decoding="async" fetchpriority="high" height="853" sizes="(max-width: 700px) 100vw, 100vw" src="/images/banner.jpg" width="1280"/></picture><picture><source srcset="/images/banner.webp" type="image/webp"/></picture>
+<div class="hero-overlay">
+<h1 class="hero-title">Resources</h1>
+<a class="cta" href="/contact.html#contact-form">Book a Free Consultation</a>
+</div>
+</header>
+<div class="below-hero-cta">
+<div class="wrap">
+</div>
+</div>
+<main class="wrap content"><div class="prose"><h3>Local Resources:</h3><p><a href="https://welcome.cmhacptk.ca" rel="noopener noreferrer" target="_blank">Confident Parents: Thriving kids - Anxiety</a> is a free program helping BC families overcome anxiety challenges in children ages 3-12. This is a web and phone based coaching service that helps parents and caregivers learn effective skills and strategies for managing anxiety. It is available by referral from the school. Please contact one of our counsellor members for more information.</p><p><a href="https://www.islandhealth.ca" rel="noopener noreferrer" target="_blank">Discovery Youth and Family Substance Use Services</a> is a free community-based counselling services for youth struggling with substance use. Discovery’s services are available to anyone in the community directly or indirectly impacted by substance use.</p><ul>
+<li>Youth aged 13 to 19 who have concerns about alcohol or drug use</li>
+<li>Families/Caregivers who are concerned about a youth using alcohol or drugs</li>
+<li>Any support person who is worried about a youth’s use of alcohol or drugs</li>
+<li>Youth who are affected by someone else’s use of alcohol or drugs</li>
+</ul><p><a href="https://www.vicrisis.ca" rel="noopener noreferrer" target="_blank">Vancouver Island Crisis line</a> - Please call in the event of a crisis. They are supportive and can provide resources if necessary. 1-888-494-3888, or visit their website for text and chat information.</p><p><a href="https://www.islandsexualhealth.org" rel="noopener noreferrer" target="_blank">Island Sexual health</a> - A community health care centre, offering pro-choice and comprehensive <a href="https://www.islandsexualhealth.org" rel="noopener noreferrer" target="_blank">sexual health clinics</a>, <a href="https://www.islandsexualhealth.org" rel="noopener noreferrer" target="_blank">education programs</a> and <a href="https://www.islandsexualhealth.org" rel="noopener noreferrer" target="_blank">products</a> for people of all genders, orientation...
+<h3>Reading/Videos/Activities:</h3>
+<p><a href="https://www.anxietycanada.com" rel="noopener noreferrer" target="_blank">Anxiety Canada</a> - Many resources, strategies and readings around understanding and navigating anxiety.</p>
+<p><a href="https://keltymentalhealth.ca" rel="noopener noreferrer" target="_blank">Kelty Mental Health</a> - A comprehensive database on mental health, including ADHD, Anxiety, Managing Sleep, Managing Stress, OCD, Trauma, Substance Use, Grief and Loss, Bullying, Medications and many more topics. They are in partnership with Vancouver Children's Hospital.</p>
+<p><a href="https://youtu.be" rel="noopener noreferrer" target="_blank">Self Regulation Strategies With Occupational Therapist Katie Zelinski: YouTube (42 min.)</a></p>
+<p><a href="https://www.cdc.gov" rel="noopener noreferrer" target="_blank">Coaching Teens to Recognize and Manage Emotions: CDC</a></p>
+<p><a href="https://youtu.be" rel="noopener noreferrer" target="_blank">Emotional Intelligence from a Teenage Perspective: YouTube (13 min.)</a></p>
+<h3>Apps:</h3>
+<p>Buddhify Meditation App</p>
+</p></div>
 </main>
+<footer class="footer">
+<div class="wrap">
+<div>
+<h4>Contact</h4>
+<p><a href="mailto:abaileycounselling@gmail.com">abaileycounselling@gmail.com</a></p>
+<p><a href="tel:+17785575504">(778)-557-5504</a></p>
+</div>
+<div>
+<h4>Location</h4>
+<p>Brentwood Bay, BC (Greater Victoria)</p>
+</div>
+<div>
+<h4>Quick Links</h4>
+<ul><li><a href="/">Home</a></li><li><a href="/meet-aaron.html">Meet Aaron</a></li><li><a href="/counselling.html">Counselling</a></li><li><a href="/teen-counselling-victoria.html">Teen Counselling</a></li><li><a href="/rates-services.html">Rates &amp; Services</a></li><li><a href="/resources.html">Resources</a></li><li><a href="/contact.html">Contact</a></li></ul>
+</div>
+<div class="copyright">© 2025 Aaron Bailey Counselling</div>
+<div class="footer-crisis" id="crisis-resources"><h4>If you’re in crisis</h4><p>For emergencies, call 911 or go to the nearest emergency department.</p><ul><li>Vancouver Island Crisis Line: 1-888-494-3888</li><li>Kids Help Phone: 1-800-668-6868 (text 686868)</li></ul></div></div>
+</footer>
+<script defer="" src="/js/site.js"></script>
+</body>
+</html>
