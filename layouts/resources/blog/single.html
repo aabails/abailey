@@ -1,0 +1,62 @@
+{{ define "main" }}
+<main class="container mx-auto px-4 py-8">
+  <article class="prose max-w-none">
+    <header class="mb-6">
+      <h1 class="text-3xl font-bold mb-2">{{ .Title }}</h1>
+      <p class="text-gray-500 text-sm">
+        Published {{ .Date.Format "Jan 2, 2006" }}
+      </p>
+    </header>
+
+    {{ .Content }}
+  </article>
+</main>
+{{ end }}
+
+{{ define "head" }}
+  <title>{{ .Title }} | Aaron Bailey Counselling</title>
+  <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+  <meta name="keywords" content="{{ delimit .Params.tags ", " }}">
+  <meta name="author" content="Aaron Bailey">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ with .Params.image }}{{ . }}{{ else }}/images/default-blog.jpg{{ end }}">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+  <meta name="twitter:image" content="{{ with .Params.image }}{{ . }}{{ else }}/images/default-blog.jpg{{ end }}">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ .Title }}",
+    "description": "{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}",
+    "datePublished": "{{ .Date.Format "2006-01-02" }}",
+    "author": {
+      "@type": "Person",
+      "name": "Aaron Bailey"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Aaron Bailey Counselling",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "/images/logo.png"
+      }
+    },
+    "image": "{{ with .Params.image }}{{ . }}{{ else }}/images/default-blog.jpg{{ end }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ .Permalink }}"
+    }
+  }
+  </script>
+{{ end }}
