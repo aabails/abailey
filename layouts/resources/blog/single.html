@@ -9,19 +9,3 @@
   </article>
 </main>
 {{ end }}
-
-{{ define "head" }}
-  <title>{{ .Title }} | Aaron Bailey Counselling</title>
-  <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
-  <meta name="keywords" content="{{ delimit .Params.tags ", " }}">
-  <meta name="author" content="Aaron Bailey">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="{{ .Title }}">
-  <meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
-  <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:image" content="{{ with .Params.image }}{{ . }}{{ else }}/images/blog/default-blog.jpg{{ end }}">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ .Title }}">
-  <meta name="twitter:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
-  <meta name="twitter:image" content="{{ with .Params.image }}{{ . }}{{ else }}/images/blog/default-blog.jpg{{ end }}">
-{{ end }}

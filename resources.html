@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resources | Aaron Bailey Counselling</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <main class="container mx-auto px-4 py-8">
+
+    <!-- Expandable Blog Section -->
+    <section class="mb-8">
+      <button 
+        class="w-full text-left bg-green-50 p-4 rounded-lg shadow-md hover:bg-green-100 transition"
+        onclick="document.getElementById('blog-section').classList.toggle('hidden')">
+        <h2 class="text-xl font-semibold">From the Blog</h2>
+        <p class="text-sm text-gray-600">Click to expand and explore latest posts</p>
+      </button>
+
+      <div id="blog-section" class="hidden mt-4 space-y-4">
+        <div id="blog-items"></div>
+        <div class="mt-6 text-center">
+          <a href="/resources/blog/" class="inline-block px-6 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition">
+            See all posts →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Existing Resources Page Content -->
+    <h1 class="text-3xl font-bold mb-6">Resources</h1>
+    <h2>Local Resources:</h2>
+    <p>[Your original Resources content continues here...]</p>
+
+  </main>
+
+  <script>
+    fetch('/resources/blog/index.json')
+      .then(res => res.json())
+      .then(posts => {
+        const container = document.getElementById('blog-items');
+        posts.slice(0,5).forEach(p => {
+          const div = document.createElement('div');
+          div.className = "border rounded-lg p-4 shadow-sm hover:shadow-md transition";
+          div.innerHTML = `
+            <a href="${p.Permalink}" class="text-lg font-medium text-green-800 hover:underline">${p.Title}</a>
+            <p class="text-gray-600 text-sm mt-1">${p.Summary || ''}</p>
+            <p class="text-gray-400 text-xs mt-2">${p.Date}</p>
+          `;
+          container.appendChild(div);
+        });
+      })
+      .catch(() => {
+        document.getElementById('blog-items').innerHTML = '<p>Blog coming soon.</p>';
+      });
+  </script>
+</body>
+</html>

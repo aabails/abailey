@@ -1,0 +1,6 @@
+baseURL = "https://abailey.ca/"
+languageCode = "en-us"
+title = "Aaron Bailey Counselling"
+
+[outputs]
+section = ["HTML", "JSON"]
