@@ -1,39 +1,38 @@
-<!-- Updated resources.html -->
-
-<!-- Expandable Blog Section at the Top -->
-<section class="mb-8">
-  <button 
-    class="w-full text-left bg-green-50 p-4 rounded-lg shadow-md hover:bg-green-100 transition"
-    onclick="document.getElementById('blog-section').classList.toggle('hidden')">
-    <h2 class="text-xl font-semibold">From the Blog</h2>
-    <p class="text-sm text-gray-600">Click to expand and explore latest posts</p>
-  </button>
-
-  <div id="blog-section" class="hidden mt-4 space-y-4">
-    {{ range first 5 (where .Site.RegularPages "Section" "resources/blog") }}
-      <div class="border rounded-lg p-4 shadow-sm hover:shadow-md transition">
-        <a href="{{ .RelPermalink }}" class="text-lg font-medium text-green-800 hover:underline">
-          {{ .Title }}
-        </a>
-        <p class="text-gray-600 text-sm mt-1">{{ .Summary }}</p>
-        <p class="text-gray-400 text-xs mt-2">Published: {{ .Date.Format "Jan 2, 2006" }}</p>
-      </div>
-    {{ end }}
-
-    <div class="mt-6 text-center">
-      <a href="/resources/blog/" class="inline-block px-6 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition">
-        See all posts →
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- Existing Resources Page Content -->
 {{ define "main" }}
-  <main class="container mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold mb-6">Resources</h1>
-    <div class="prose max-w-none">
-      {{ .Content }}
+<main class="container mx-auto px-4 py-8">
+  
+  <!-- Expandable Blog Section at the Top -->
+  <section class="mb-8">
+    <button 
+      class="w-full text-left bg-green-50 p-4 rounded-lg shadow-md hover:bg-green-100 transition"
+      onclick="document.getElementById('blog-section').classList.toggle('hidden')">
+      <h2 class="text-xl font-semibold">From the Blog</h2>
+      <p class="text-sm text-gray-600">Click to expand and explore latest posts</p>
+    </button>
+
+    <div id="blog-section" class="hidden mt-4 space-y-4">
+      {{ range first 5 (where .Site.RegularPages "Section" "resources/blog") }}
+        <div class="border rounded-lg p-4 shadow-sm hover:shadow-md transition">
+          <a href="{{ .RelPermalink }}" class="text-lg font-medium text-green-800 hover:underline">
+            {{ .Title }}
+          </a>
+          <p class="text-gray-600 text-sm mt-1">{{ .Summary }}</p>
+          <p class="text-gray-400 text-xs mt-2">Published: {{ .Date.Format "Jan 2, 2006" }}</p>
+        </div>
+      {{ end }}
+
+      <div class="mt-6 text-center">
+        <a href="/resources/blog/" class="inline-block px-6 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition">
+          See all posts →
+        </a>
+      </div>
     </div>
-  </main>
+  </section>
+
+  <!-- Existing Resources Page Content -->
+  <h1 class="text-3xl font-bold mb-6">Resources</h1>
+  <div class="prose max-w-none">
+    {{ .Content }}
+  </div>
+</main>
 {{ end }}
