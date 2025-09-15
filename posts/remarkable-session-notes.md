@@ -1,12 +1,4 @@
----
-title: "Using the ReMarkable 2 for Clinical Counselling Notes"
-date: 2025-09-14
-summary: "Learn how I use the ReMarkable 2 in my counselling practice and download a free Clinical Counselling Notes template."
-description: "Discover how the ReMarkable 2 can help counsellors take focused, distraction-free session notes. Includes a free Clinical Counselling Notes template for download."
-tags: ["remarkable", "counselling tools", "session notes"]
----
 
-<article class="prose max-w-none">
   <header>
     <h1>Using the ReMarkable 2 for Clinical Counselling Notes</h1>
     <p class="text-gray-500"><em>By Aaron Bailey, Counsellor</em></p>
