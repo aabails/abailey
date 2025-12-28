@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://abailey.ca/</loc></url>
-  <url><loc>https://abailey.ca/counselling.html</loc></url>
-  <url><loc>https://abailey.ca/teen-counselling-victoria.html</loc></url>
-  <url><loc>https://abailey.ca/meet-aaron.html</loc></url>
-  <url><loc>https://abailey.ca/rates-services.html</loc></url>
-  <url><loc>https://abailey.ca/resources.html</loc></url>
-  <url><loc>https://abailey.ca/contact.html</loc></url>
-  <url><loc>https://abailey.ca/thank-you.html</loc></url>
+
+  <url>
+    <loc>https://abailey.ca/</loc>
+    <lastmod>2025-12-27</lastmod>
+  </url>
+
+  <url>
+    <loc>https://abailey.ca/counselling</loc>
+    <lastmod>2025-12-27</lastmod>
+  </url>
+
+  <url>
+    <loc>https://abailey.ca/teen-counselling-victoria</loc>
+    <lastmod>2025-12-27</lastmod>
+  </url>
+
+  <url>
+    <loc>https://abailey.ca/meet-aaron</loc>
+    <lastmod>2025-12-27</lastmod>
+  </url>
+
+  <url>
+    <loc>https://abailey.ca/rates-services</loc>
+    <lastmod>2025-12-27</lastmod>
+  </url>
+
+  <url>
+    <loc>https://abailey.ca/resources</loc>
+    <lastmod>2025-12-27</lastmod>
+  </url>
+
+  <url>
+    <loc>https://abailey.ca/contact</loc>
+    <lastmod>2025-12-27</lastmod>
+  </url>
+
+
 </urlset>
