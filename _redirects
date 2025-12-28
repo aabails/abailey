@@ -1,9 +1,10 @@
-http://abailey.ca/* https://abailey.ca/:splat 301!
-http://www.abailey.ca/* https://abailey.ca/:splat 301!
-https://www.abailey.ca/* https://abailey.ca/:splat 301!
 /contact.html /contact 301!
 /teen-counselling-victoria.html /teen-counselling-victoria 301!
 /counselling.html /counselling 301!
 /meet-aaron.html /meet-aaron 301!
 /rates-services.html /rates-services 301!
 /thank-you.html /thank-you 301!
+
+http://abailey.ca/* https://abailey.ca/:splat 301!
+http://www.abailey.ca/* https://abailey.ca/:splat 301!
+https://www.abailey.ca/* https://abailey.ca/:splat 301!
