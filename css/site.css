@@ -920,9 +920,9 @@ body.nav-open{ overflow:hidden; }
     gap: 12px;
   }
 .hero .cta{
-  position: static;
-  transform: none;
-  margin-top: 16px;
+  position: static; !important;
+  transform: none; !important;
+  margin-top: 18px;
 }
 }
 
