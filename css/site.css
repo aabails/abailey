@@ -912,13 +912,13 @@ body.nav-open{ overflow:hidden; }
   .hero{
     height: 280px;
   }
-}
-
-@media (max-width: 768px){
   .hero-overlay{
-    gap: 1.25rem;
+    justify-content: flex-start;
+    padding-top: 48px;
   }
 }
+
+
 
 
 
