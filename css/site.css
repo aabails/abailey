@@ -84,6 +84,7 @@ ul{padding-left:20px}
   display: flex;
   align-items: center;
   contain: layout paint;
+  isolation: isolate;
   
 }
 .footer::before{
