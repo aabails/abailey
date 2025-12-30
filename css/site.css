@@ -914,3 +914,11 @@ body.nav-open{ overflow:hidden; }
   }
 }
 
+@media (max-width: 768px){
+  .hero-overlay{
+    gap: 1.25rem;
+  }
+}
+
+
+
