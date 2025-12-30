@@ -12,6 +12,17 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="Registered Clinical Counsellor in Brentwood Bay, BC (Greater Victoria). Youth and adult counselling, trauma-informed and solution-focused." name="description"/>
+<link
+  rel="preload"
+  as="image"
+  href="/images/banner-768.webp"
+  imagesrcset="
+    /images/banner-768.webp 768w,
+    /images/banner-1200.webp 1200w,
+    /images/banner-1800.webp 1800w
+  "
+  imagesizes="100vw"
+/>
 <link as="style" href="/css/site.css" rel="preload"/>
 <link href="/css/site.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -48,15 +59,17 @@
     type="image/webp"
   />
 
-  <img
-    src="/images/banner-1200.jpg"
-    alt="Youth and teen counselling in Brentwood Bay"
-    class="hero-bg"
-    fetchpriority="high"
-    decoding="async"
-    width="1280"
-    height="853"
-  />
+ <img
+  src="/images/banner-1200.webp"
+  alt="Youth and teen counselling in Brentwood Bay"
+  class="hero-bg"
+  fetchpriority="high"
+  loading="eager"
+  decoding="async"
+  width="1280"
+  height="853"
+/>
+
 </picture>
 
 <div class="hero-overlay">
