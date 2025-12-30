@@ -908,3 +908,9 @@ body.nav-open{ overflow:hidden; }
   border-bottom: none !important;
   white-space: nowrap;
 }
+@media (max-width: 768px){
+  .hero{
+    height: 280px;
+  }
+}
+
