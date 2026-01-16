@@ -32,25 +32,36 @@
     { "@type": "AdministrativeArea", "name": "British Columbia" },
     { "@type": "Place", "name": "Greater Victoria" }
   ],
-  "makesOffer": [
-    {
-      "@type": "Offer",
-      "name": "Individual Counselling (50 minutes)",
-      "price": "150",
-      "priceCurrency": "CAD",
-      "url": "https://abailey.ca/rates-services",
-      "availability": "https://schema.org/InStock",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Individual Counselling",
-        "serviceType": "Counselling",
-        "provider": {
-          "@type": "Person",
-          "name": "Aaron Bailey"
+  "founder": {
+    "@type": "Person",
+    "name": "Aaron Bailey",
+    "jobTitle": "Registered Clinical Counsellor (RCC)"
+  },
+  "serviceType": [
+    "Counselling",
+    "Youth counselling",
+    "Teen counselling",
+    "Online counselling"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Rates & Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Individual Counselling (50 minutes)",
+        "price": "150",
+        "priceCurrency": "CAD",
+        "url": "https://abailey.ca/rates-services",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Individual Counselling",
+          "serviceType": "Counselling"
         }
       }
-    }
-  ]
+    ]
+  }
 }
 </script>
   <link
