@@ -96,4 +96,19 @@
     }
 
 }
+@media (max-width: 768px) {
+    .consider-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .consider-text {
+        width: 100%;
+        text-align: left;
+    }
+
+    .consider-image {
+        text-align: center;
+    }
+}
 
