@@ -25,6 +25,56 @@
   margin-bottom: 15px;
   border-radius: 0 0 8px 8px;
 }
-<p class="shed-caption">
-    A calm, private counselling space in Brentwood Bay where teens and young adults can feel safe, comfortable, and understood from the moment they arrive.
-  </p>
+.consider-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+/* LEFT SIDE */
+.consider-text {
+    flex: 1.5;
+}
+
+/* RIGHT SIDE */
+.consider-image {
+    flex: 0.8;   /* smaller column = smaller image feel */
+    text-align: center;
+}
+
+/* image sizing (THIS controls “much smaller”) */
+.consider-img {
+    width: 100%;
+    max-width: 260px;
+    border-radius: 14px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+}
+
+/* caption centered under image */
+.consider-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #4a5a4f;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .consider-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .consider-img {
+        max-width: 220px;
+    }
+}
