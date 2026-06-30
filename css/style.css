@@ -78,3 +78,14 @@
         max-width: 220px;
     }
 }
+
+.consider-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.consider-img {
+    max-width: 220px;
+}
+
