@@ -88,4 +88,12 @@
 .consider-img {
     max-width: 220px;
 }
+@media (max-width: 768px) {
+
+    .content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+}
 
