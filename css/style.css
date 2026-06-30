@@ -53,5 +53,12 @@
 .hero-shed {
     margin-top: 1.5rem;
 }
+.hero-shed {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 24px;
+    border-radius: 18px;
+    background: #faf7f2;
+}
 
     
