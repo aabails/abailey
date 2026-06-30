@@ -100,4 +100,18 @@
         margin-top: 20px;
     }
 }
-    
+    .hero-shed {
+    text-align: center;
+}
+
+.shed-photo {
+    display: block;
+    margin: 0 auto;
+}
+.shed-caption {
+    text-align: center;
+    margin-top: 12px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
