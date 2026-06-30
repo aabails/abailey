@@ -122,4 +122,11 @@
     margin-right: auto;
     line-height: 1.4;
 }
+.expect-section p {
+    margin-bottom: 14px;
+}
 
+.expect-section p strong {
+    display: block;
+    margin-bottom: 4px;
+}
