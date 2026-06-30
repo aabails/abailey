@@ -60,4 +60,44 @@
     background: #faf7f2;
     border-radius: 18px;
 }
+.consider-section {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+/* left side text */
+.consider-text {
+    flex: 1.2;
+}
+
+/* right side image */
+.consider-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.consider-image .shed-photo {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+}
+
+/* mobile stacking */
+@media (max-width: 768px) {
+    .consider-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .consider-image {
+        margin-top: 20px;
+    }
+}
     
