@@ -39,15 +39,32 @@
 
     width: 100%;
 
-    max-width: 850px;
+    max-width: 720px;   /* KEY FIX: stops it getting huge on laptops */
+
+    height: auto;
+
+    display: block;
+
+    margin: 0 auto;
 
     border-radius: 18px;
 
     box-shadow: 0 10px 30px rgba(0,0,0,0.12);
 
-    display: block;
+}
+@media (min-width: 1024px) {
 
-    margin: 0 auto;
+    .hero-shed {
+
+        margin-top: 2.5rem;
+
+    }
+
+    .shed-photo {
+
+        max-width: 650px; /* tighter, more premium framing on laptops */
+
+    }
 
 }
 
