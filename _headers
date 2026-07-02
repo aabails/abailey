@@ -9,3 +9,7 @@
 
 /sitemap_index.xml
   Content-Type: application/xml; charset=utf-8
+
+/blog/*
+  X-Robots-Tag: noindex
+  Basic-Auth: true
