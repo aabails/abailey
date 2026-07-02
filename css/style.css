@@ -430,10 +430,18 @@ margin-left:20px;
 
 }
 .hero-tagline {
+    font-size: clamp(4rem, 6vw, 5.75rem);
+    font-weight: 700;
+    line-height: 0.92;
+    letter-spacing: -0.055em;
     color: #1A3D2E;
 }
 
 .hero-tagline span {
-    color: #5B7764;
+    
+  color: #5B7764;
     font-style: italic;
 }
+
+
+
