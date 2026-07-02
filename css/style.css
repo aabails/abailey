@@ -130,3 +130,109 @@
     display: block;
     margin-bottom: 4px;
 }
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@import "@fontsource/outfit/400.css";
+@import "@fontsource/outfit/500.css";
+@import "@fontsource/outfit/600.css";
+@import "@fontsource/outfit/700.css";
+@import "@fontsource/figtree/400.css";
+@import "@fontsource/figtree/500.css";
+@import "@fontsource/figtree/600.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-forest: var(--forest);
+  --color-moss: var(--moss);
+  --color-sage: var(--sage);
+  --color-sage-soft: var(--sage-soft);
+  --color-cream: var(--cream);
+  --color-cream-warm: var(--cream-warm);
+}
+
+:root {
+  --radius: 0.875rem;
+
+  /* Forest & Moss palette in oklch */
+  --forest: oklch(0.28 0.045 155);       /* #1a3c2a deep forest */
+  --moss: oklch(0.40 0.055 150);         /* #2d5a3d moss */
+  --sage: oklch(0.58 0.065 140);         /* #5a8a5c sage */
+  --sage-soft: oklch(0.78 0.055 135);    /* #a0c49d soft sage */
+  --cream: oklch(0.98 0.008 90);         /* off white cream */
+  --cream-warm: oklch(0.955 0.015 85);   /* warmer cream */
+
+  --background: var(--cream);
+  --foreground: var(--forest);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--forest);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--forest);
+  --primary: var(--forest);
+  --primary-foreground: var(--cream);
+  --secondary: var(--cream-warm);
+  --secondary-foreground: var(--forest);
+  --muted: var(--cream-warm);
+  --muted-foreground: oklch(0.45 0.03 150);
+  --accent: var(--moss);
+  --accent-foreground: var(--cream);
+  --destructive: oklch(0.55 0.20 27);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.88 0.02 130);
+  --input: oklch(0.88 0.02 130);
+  --ring: var(--moss);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    font-family: var(--font-sans);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
