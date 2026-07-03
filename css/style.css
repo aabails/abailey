@@ -1926,3 +1926,29 @@ pointer-events:none;
     padding-bottom:95px;
 
 }
+/* ==========================================
+   CONSISTENT SECTION HEADING SIZE
+========================================== */
+
+/* Major homepage section headings */
+.problem-content h2,
+.process-content h2,
+.support-content h2,
+.consult-left h2,
+.faq-grid h2,
+.final-cta h2{
+
+    font-size:clamp(2.5rem, 4vw, 3.3rem);
+    line-height:1.12;
+    letter-spacing:-0.03em;
+
+}
+
+/* Keep the hero larger than everything else */
+.hero h1{
+
+    font-size:clamp(3.8rem, 6vw, 5rem);
+    line-height:1.05;
+    letter-spacing:-0.045em;
+
+}
