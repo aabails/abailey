@@ -3501,3 +3501,48 @@ html{
 
     margin-bottom:28px;
 }
+/* ==========================================================
+   CALM SPACE
+========================================================== */
+
+.tc-space{
+
+    padding:70px 0;
+
+    background:#faf8f2;
+
+}
+
+.tc-space-card{
+
+    display:flex;
+    align-items:flex-start;
+    gap:44px;
+
+    padding:54px 60px;
+
+    border-radius:32px;
+
+    background:linear-gradient(135deg,#163825 0%,#1b442d 100%);
+
+    color:#fff;
+
+}
+
+.tc-space-icon{
+
+    width:112px;
+    height:112px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.08);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    flex-shrink:0;
+
+    font-size:50px;
+}
