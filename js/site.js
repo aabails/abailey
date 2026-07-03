@@ -85,3 +85,34 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+/* ==========================================
+   Teen FAQ Accordion
+========================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const items = document.querySelectorAll(".teen-faq .faq-item");
+
+    items.forEach(item => {
+
+        const button = item.querySelector(".faq-question");
+
+        button.addEventListener("click", () => {
+
+            const isOpen = item.classList.contains("active");
+
+            // Close every FAQ
+            items.forEach(faq => {
+                faq.classList.remove("active");
+            });
+
+            // Open the clicked FAQ
+            if (!isOpen) {
+                item.classList.add("active");
+            }
+
+        });
+
+    });
+
+});
