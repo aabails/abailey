@@ -2036,4 +2036,9 @@ pointer-events:none;
 
 }
 
-
+html{
+    scroll-behavior:smooth;
+}
+#how-it-works{
+    scroll-margin-top:100px;
+}
