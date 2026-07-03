@@ -3088,3 +3088,73 @@ html{
     position:relative;
     z-index:1;
 }
+/* ==========================================================
+   HERO TITLE
+========================================================== */
+
+.tc-title{
+    font-size:4.55rem;      /* was 5.35rem */
+    line-height:.96;
+    letter-spacing:-2.5px;
+    font-weight:650;
+}
+
+.tc-title-accent{
+    margin-top:6px;
+}
+
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.tc-description{
+    max-width:610px;
+    font-size:1.12rem;      /* was 1.3rem */
+    line-height:1.8;
+    margin:32px 0 44px;
+}
+
+
+/* ==========================================================
+   QUOTE CARD
+========================================================== */
+
+.tc-card-inner{
+    max-width:490px;
+    padding:50px;
+}
+
+.tc-card h3{
+    font-size:2.35rem;      /* was 3rem */
+    line-height:1.3;
+    margin-bottom:24px;
+}
+
+.tc-card p{
+    font-size:1.08rem;      /* was 1.25rem */
+    line-height:1.8;
+}
+
+
+/* ==========================================================
+   PILL
+========================================================== */
+
+.tc-pill span:last-child{
+    font-size:.88rem;       /* was .95rem */
+}
+
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.tc-btn{
+    height:54px;            /* was 58px */
+    padding:0 28px;
+    font-size:.96rem;
+}
+.tc-title{
+    font-weight:600;
+}
