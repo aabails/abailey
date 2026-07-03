@@ -1710,3 +1710,110 @@ transparent 70%);
 pointer-events:none;
 
 }
+/* ==========================================
+   TYPOGRAPHY REFINEMENT
+   Makes lower sections feel lighter & more premium
+========================================== */
+
+/* ---------- What Sessions Are Like ---------- */
+
+.process-content h2{
+    font-size:clamp(2.5rem, 4vw, 3.35rem);
+    line-height:1.15;
+    margin-bottom:1.5rem;
+}
+
+.process-content .lead{
+    font-size:1.1rem;
+    line-height:1.85;
+    max-width:38rem;
+}
+
+.process-content blockquote{
+    font-size:1.25rem;
+    line-height:1.7;
+}
+
+.step-card{
+    padding:2rem;
+}
+
+.step-card h3{
+    font-size:1.45rem;
+    margin-bottom:.75rem;
+}
+
+.step-card p{
+    font-size:1rem;
+    line-height:1.7;
+}
+
+/* ---------- Who I Support ---------- */
+
+.support-content h2{
+    font-size:clamp(2.5rem, 4vw, 3.2rem);
+    line-height:1.15;
+}
+
+.support-content p{
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+.support-tags span{
+    padding:.8rem 1.3rem;
+    font-size:.95rem;
+}
+
+/* ---------- Consultation ---------- */
+
+.consult-left h2{
+    font-size:clamp(2.5rem, 4vw, 3.2rem);
+    line-height:1.15;
+}
+
+.consult-left li{
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+.practice-card h4{
+    font-size:2rem;
+}
+
+.practice-card p{
+    font-size:1rem;
+    line-height:1.8;
+}
+
+.practice-details strong{
+    font-size:1.2rem;
+}
+
+/* ---------- FAQ ---------- */
+
+.faq-grid h2{
+    font-size:clamp(2.5rem, 4vw, 3rem);
+    line-height:1.15;
+}
+
+.faq-question{
+    font-size:1.5rem;
+}
+
+.faq-answer{
+    font-size:1rem;
+    line-height:1.8;
+}
+
+/* ---------- Final CTA ---------- */
+
+.final-cta h2{
+    font-size:clamp(2.8rem, 5vw, 3.7rem);
+    line-height:1.1;
+}
+
+.final-cta p{
+    font-size:1.15rem;
+    line-height:1.85;
+}
