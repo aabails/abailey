@@ -2146,8 +2146,8 @@ pointer-events:none;
 
     position:absolute;
 
-    left:-5px;
-    bottom:10px;
+    left:-20px;
+    bottom:-20px;
 
     display:flex;
     align-items:center;
