@@ -2042,3 +2042,37 @@ html{
 #how-i-work{
     scroll-margin-top:100px;
 }
+/* ==========================================
+   CONSULTATION SECTION - MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .consult-card{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:32px;
+    }
+
+    .practice-card{
+        width:100%;
+        max-width:none;
+        margin:0;
+        padding:32px 28px;
+    }
+
+    .practice-details{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:24px;
+    }
+
+    .consult-left{
+        order:1;
+    }
+
+    .practice-card{
+        order:2;
+    }
+
+}
