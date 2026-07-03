@@ -4086,3 +4086,152 @@ html{
     }
 
 }
+/* ==========================================================
+   TEEN PAGE FINAL POLISH
+   Add to very bottom of stylesheet
+========================================================== */
+
+/* ---------- Consistent heading style ---------- */
+
+.tc-hero h1,
+.tc-section-header h2,
+.consider-section h2,
+.tc-space-content h2,
+.teen-faq-header h2,
+.parents-left h2,
+.teen-cta h2{
+
+    font-family:inherit !important;
+    font-weight:800 !important;
+    letter-spacing:-0.04em !important;
+    line-height:1.05 !important;
+    color:#173726;
+
+}
+
+/* Slightly reduce heading sizes */
+
+.tc-section-header h2,
+.consider-section h2,
+.tc-space-content h2,
+.teen-faq-header h2,
+.parents-left h2{
+
+    font-size:clamp(2.3rem,4vw,3.2rem) !important;
+
+}
+
+.teen-cta h2{
+
+    font-size:clamp(2.6rem,5vw,3.8rem) !important;
+
+}
+
+/* ---------- Hero ---------- */
+
+.tc-hero p{
+
+    font-size:1.18rem !important;
+    line-height:1.75;
+
+}
+
+/* ---------- Section intro text ---------- */
+
+.tc-section-header p,
+.parents-left p,
+.teen-cta p{
+
+    font-size:1.12rem !important;
+    line-height:1.75;
+
+}
+
+/* ---------- Cards ---------- */
+
+.tc-card p,
+.tc-expect-card p,
+.parent-card p,
+.tc-space-content p{
+
+    font-size:1.05rem !important;
+    line-height:1.75;
+
+}
+
+/* ---------- FAQ ---------- */
+
+.faq-question span:first-child{
+
+    font-size:1.08rem !important;
+
+}
+
+.faq-answer p{
+
+    font-size:1rem !important;
+    line-height:1.75;
+
+}
+
+/* ---------- Parent cards ---------- */
+
+.parent-card h3{
+
+    font-size:.88rem;
+    letter-spacing:.14em;
+
+}
+
+/* ---------- Slightly tighter spacing ---------- */
+
+.consider-section,
+.tc-expect,
+.tc-space,
+.teen-faq,
+.parents-section{
+
+    padding:90px 0 !important;
+
+}
+
+.teen-cta{
+
+    padding:95px 0 110px !important;
+
+}
+
+/* ---------- Secondary button ---------- */
+
+.btn-secondary,
+.btn-secondary:link,
+.btn-secondary:visited{
+
+    color:#173726 !important;
+
+}
+
+.btn-secondary:hover{
+
+    color:#173726 !important;
+    border-color:#173726;
+
+}
+
+/* ---------- Improve readability ---------- */
+
+.tc-container{
+
+    max-width:1200px;
+
+}
+
+/* ---------- Softer cards ---------- */
+
+.parent-card,
+.tc-expect-card,
+.consider-card{
+
+    border-radius:26px;
+
+}
