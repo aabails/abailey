@@ -986,3 +986,174 @@ border-bottom:none;
 }
 
 }
+/* ==========================================
+   PROCESS SECTION
+========================================== */
+
+.process-section{
+    position:relative;
+    overflow:hidden;
+    padding:110px 0;
+    color:#fff;
+
+    background:
+        linear-gradient(rgba(22,49,35,.83),
+        rgba(22,49,35,.83)),
+        url("/images/forest-mist.jpg") center center/cover no-repeat;
+}
+
+.process-grid{
+    position:relative;
+    z-index:2;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:start;
+}
+
+.process-content{
+    max-width:620px;
+}
+
+.process-content .eyebrow{
+    display:block;
+    margin-bottom:22px;
+
+    color:#c9d8c7;
+    letter-spacing:4px;
+    font-size:.9rem;
+    text-transform:uppercase;
+}
+
+.process-content h2{
+    font-size:3.3rem;
+    line-height:1.15;
+    margin-bottom:30px;
+    color:#fff;
+}
+
+.process-content .lead{
+    font-size:1.35rem;
+    line-height:1.8;
+    color:rgba(255,255,255,.84);
+    margin-bottom:50px;
+}
+
+.process-content blockquote{
+    border-left:3px solid rgba(255,255,255,.35);
+    padding-left:22px;
+    margin:0 0 18px;
+
+    color:rgba(255,255,255,.92);
+    font-style:italic;
+    font-size:1.45rem;
+    line-height:1.6;
+}
+
+.process-content cite{
+    display:block;
+    padding-left:25px;
+    color:rgba(255,255,255,.7);
+    font-style:normal;
+}
+
+
+/* Cards */
+
+.steps{
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+}
+
+.step-card{
+
+    display:flex;
+    gap:26px;
+    align-items:flex-start;
+
+    padding:36px;
+
+    border-radius:34px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.14);
+
+    transition:.35s;
+}
+
+.step-card:hover{
+    transform:translateY(-4px);
+
+    background:rgba(255,255,255,.12);
+}
+
+.step-icon{
+
+    width:58px;
+    height:58px;
+
+    border-radius:50%;
+
+    background:rgba(196,215,192,.15);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#dbe6d7;
+    flex-shrink:0;
+}
+
+.step-number{
+    display:block;
+    color:#b8c7b5;
+    font-size:.95rem;
+    margin-bottom:12px;
+}
+
+.step-card h3{
+    color:#fff;
+    margin:0 0 14px;
+    font-size:2rem;
+}
+
+.step-card p{
+    margin:0;
+    color:rgba(255,255,255,.78);
+    line-height:1.7;
+    font-size:1.15rem;
+}
+
+
+/* Responsive */
+
+@media (max-width:980px){
+
+.process-grid{
+    grid-template-columns:1fr;
+    gap:60px;
+}
+
+.process-content h2{
+    font-size:2.5rem;
+}
+
+.process-content .lead{
+    font-size:1.15rem;
+}
+
+.step-card{
+    padding:28px;
+}
+
+.step-card h3{
+    font-size:1.55rem;
+}
+
+}
