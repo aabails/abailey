@@ -85,38 +85,32 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
-/* ==========================================
-   Teen FAQ Accordion
-========================================== */
-
 document.addEventListener("DOMContentLoaded", () => {
 
     const items = document.querySelectorAll(".teen-faq .faq-item");
 
     items.forEach(item => {
 
-        const button = item.querySelector(".faq-question");
-        const answer = item.querySelector(".faq-answer");
+        item.querySelector(".faq-question").addEventListener("click", () => {
 
-        button.addEventListener("click", () => {
-
+            const answer = item.querySelector(".faq-answer");
             const open = item.classList.contains("active");
 
-            // Close everything
-            items.forEach(faq => {
+            items.forEach(i => {
 
-                faq.classList.remove("active");
-                faq.querySelector(".faq-answer").style.maxHeight = "0px";
+                i.classList.remove("active");
+
+                const a = i.querySelector(".faq-answer");
+
+                a.style.maxHeight = null;
 
             });
 
-            // If it wasn't already open, open it
-            if (!open) {
+            if(!open){
 
                 item.classList.add("active");
 
-                answer.style.maxHeight =
-                    answer.querySelector("p").scrollHeight + 40 + "px";
+                answer.style.maxHeight = answer.scrollHeight + "px";
 
             }
 
