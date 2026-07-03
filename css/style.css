@@ -3279,3 +3279,30 @@ html{
     flex-shrink:0;
 
     display
+}
+.tc-help-icon{
+
+    width:64px;
+    height:64px;
+
+    border-radius:50%;
+
+    background:#f3f3ee;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    flex-shrink:0;
+
+    color:#365741;
+
+}
+
+.tc-help-icon svg{
+
+    width:28px;
+    height:28px;
+
+    stroke-width:1.6;
+}
