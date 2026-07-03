@@ -1892,6 +1892,8 @@ pointer-events:none;
 .practice-card{
 
     padding:52px;
+    width:88%;
+    margin-left:auto;
 
 }
 
