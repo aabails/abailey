@@ -3158,3 +3158,23 @@ html{
 .tc-title{
     font-weight:600;
 }
+.tc-hero::before{
+    content:"";
+    position:absolute;
+
+    width:1150px;
+    height:900px;
+
+    left:-560px;
+    top:-120px;
+
+    border-radius:50%;
+
+    background:#edf5ea;
+
+    filter:blur(55px);
+
+    opacity:.95;
+
+    z-index:0;
+}
