@@ -1888,12 +1888,15 @@ pointer-events:none;
     gap:80px;
 
 }
+.consult-card{
+    display:grid;
+    grid-template-columns:60% 40%;
+    gap:60px;
+}
 
 .practice-card{
 
     padding:52px;
-    width:88%;
-    margin-left:auto;
 
 }
 
