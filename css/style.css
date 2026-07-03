@@ -2076,3 +2076,311 @@ html{
     }
 
 }
+/* ==========================================================
+   TEEN HERO
+========================================================== */
+
+.teen-hero{
+    position:relative;
+    padding:90px 0 110px;
+    background:
+        radial-gradient(circle at 28% 18%, rgba(98,138,104,.08) 0%, transparent 34%),
+        linear-gradient(180deg,#f8faf6 0%,#faf9f5 65%,#ffffff 100%);
+}
+
+.teen-container{
+    width:min(1280px,92%);
+    margin:0 auto;
+}
+
+.teen-hero-grid{
+    display:grid;
+    grid-template-columns:1.05fr .82fr;
+    gap:80px;
+    align-items:center;
+}
+
+
+/* ==========================================================
+   PILL
+========================================================== */
+
+.teen-pill{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 22px;
+    border:1px solid #cfd7ca;
+    border-radius:999px;
+    background:#f5f7ef;
+    margin-bottom:40px;
+}
+
+.teen-pill i{
+    width:10px;
+    height:10px;
+    fill:#7f987f;
+    color:#7f987f;
+}
+
+.teen-pill span{
+    font-size:1.05rem;
+    font-weight:500;
+    color:#355640;
+}
+
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.teen-title{
+
+    margin:0 0 34px;
+
+    font-size:5.4rem;
+    line-height:.96;
+    letter-spacing:-3px;
+
+    font-weight:700;
+
+    color:#173726;
+
+}
+
+.teen-title-light{
+
+    display:block;
+
+    margin-top:12px;
+
+    color:#547558;
+
+    font-style:italic;
+    font-weight:600;
+
+}
+
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.teen-description{
+
+    max-width:720px;
+
+    font-size:1.55rem;
+
+    line-height:1.75;
+
+    color:#55635a;
+
+    margin-bottom:55px;
+
+}
+
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.teen-buttons{
+
+    display:flex;
+    gap:22px;
+    flex-wrap:wrap;
+
+}
+
+.btn-primary{
+
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+
+    background:#143723;
+    color:#fff;
+
+    padding:20px 34px;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.btn-primary:hover{
+
+    background:#1c4930;
+
+}
+
+.btn-primary i{
+
+    width:20px;
+    height:20px;
+
+}
+
+.btn-secondary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:20px 36px;
+
+    border:1px solid #cfd7ca;
+
+    border-radius:999px;
+
+    background:white;
+
+    color:#173726;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.btn-secondary:hover{
+
+    background:#f8f8f6;
+
+}
+
+
+/* ==========================================================
+   QUOTE CARD
+========================================================== */
+
+.teen-quote-card{
+
+    background:#faf8f1;
+
+    border:1px solid #d8ddd2;
+
+    border-radius:34px;
+
+    padding:60px;
+
+}
+
+.teen-quote-card h3{
+
+    margin:0 0 34px;
+
+    font-size:3.25rem;
+
+    line-height:1.38;
+
+    font-weight:600;
+
+    color:#183524;
+
+}
+
+.teen-quote-card em{
+
+    color:#4d6d52;
+
+    font-style:italic;
+
+}
+
+.teen-quote-card p{
+
+    font-size:1.45rem;
+
+    line-height:1.8;
+
+    color:#59665d;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:1100px){
+
+    .teen-hero-grid{
+
+        grid-template-columns:1fr;
+
+        gap:60px;
+
+    }
+
+    .teen-title{
+
+        font-size:4.4rem;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .teen-hero{
+
+        padding:70px 0;
+
+    }
+
+    .teen-title{
+
+        font-size:3rem;
+
+        letter-spacing:-1.5px;
+
+    }
+
+    .teen-description{
+
+        font-size:1.15rem;
+
+    }
+
+    .teen-quote-card{
+
+        padding:34px;
+
+    }
+
+    .teen-quote-card h3{
+
+        font-size:2rem;
+
+    }
+
+    .teen-quote-card p{
+
+        font-size:1.05rem;
+
+    }
+
+    .teen-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .btn-primary,
+    .btn-secondary{
+
+        justify-content:center;
+        width:100%;
+
+    }
+
+}
