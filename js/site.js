@@ -96,19 +96,28 @@ document.addEventListener("DOMContentLoaded", () => {
     items.forEach(item => {
 
         const button = item.querySelector(".faq-question");
+        const answer = item.querySelector(".faq-answer");
 
         button.addEventListener("click", () => {
 
-            const isOpen = item.classList.contains("active");
+            const open = item.classList.contains("active");
 
-            // Close every FAQ
+            // Close everything
             items.forEach(faq => {
+
                 faq.classList.remove("active");
+                faq.querySelector(".faq-answer").style.maxHeight = "0px";
+
             });
 
-            // Open the clicked FAQ
-            if (!isOpen) {
+            // If it wasn't already open, open it
+            if (!open) {
+
                 item.classList.add("active");
+
+                answer.style.maxHeight =
+                    answer.querySelector("p").scrollHeight + 40 + "px";
+
             }
 
         });
