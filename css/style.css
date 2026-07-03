@@ -3616,7 +3616,7 @@ html{
 
 /* Card */
 
-.faq-item{
+.teen-faq-item{
 
     margin-bottom:18px;
 
@@ -3632,7 +3632,7 @@ html{
 
 }
 
-.faq-item:hover{
+.teen-faq-item:hover{
 
     border-color:#c8d6c8;
 
@@ -3642,13 +3642,13 @@ html{
 
 /* Remove default marker */
 
-.faq-question::-webkit-details-marker{
+.teen-faq-question::-webkit-details-marker{
 
     display:none;
 
 }
 
-.faq-question::marker{
+.teen-faq-question::marker{
 
     display:none;
 
@@ -3658,7 +3658,7 @@ html{
 
 /* Header */
 
-.faq-question{
+.teen-faq-question{
 
     display:flex;
 
@@ -3676,7 +3676,7 @@ html{
 
 }
 
-.faq-question span:first-child{
+.teen-faq-question span:first-child{
 
     flex:1;
 
@@ -3692,7 +3692,7 @@ html{
 
 /* Icon */
 
-.faq-icon{
+.teen-faq-icon{
 
     width:44px;
 
@@ -3716,7 +3716,7 @@ html{
 
 }
 
-.faq-icon i{
+.teen-faq-icon i{
 
     font-size:18px;
 
@@ -3724,7 +3724,7 @@ html{
 
 }
 
-.faq-item[open] .faq-icon{
+.teen-faq-item[open] .faq-icon{
 
     background:#173726;
 
@@ -3732,7 +3732,7 @@ html{
 
 }
 
-.faq-item[open] .faq-icon i{
+.teen-faq-item[open] .faq-icon i{
 
     transform:rotate(45deg);
 
@@ -3740,13 +3740,13 @@ html{
 
 /* Answer */
 
-.faq-answer{
+.teen-faq-answer{
 
     padding:0 34px 30px;
 
 }
 
-.faq-answer p{
+.teen-faq-answer p{
 
     margin:0;
 
@@ -3774,31 +3774,31 @@ html{
 
     }
 
-    .faq-question{
+    .teen-faq-question{
 
         padding:22px 24px;
 
     }
 
-    .faq-question span:first-child{
+    .teen-faq-question span:first-child{
 
         font-size:1.05rem;
 
     }
 
-    .faq-answer{
+    .teen-faq-answer{
 
         padding:0 24px 24px;
 
     }
 
-    .faq-answer p{
+    .teen-faq-answer p{
 
         font-size:1rem;
 
     }
 
-    .faq-icon{
+    .teen-faq-icon{
 
         width:38px;
 
