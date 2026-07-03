@@ -3482,3 +3482,22 @@ html{
     }
 
 }
+.tc-expect-icon{
+
+    width:70px;
+    height:70px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:18px;
+
+    background:#eef4ea;
+
+    color:#2f5d43;
+
+    font-size:30px;
+
+    margin-bottom:28px;
+}
