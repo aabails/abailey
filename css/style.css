@@ -2692,3 +2692,399 @@ html{
     }
 
 }
+/* ==========================================================
+   TEEN HERO
+========================================================== */
+
+.tc-hero{
+    position:relative;
+    overflow:hidden;
+    padding:100px 0 120px;
+
+    background:
+        radial-gradient(
+            circle 900px at -8% 22%,
+            rgba(117,152,117,.18) 0%,
+            rgba(117,152,117,.10) 22%,
+            rgba(117,152,117,.05) 40%,
+            transparent 68%
+        ),
+        linear-gradient(
+            180deg,
+            #fafbf7 0%,
+            #fbfaf7 55%,
+            #ffffff 100%
+        );
+}
+
+.tc-container{
+    width:min(1240px,92%);
+    margin:0 auto;
+}
+
+.tc-grid{
+    display:grid;
+    grid-template-columns:1.05fr .82fr;
+    gap:80px;
+    align-items:center;
+}
+
+
+/* ==========================================================
+   LEFT COLUMN
+========================================================== */
+
+.tc-content{
+    max-width:720px;
+}
+
+
+/* ==========================================================
+   PILL
+========================================================== */
+
+.tc-pill{
+
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+
+    padding:10px 18px;
+
+    background:#f8f8f2;
+
+    border:1px solid #d8ddd1;
+
+    border-radius:999px;
+
+    margin-bottom:38px;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.8),
+        0 2px 6px rgba(0,0,0,.02);
+
+}
+
+.tc-pill-dot{
+
+    width:8px;
+    height:8px;
+
+    border-radius:50%;
+
+    background:#7e9a76;
+
+    flex-shrink:0;
+
+}
+
+.tc-pill span:last-child{
+
+    font-size:.95rem;
+
+    font-weight:500;
+
+    color:#375844;
+
+}
+
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.tc-title{
+
+    margin:0;
+
+    font-size:5.35rem;
+
+    line-height:.92;
+
+    letter-spacing:-3px;
+
+    font-weight:650;
+
+    color:#173726;
+
+}
+
+.tc-title-accent{
+
+    display:block;
+
+    margin-top:8px;
+
+    color:#5f7c63;
+
+    font-style:italic;
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.tc-description{
+
+    margin:38px 0 48px;
+
+    max-width:660px;
+
+    font-size:1.3rem;
+
+    line-height:1.85;
+
+    color:#59675e;
+
+}
+
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.tc-buttons{
+
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+
+}
+
+.tc-btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+
+    height:58px;
+
+    padding:0 30px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:.25s ease;
+
+}
+
+.tc-btn i{
+
+    width:18px;
+    height:18px;
+
+}
+
+.tc-btn-primary{
+
+    background:#173726;
+
+    color:white;
+
+}
+
+.tc-btn-primary:hover{
+
+    background:#234833;
+
+    transform:translateY(-2px);
+
+}
+
+.tc-btn-secondary{
+
+    background:white;
+
+    color:#173726;
+
+    border:1px solid #d8ddd1;
+
+}
+
+.tc-btn-secondary:hover{
+
+    background:#f8f8f4;
+
+}
+
+
+/* ==========================================================
+   QUOTE CARD
+========================================================== */
+
+.tc-card{
+
+    display:flex;
+    justify-content:flex-end;
+
+}
+
+.tc-card-inner{
+
+    max-width:520px;
+
+    background:#faf8f2;
+
+    border:1px solid #dddccf;
+
+    border-radius:34px;
+
+    padding:56px;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.8),
+        0 18px 45px rgba(29,46,30,.05);
+
+}
+
+.tc-card h3{
+
+    margin:0 0 30px;
+
+    font-size:3rem;
+
+    line-height:1.28;
+
+    font-weight:600;
+
+    color:#173726;
+
+}
+
+.tc-card h3 span{
+
+    color:#648164;
+
+    font-style:italic;
+
+}
+
+.tc-card p{
+
+    margin:0 0 20px;
+
+    font-size:1.25rem;
+
+    line-height:1.85;
+
+    color:#5d6a60;
+
+}
+
+.tc-card p:last-child{
+
+    margin-bottom:0;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:1100px){
+
+    .tc-grid{
+
+        grid-template-columns:1fr;
+
+        gap:60px;
+
+    }
+
+    .tc-title{
+
+        font-size:4.2rem;
+
+    }
+
+    .tc-card{
+
+        justify-content:flex-start;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .tc-hero{
+
+        padding:70px 0;
+
+    }
+
+    .tc-title{
+
+        font-size:3rem;
+
+        letter-spacing:-1px;
+
+        line-height:1;
+
+    }
+
+    .tc-description{
+
+        font-size:1.08rem;
+
+    }
+
+    .tc-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .tc-btn{
+
+        width:100%;
+
+    }
+
+    .tc-card-inner{
+
+        padding:34px;
+
+        border-radius:24px;
+
+    }
+
+    .tc-card h3{
+
+        font-size:2rem;
+
+    }
+
+    .tc-card p{
+
+        font-size:1.05rem;
+
+    }
+
+}
+.tc-hero::before{
+    content:"";
+    position:absolute;
+    left:-260px;
+    top:-120px;
+    width:900px;
+    height:900px;
+    border-radius:50%;
+    background:#eef5ea;
+    filter:blur(30px);
+    z-index:0;
+}
+
+.tc-container{
+    position:relative;
+    z-index:1;
+}
