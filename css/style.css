@@ -4562,3 +4562,42 @@ html{
     }
 
 }
+/* ==========================================
+   Teen Hero Typography
+========================================== */
+
+.tc-title{
+
+    font-size:clamp(3.2rem, 4.8vw, 3.9rem) !important;
+
+    line-height:.96 !important;
+
+    letter-spacing:-0.04em !important;
+
+    font-weight:700 !important;
+
+    max-width:700px;
+
+}
+
+.tc-title-accent{
+
+    margin-top:8px;
+
+    color:#5d7b62;
+
+    font-style:italic;
+
+    font-weight:600;
+
+}
+
+.tc-description{
+
+    max-width:620px;
+
+    font-size:1.15rem !important;
+
+    line-height:1.75 !important;
+
+}
