@@ -1157,3 +1157,395 @@ border-bottom:none;
 }
 
 }
+/* ========================================
+   WHO I SUPPORT
+======================================== */
+
+.support-section{
+    padding:120px 0;
+}
+
+.support-grid{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+
+}
+
+.support-content h2{
+
+    margin:18px 0 28px;
+
+    font-size:4rem;
+    line-height:1.15;
+
+}
+
+.support-content p{
+
+    max-width:600px;
+
+    font-size:1.35rem;
+    line-height:1.8;
+
+    color:#5f6f66;
+
+}
+
+.support-tags{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:16px;
+
+    justify-content:flex-start;
+
+}
+
+.support-tags span{
+
+    display:inline-flex;
+    align-items:center;
+
+    padding:16px 28px;
+
+    border-radius:999px;
+
+    border:1px solid #d7d1c4;
+
+    background:#faf8f3;
+
+    font-size:1.15rem;
+
+    color:#335443;
+
+    transition:.3s;
+
+}
+
+.support-tags span:hover{
+
+    background:#173927;
+    color:#fff;
+    border-color:#173927;
+
+    transform:translateY(-3px);
+
+}
+
+@media(max-width:900px){
+
+.support-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.support-content h2{
+
+font-size:2.7rem;
+
+}
+
+}
+/* =====================================
+   CONSULT
+===================================== */
+
+.consult-section{
+
+padding-bottom:120px;
+
+}
+
+.consult-card{
+
+background:linear-gradient(180deg,#fbfaf6,#f5f2ea);
+
+border:1px solid #ddd8ca;
+
+border-radius:48px;
+
+padding:70px;
+
+display:grid;
+
+grid-template-columns:1.1fr .9fr;
+
+gap:70px;
+
+box-shadow:0 25px 70px rgba(0,0,0,.05);
+
+}
+
+.consult-left h2{
+
+margin:22px 0 36px;
+
+font-size:4rem;
+
+line-height:1.15;
+
+}
+
+.consult-left ul{
+
+margin:0 0 45px;
+
+padding-left:26px;
+
+}
+
+.consult-left li{
+
+margin-bottom:20px;
+
+font-size:1.3rem;
+
+line-height:1.6;
+
+color:#4f6357;
+
+}
+
+.consult-buttons{
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.practice-card{
+
+background:white;
+
+border-radius:34px;
+
+padding:44px;
+
+border:1px solid #e4ded2;
+
+box-shadow:0 18px 45px rgba(0,0,0,.05);
+
+}
+
+.practice-card h3{
+
+font-size:1.4rem;
+
+margin-bottom:12px;
+
+}
+
+.practice-card h4{
+
+font-size:2.3rem;
+
+margin-bottom:18px;
+
+}
+
+.practice-card p{
+
+margin-bottom:42px;
+
+line-height:1.8;
+
+color:#5b6a61;
+
+}
+
+.practice-details{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:35px;
+
+}
+
+.practice-details span{
+
+display:block;
+
+margin-bottom:12px;
+
+color:#7a877f;
+
+}
+
+.practice-details strong{
+
+font-size:1.4rem;
+
+line-height:1.6;
+
+}
+
+@media(max-width:1000px){
+
+.consult-card{
+
+grid-template-columns:1fr;
+
+padding:45px;
+
+}
+
+.consult-left h2{
+
+font-size:2.9rem;
+
+}
+
+}
+/* ======================================
+   FAQ
+====================================== */
+
+.faq-section{
+
+padding:120px 0;
+
+border-top:1px solid #e4dfd5;
+
+}
+
+.faq-grid{
+
+display:grid;
+
+grid-template-columns:420px 1fr;
+
+gap:90px;
+
+align-items:start;
+
+}
+
+.faq-grid h2{
+
+margin-top:20px;
+
+font-size:4rem;
+
+line-height:1.15;
+
+}
+
+.faq-list{
+
+border-top:1px solid #ddd7ca;
+
+}
+
+.faq-item{
+
+border-bottom:1px solid #ddd7ca;
+
+padding:34px 0;
+
+}
+
+.faq-question{
+
+width:100%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:none;
+
+border:none;
+
+cursor:pointer;
+
+padding:0;
+
+text-align:left;
+
+font-size:2rem;
+
+font-weight:650;
+
+color:#173927;
+
+}
+
+.faq-question span{
+
+width:42px;
+height:42px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border:1px solid #d9d4c8;
+
+border-radius:50%;
+
+font-size:1.4rem;
+
+transition:.3s;
+
+}
+
+.faq-answer{
+
+max-width:720px;
+
+margin-top:22px;
+
+font-size:1.25rem;
+
+line-height:1.9;
+
+color:#5c6c63;
+
+}
+
+.faq-item.active .faq-question span{
+
+transform:rotate(45deg);
+
+background:#173927;
+
+color:white;
+
+border-color:#173927;
+
+}
+
+@media(max-width:900px){
+
+.faq-grid{
+
+grid-template-columns:1fr;
+
+gap:60px;
+
+}
+
+.faq-grid h2{
+
+font-size:2.8rem;
+
+}
+
+.faq-question{
+
+font-size:1.45rem;
+
+}
+
+}
