@@ -3807,3 +3807,282 @@ html{
     }
 
 }
+/*==========================================================
+  PARENTS SECTION
+==========================================================*/
+
+.parents-section{
+
+    padding:110px 0;
+
+    background:#faf8f2;
+
+}
+
+.parents-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:start;
+
+}
+
+.parents-left{
+
+    position:sticky;
+
+    top:120px;
+
+}
+
+.parents-left h2{
+
+    margin:22px 0 26px;
+
+    font-family:"Lora",serif;
+
+    font-size:3.4rem;
+
+    line-height:1.1;
+
+    letter-spacing:-1px;
+
+    color:#173726;
+
+}
+
+.parents-left p{
+
+    font-size:1.4rem;
+
+    line-height:1.75;
+
+    color:#526157;
+
+    max-width:540px;
+
+}
+
+.parents-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:26px;
+
+}
+
+.parent-card{
+
+    background:#fff;
+
+    border:1px solid #d9e2d7;
+
+    border-radius:30px;
+
+    padding:34px 36px;
+
+    transition:.25s ease;
+
+}
+
+.parent-card:hover{
+
+    border-color:#c7d5c7;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 14px 36px rgba(0,0,0,.045);
+
+}
+
+.parent-card h3{
+
+    margin:0 0 16px;
+
+    font-size:.95rem;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+    color:#2f5d43;
+
+}
+
+.parent-card p{
+
+    margin:0;
+
+    font-size:1.3rem;
+
+    line-height:1.7;
+
+    color:#526157;
+
+}
+
+
+/*==========================================================
+  FINAL CTA
+==========================================================*/
+
+.teen-cta{
+
+    padding:120px 0 140px;
+
+    background:#faf8f2;
+
+    text-align:center;
+
+}
+
+.teen-cta-content{
+
+    max-width:920px;
+
+    margin:0 auto;
+
+}
+
+.teen-cta h2{
+
+    margin:0 0 26px;
+
+    font-family:"Lora",serif;
+
+    font-size:4rem;
+
+    line-height:1.08;
+
+    letter-spacing:-1.5px;
+
+    color:#173726;
+
+}
+
+.teen-cta p{
+
+    margin:0 auto 50px;
+
+    max-width:840px;
+
+    font-size:1.45rem;
+
+    line-height:1.75;
+
+    color:#526157;
+
+}
+
+.teen-cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:22px;
+
+    flex-wrap:wrap;
+
+}
+
+.teen-cta .btn{
+
+    min-width:290px;
+
+}
+
+
+/*==========================================================
+  MOBILE
+==========================================================*/
+
+@media (max-width:900px){
+
+    .parents-grid{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
+
+    }
+
+    .parents-left{
+
+        position:static;
+
+    }
+
+    .parents-left h2{
+
+        font-size:2.7rem;
+
+    }
+
+    .parents-left p{
+
+        max-width:none;
+
+        font-size:1.18rem;
+
+    }
+
+    .parent-card{
+
+        padding:28px;
+
+        border-radius:24px;
+
+    }
+
+    .parent-card p{
+
+        font-size:1.1rem;
+
+    }
+
+    .teen-cta{
+
+        padding:90px 0;
+
+    }
+
+    .teen-cta h2{
+
+        font-size:2.8rem;
+
+    }
+
+    .teen-cta p{
+
+        font-size:1.15rem;
+
+    }
+
+    .teen-cta-buttons{
+
+        flex-direction:column;
+
+        gap:18px;
+
+    }
+
+    .teen-cta .btn{
+
+        width:100%;
+
+        min-width:0;
+
+    }
+
+}
