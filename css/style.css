@@ -4601,3 +4601,77 @@ html{
     line-height:1.75 !important;
 
 }
+/* ==========================================================
+   TEEN PAGE - CONSISTENT SECTION HEADINGS
+========================================================== */
+
+/* Shared section layout */
+
+.tc-help-header,
+.tc-section-header,
+.teen-faq-header,
+.parents-left{
+
+    max-width:720px;
+
+    margin:0 auto 55px;
+
+}
+
+/* Shared heading */
+
+.tc-help-header h2,
+.tc-section-header h2,
+.teen-faq-header h2,
+.parents-left h2{
+
+    margin:0 0 18px;
+
+    font-family:inherit;
+
+    font-size:clamp(2.3rem,4vw,3rem);
+
+    font-weight:800;
+
+    line-height:1.08;
+
+    letter-spacing:-0.04em;
+
+    color:#173726;
+
+}
+
+/* Shared introductory paragraph */
+
+.tc-help-header p,
+.tc-section-header p,
+.teen-faq-header p,
+.parents-left p{
+
+    margin:0;
+
+    max-width:620px;
+
+    font-size:1.05rem;
+
+    line-height:1.75;
+
+    color:#5b655d;
+
+}
+
+/* FAQ stays centred */
+
+.teen-faq-header{
+
+    text-align:center;
+
+}
+
+/* Parents section stays left aligned */
+
+.parents-left{
+
+    text-align:left;
+
+}
