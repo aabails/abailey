@@ -85,37 +85,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
-document.addEventListener("DOMContentLoaded", () => {
 
-    const items = document.querySelectorAll(".teen-faq .faq-item");
-
-    items.forEach(item => {
-
-        item.querySelector(".faq-question").addEventListener("click", () => {
-
-            const answer = item.querySelector(".faq-answer");
-            const open = item.classList.contains("active");
-
-            items.forEach(i => {
-
-                i.classList.remove("active");
-
-                const a = i.querySelector(".faq-answer");
-
-                a.style.maxHeight = null;
-
-            });
-
-            if(!open){
-
-                item.classList.add("active");
-
-                answer.style.maxHeight = answer.scrollHeight + "px";
-
-            }
-
-        });
-
-    });
-
-});
