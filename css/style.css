@@ -3825,3 +3825,26 @@ html{
     max-height:500px;
 
 }
+.faq-answer{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:max-height .35s ease;
+
+}
+
+.faq-answer p{
+
+    margin:0;
+
+    padding:0 34px 30px;
+
+    color:#5b655d;
+
+    font-size:1.08rem;
+
+    line-height:1.8;
+
+}
