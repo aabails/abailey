@@ -4235,3 +4235,218 @@ html{
     border-radius:26px;
 
 }
+/* ==========================================================
+   FINAL TYPOGRAPHY + SPACING POLISH
+   (Teen Counselling Page)
+========================================================== */
+
+/* ---------- Section spacing ---------- */
+
+.consider-section,
+.tc-expect,
+.tc-space,
+.teen-faq,
+.parents-section{
+
+    padding:80px 0 !important;
+
+}
+
+.teen-cta{
+
+    padding:85px 0 95px !important;
+
+}
+
+/* ---------- Headings ---------- */
+
+.tc-section-header h2,
+.consider-section h2,
+.tc-space-content h2,
+.teen-faq-header h2,
+.parents-left h2{
+
+    font-family:inherit !important;
+
+    font-size:clamp(2rem,3.5vw,2.8rem) !important;
+
+    font-weight:800 !important;
+
+    line-height:1.08;
+
+    letter-spacing:-0.03em;
+
+}
+
+/* Final CTA */
+
+.teen-cta h2{
+
+    font-family:inherit !important;
+
+    font-size:clamp(2.3rem,4vw,3.5rem) !important;
+
+    font-weight:800 !important;
+
+    line-height:1.08;
+
+}
+
+/* ---------- Hero ---------- */
+
+.tc-hero h1{
+
+    font-size:clamp(3rem,5vw,4.6rem) !important;
+
+    line-height:1.02;
+
+}
+
+.tc-hero p{
+
+    font-size:1.08rem !important;
+
+    line-height:1.7;
+
+}
+
+/* ---------- Intro paragraphs ---------- */
+
+.tc-section-header p,
+.parents-left p,
+.teen-cta p{
+
+    font-size:1.05rem !important;
+
+    line-height:1.75;
+
+    max-width:720px;
+
+}
+
+/* ---------- Card headings ---------- */
+
+.consider-card h3,
+.tc-expect-card h3,
+.parent-card h3{
+
+    font-size:1.18rem !important;
+
+}
+
+/* ---------- Card text ---------- */
+
+.consider-card p,
+.tc-expect-card p,
+.parent-card p,
+.tc-space-content p{
+
+    font-size:.98rem !important;
+
+    line-height:1.7;
+
+}
+
+/* ---------- FAQ ---------- */
+
+.faq-question span:first-child{
+
+    font-size:1rem !important;
+
+}
+
+.faq-answer p{
+
+    font-size:.95rem !important;
+
+    line-height:1.75;
+
+}
+
+/* ---------- Card padding ---------- */
+
+.consider-card,
+.tc-expect-card{
+
+    padding:30px !important;
+
+}
+
+.parent-card{
+
+    padding:28px 30px !important;
+
+}
+
+/* ---------- Office section ---------- */
+
+.tc-space-card{
+
+    padding:42px 48px !important;
+
+}
+
+/* FIX: Heading colour */
+
+.tc-space-content h2{
+
+    color:#f7f8f4 !important;
+
+}
+
+/* Paragraph slightly softer */
+
+.tc-space-content p{
+
+    color:rgba(255,255,255,.88) !important;
+
+}
+
+/* ---------- FAQ spacing ---------- */
+
+.faq-question{
+
+    padding:24px 28px !important;
+
+}
+
+.faq-answer{
+
+    padding:0 28px 24px !important;
+
+}
+
+/* ---------- Parent section ---------- */
+
+.parents-grid{
+
+    gap:60px !important;
+
+}
+
+.parents-right{
+
+    gap:20px !important;
+
+}
+
+/* ---------- Buttons ---------- */
+
+.btn{
+
+    font-size:.98rem;
+
+}
+
+.btn-secondary,
+.btn-secondary:visited{
+
+    color:#173726 !important;
+
+}
+
+.btn-secondary:hover{
+
+    color:#173726 !important;
+
+}
