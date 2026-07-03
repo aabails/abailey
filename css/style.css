@@ -1825,3 +1825,99 @@ pointer-events:none;
     font-size:1.15rem;
     line-height:1.85;
 }
+/* ==========================================================
+   FINAL POLISH
+   Small refinements for a more premium feel
+========================================================== */
+
+
+/* ----------------------------------------------------------
+   2. Reduce gap below credentials strip
+---------------------------------------------------------- */
+
+.features-bar{
+    margin-bottom:70px;
+}
+
+.problem-section{
+    padding-top:85px;
+}
+
+/* ----------------------------------------------------------
+   3. Glass cards in "What Sessions Are Like"
+---------------------------------------------------------- */
+
+.step-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.14);
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.14);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+
+}
+
+.step-card:hover{
+
+    transform:translateY(-4px);
+
+    background:rgba(255,255,255,.11);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.18);
+
+}
+
+/* ----------------------------------------------------------
+   4. Consultation section balance
+---------------------------------------------------------- */
+
+.consult-card{
+
+    grid-template-columns:55% 45%;
+
+    gap:80px;
+
+}
+
+.practice-card{
+
+    padding:52px;
+
+}
+
+.practice-card h4{
+
+    font-size:2.15rem;
+
+}
+
+.practice-details{
+
+    gap:45px;
+
+}
+
+/* ----------------------------------------------------------
+   Slightly tighten all major sections
+---------------------------------------------------------- */
+
+.problem-section,
+.process-section,
+.support-section,
+.consult-section,
+.faq-section{
+
+    padding-top:95px;
+    padding-bottom:95px;
+
+}
