@@ -36,3 +36,52 @@ document.addEventListener('DOMContentLoaded', () => {
     if (a) close();
   });
 });
+/* ==========================================
+   FAQ Accordion
+========================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+
+        const button = item.querySelector(".faq-question");
+        const answer = item.querySelector(".faq-answer");
+        const icon = item.querySelector(".faq-icon");
+
+        // Start closed
+        answer.style.maxHeight = null;
+        icon.textContent = "+";
+
+        button.addEventListener("click", () => {
+
+            const isOpen = item.classList.contains("active");
+
+            // Close all FAQs
+            faqItems.forEach(other => {
+
+                other.classList.remove("active");
+
+                other.querySelector(".faq-answer").style.maxHeight = null;
+
+                other.querySelector(".faq-icon").textContent = "+";
+
+            });
+
+            // If this one wasn't already open, open it
+            if (!isOpen) {
+
+                item.classList.add("active");
+
+                answer.style.maxHeight = answer.scrollHeight + "px";
+
+                icon.textContent = "×";
+
+            }
+
+        });
+
+    });
+
+});
