@@ -2076,3 +2076,720 @@ html{
     }
 
 }
+//new
+/* ======================================================
+   TEEN COUNSELLING
+====================================================== */
+
+.teen-section{
+    padding:110px 0;
+}
+
+.teen-soft{
+    background:#f8f7f3;
+}
+
+.teen-container{
+    width:min(1180px,92%);
+    margin:0 auto;
+}
+
+
+/* ======================================================
+TYPOGRAPHY
+====================================================== */
+
+.section-label{
+    display:inline-flex;
+    align-items:center;
+    gap:.45rem;
+    padding:.45rem .9rem;
+    border-radius:999px;
+    background:#edf5ef;
+    color:var(--primary,#295135);
+    font-size:.78rem;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    margin-bottom:1.25rem;
+}
+
+.section-heading{
+    max-width:760px;
+    margin:0 auto 70px;
+    text-align:center;
+}
+
+.section-heading h2{
+
+    font-size:clamp(2rem,4vw,3.25rem);
+    line-height:1.15;
+    margin-bottom:1.3rem;
+    color:#1d3423;
+
+}
+
+.section-heading p{
+
+    font-size:1.1rem;
+    line-height:1.8;
+    color:#5d685f;
+
+}
+
+
+
+/* ======================================================
+HERO
+====================================================== */
+
+.teen-hero{
+
+    padding:90px 0 110px;
+
+}
+
+.teen-hero-grid{
+
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:60px;
+    align-items:center;
+
+}
+
+.teen-eyebrow{
+
+    display:inline-flex;
+    align-items:center;
+    padding:.55rem 1rem;
+    border-radius:999px;
+    background:#edf5ef;
+    color:#2b5d3d;
+    font-size:.82rem;
+    font-weight:700;
+    margin-bottom:1.4rem;
+
+}
+
+.teen-hero h2{
+
+    font-size:clamp(2.5rem,5vw,4.25rem);
+    line-height:1.08;
+    margin-bottom:1.4rem;
+    color:#183322;
+
+}
+
+.teen-intro{
+
+    font-size:1.14rem;
+    line-height:1.95;
+    color:#58655d;
+    max-width:680px;
+
+}
+
+.teen-actions{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:16px;
+    margin-top:2.3rem;
+
+}
+
+
+/* ======================================================
+REASSURANCE CARD
+====================================================== */
+
+.teen-reassurance-card{
+
+    background:white;
+    border:1px solid rgba(33,77,47,.08);
+    border-radius:24px;
+    padding:42px;
+    box-shadow:0 14px 40px rgba(25,55,37,.06);
+
+}
+
+.teen-reassurance-card i{
+
+    width:54px;
+    height:54px;
+    color:#3f7751;
+    margin-bottom:1.5rem;
+
+}
+
+.teen-reassurance-card h3{
+
+    font-size:1.65rem;
+    margin-bottom:1rem;
+    color:#183322;
+
+}
+
+.teen-reassurance-card p{
+
+    line-height:1.9;
+    color:#5b675f;
+
+}
+
+
+
+/* ======================================================
+FOUR CARDS
+====================================================== */
+
+.teen-card-grid{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+
+}
+
+.teen-card{
+
+    background:white;
+    border:1px solid rgba(0,0,0,.06);
+    border-radius:22px;
+    padding:34px;
+    transition:.35s ease;
+
+}
+
+.teen-card:hover{
+
+    transform:translateY(-6px);
+    box-shadow:0 18px 45px rgba(35,60,40,.08);
+
+}
+
+.teen-card-icon{
+
+    width:62px;
+    height:62px;
+    border-radius:18px;
+    background:#edf5ef;
+    display:grid;
+    place-items:center;
+    margin-bottom:1.6rem;
+
+}
+
+.teen-card-icon i{
+
+    width:30px;
+    height:30px;
+    color:#356643;
+
+}
+
+.teen-card h3{
+
+    margin-bottom:1rem;
+    font-size:1.3rem;
+    color:#183322;
+
+}
+
+.teen-card p{
+
+    line-height:1.8;
+    color:#606960;
+
+}
+
+
+
+/* ======================================================
+HELP GRID
+====================================================== */
+
+.teen-help-grid{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+
+}
+
+.help-card{
+
+    background:white;
+    border-radius:20px;
+    border:1px solid rgba(0,0,0,.06);
+    padding:30px 24px;
+    text-align:center;
+    transition:.3s;
+
+}
+
+.help-card:hover{
+
+    transform:translateY(-5px);
+    border-color:#bfd7c6;
+
+}
+
+.help-card i{
+
+    width:34px;
+    height:34px;
+    color:#356643;
+    margin-bottom:1rem;
+
+}
+
+.help-card h3{
+
+    font-size:1.05rem;
+    color:#1c3324;
+    line-height:1.45;
+
+}
+
+
+
+/* ======================================================
+ABOUT SECTION
+====================================================== */
+
+.teen-about-grid{
+
+    display:grid;
+    grid-template-columns:.95fr 1.05fr;
+    gap:70px;
+    align-items:center;
+
+}
+
+.teen-about-image img{
+
+    width:100%;
+    display:block;
+    border-radius:24px;
+
+}
+
+.teen-about-content h2{
+
+    font-size:clamp(2rem,4vw,3rem);
+    margin:1rem 0 1.5rem;
+    color:#183322;
+
+}
+
+.teen-about-content>p{
+
+    line-height:1.95;
+    color:#5f695f;
+    margin-bottom:1.4rem;
+
+}
+
+
+
+/* ======================================================
+FEATURE LIST
+====================================================== */
+
+.teen-feature-list{
+
+    display:grid;
+    gap:22px;
+    margin-top:2.4rem;
+
+}
+
+.teen-feature{
+
+    display:flex;
+    gap:18px;
+
+}
+
+.teen-feature i{
+
+    width:28px;
+    height:28px;
+    color:#356643;
+    flex-shrink:0;
+    margin-top:4px;
+
+}
+
+.teen-feature h3{
+
+    margin-bottom:.4rem;
+    color:#183322;
+    font-size:1.1rem;
+
+}
+
+.teen-feature p{
+
+    line-height:1.8;
+    color:#5f695f;
+
+}
+/* ======================================================
+PARENT CARDS
+====================================================== */
+
+.teen-parent-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+}
+
+.parent-card{
+    background:#fff;
+    border:1px solid rgba(0,0,0,.06);
+    border-radius:22px;
+    padding:36px;
+    transition:.3s ease;
+}
+
+.parent-card:hover{
+    transform:translateY(-4px);
+    border-color:#cfded3;
+    box-shadow:0 8px 24px rgba(0,0,0,.04);
+}
+
+.parent-icon{
+    width:64px;
+    height:64px;
+    border-radius:18px;
+    background:#edf5ef;
+    display:grid;
+    place-items:center;
+    margin-bottom:1.5rem;
+}
+
+.parent-icon i{
+    width:30px;
+    height:30px;
+    color:#356643;
+}
+
+.parent-card h3{
+    margin-bottom:1rem;
+    color:#183322;
+    font-size:1.3rem;
+}
+
+.parent-card p{
+    line-height:1.8;
+    color:#5d675f;
+}
+
+
+/* ======================================================
+REASSURANCE
+====================================================== */
+
+.teen-reassure-box{
+    background:#edf5ef;
+    border-radius:30px;
+    padding:70px;
+    text-align:center;
+}
+
+.reassure-intro{
+    max-width:760px;
+    margin:0 auto 3.5rem;
+    line-height:1.9;
+    color:#5f675f;
+}
+
+.teen-reassure-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+}
+
+.reassure-card{
+    background:#fff;
+    border-radius:20px;
+    padding:34px;
+    border:1px solid rgba(0,0,0,.05);
+}
+
+.reassure-icon{
+    width:62px;
+    height:62px;
+    margin:0 auto 1.5rem;
+    border-radius:18px;
+    background:#edf5ef;
+    display:grid;
+    place-items:center;
+}
+
+.reassure-icon i{
+    width:30px;
+    height:30px;
+    color:#356643;
+}
+
+.reassure-card h3{
+    margin-bottom:1rem;
+    color:#183322;
+}
+
+.reassure-card p{
+    line-height:1.8;
+    color:#5f675f;
+}
+
+
+/* ======================================================
+PROCESS
+====================================================== */
+
+.teen-process{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:34px;
+    margin-top:2rem;
+}
+
+.process-step{
+    background:#fff;
+    border:1px solid rgba(0,0,0,.06);
+    border-radius:22px;
+    padding:42px 34px;
+    text-align:center;
+    position:relative;
+}
+
+.process-step:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    top:46px;
+    right:-17px;
+    width:34px;
+    height:2px;
+    background:#d6e3d8;
+}
+
+.process-number{
+    width:58px;
+    height:58px;
+    margin:0 auto 1.5rem;
+    border-radius:50%;
+    background:#356643;
+    color:#fff;
+    display:grid;
+    place-items:center;
+    font-weight:700;
+    font-size:1.2rem;
+}
+
+.process-step h3{
+    margin-bottom:1rem;
+    color:#183322;
+}
+
+.process-step p{
+    line-height:1.8;
+    color:#5d675f;
+}
+
+
+/* ======================================================
+FAQ
+====================================================== */
+
+.faq-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:26px;
+}
+
+.faq-column{
+    display:grid;
+    gap:18px;
+}
+
+.faq-item{
+    background:#fff;
+    border:1px solid rgba(0,0,0,.06);
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.faq-item summary{
+    list-style:none;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:24px 28px;
+    font-weight:600;
+    color:#183322;
+}
+
+.faq-item summary::-webkit-details-marker{
+    display:none;
+}
+
+.faq-item summary i{
+    width:22px;
+    height:22px;
+    transition:.25s;
+}
+
+.faq-item[open] summary i{
+    transform:rotate(45deg);
+}
+
+.faq-answer{
+    padding:0 28px 28px;
+}
+
+.faq-answer p{
+    line-height:1.85;
+    color:#5d675f;
+}
+
+
+/* ======================================================
+FINAL CTA
+====================================================== */
+
+.teen-final-card{
+    background:#295135;
+    color:#fff;
+    border-radius:32px;
+    padding:80px;
+    text-align:center;
+}
+
+.teen-final-card .section-label{
+    background:rgba(255,255,255,.12);
+    color:#fff;
+}
+
+.teen-final-card h2{
+    color:#fff;
+    font-size:clamp(2.2rem,4vw,3.5rem);
+    margin:1.25rem 0;
+}
+
+.teen-final-card p{
+    max-width:720px;
+    margin:0 auto;
+    line-height:1.9;
+    color:rgba(255,255,255,.88);
+}
+
+.teen-final-card .teen-actions{
+    justify-content:center;
+    margin-top:2.5rem;
+}
+
+
+/* ======================================================
+GLOBAL HOVER
+====================================================== */
+
+.teen-card,
+.help-card,
+.parent-card,
+.reassure-card,
+.process-step,
+.faq-item{
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.teen-card:hover,
+.help-card:hover,
+.parent-card:hover,
+.reassure-card:hover,
+.process-step:hover{
+    transform:translateY(-5px);
+    border-color:#cddfd1;
+    box-shadow:0 8px 24px rgba(0,0,0,.04);
+}
+
+
+/* ======================================================
+RESPONSIVE
+====================================================== */
+
+@media (max-width:1100px){
+
+    .teen-hero-grid,
+    .teen-about-grid{
+        grid-template-columns:1fr;
+        gap:60px;
+    }
+
+    .teen-card-grid,
+    .teen-help-grid,
+    .teen-parent-grid,
+    .teen-reassure-grid,
+    .teen-process{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .faq-grid{
+        grid-template-columns:1fr;
+    }
+
+    .process-step::after{
+        display:none;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .teen-section{
+        padding:75px 0;
+    }
+
+    .teen-card-grid,
+    .teen-help-grid,
+    .teen-parent-grid,
+    .teen-reassure-grid,
+    .teen-process{
+        grid-template-columns:1fr;
+    }
+
+    .teen-reassurance-card,
+    .teen-final-card,
+    .teen-reassure-box{
+        padding:38px 28px;
+    }
+
+    .teen-card,
+    .parent-card,
+    .process-step,
+    .reassure-card{
+        padding:28px;
+    }
+
+    .section-heading{
+        margin-bottom:50px;
+    }
+
+    .teen-actions{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .teen-actions a{
+        width:100%;
+        justify-content:center;
+    }
+
+}
