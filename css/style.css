@@ -4729,3 +4729,32 @@ html{
     }
 
 }
+@media (max-width:768px){
+
+    .tc-space-card{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:2rem;
+        text-align:left;
+    }
+
+    .tc-space-icon{
+        justify-self:start;
+    }
+
+    .tc-space-content{
+        width:100%;
+        max-width:none;
+    }
+
+    .tc-space-photo{
+        width:100%;
+    }
+
+    .tc-space-image{
+        width:100%;
+        max-width:450px;
+        margin:0 auto;
+    }
+
+}
