@@ -4713,3 +4713,19 @@ html{
         0 24px 60px rgba(0,0,0,.10);
 
 }
+@media (max-width: 768px){
+
+    .tc-space-grid{
+        grid-template-columns:1fr;
+        gap:2rem;
+    }
+
+    .tc-space-content{
+        order:1;
+    }
+
+    .tc-space-photo{
+        order:2;
+    }
+
+}
