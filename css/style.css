@@ -4786,3 +4786,40 @@ html{
     margin-right:.55rem;
 
 }
+/* ---------- Teen Counselling inline SVG icons ---------- */
+
+.tc-card-icon svg,
+.tc-help-icon svg,
+.tc-step-icon svg,
+.tc-feature-icon svg,
+.tc-faq-icon svg,
+.parents-icon svg,
+.teen-icon svg,
+.section-icon svg{
+
+    width:20px;
+    height:20px;
+
+    min-width:20px;
+    min-height:20px;
+
+    display:block;
+    flex-shrink:0;
+
+}
+
+/* Button icons */
+
+.tc-btn svg,
+.tc-button svg,
+.btn-primary svg,
+.btn-secondary svg{
+
+    width:20px;
+    height:20px;
+
+    margin-right:.55rem;
+
+    flex-shrink:0;
+
+}
