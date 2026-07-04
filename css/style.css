@@ -4639,7 +4639,8 @@ html{
     color:#173726;
 
 }
-.tc-title{
+
+.tc-expect{
 
     font-size:clamp(.1rem,5vw,.6rem);
 
