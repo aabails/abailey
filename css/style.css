@@ -4619,7 +4619,6 @@ html{
 }
 
 /* Shared heading */
-.tc-title h2,
 .tc-help-header h2,
 .tc-section-header h2,
 .teen-faq-header h2,
@@ -4638,6 +4637,11 @@ html{
     letter-spacing:-0.04em;
 
     color:#173726;
+
+}
+.tc-title{
+
+    font-size:clamp(2.1rem,5vw,2.6rem);
 
 }
 
