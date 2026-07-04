@@ -4888,3 +4888,27 @@ html{
 
     display:block;
 }
+.tc-button-group{
+    display:flex;
+    gap:1rem;
+}
+
+.tc-button-group a{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:72px;
+
+    border-radius:999px;
+}
+
+.tc-button-group a svg{
+    width:20px;
+    height:20px;
+
+    margin-right:.65rem;
+
+    flex-shrink:0;
+}
