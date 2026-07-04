@@ -4117,7 +4117,7 @@ html{
 .teen-faq-header h2,
 .parents-left h2{
 
-    font-size:clamp(2.3rem,4vw,3.2rem) !important;
+    font-size:clamp(2.0rem,4vw,2.8rem) !important;
 
 }
 
@@ -4640,11 +4640,7 @@ html{
 
 }
 
-.tc-expect{
 
-    font-size:clamp(.1rem,5vw,.6rem);
-
-}
 
 /* Shared introductory paragraph */
 
