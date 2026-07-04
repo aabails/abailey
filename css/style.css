@@ -4758,3 +4758,31 @@ html{
     }
 
 }
+/* ---------- Inline SVG icon sizing ---------- */
+
+.credential-icon svg,
+.step-icon svg,
+.btn-primary svg,
+.btn-secondary svg,
+.consult-buttons svg,
+.final-buttons svg{
+
+    width:20px;
+    height:20px;
+
+    min-width:20px;
+    min-height:20px;
+
+    display:block;
+    flex-shrink:0;
+
+}
+
+/* Space icons from text in buttons */
+
+.btn-primary svg,
+.btn-secondary svg{
+
+    margin-right:.55rem;
+
+}
