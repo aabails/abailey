@@ -4912,39 +4912,21 @@ html{
 
     flex-shrink:0;
 }
-/* Teen CTA buttons */
-
 .teen-cta-buttons{
     display:flex;
     gap:1rem;
-    width:100%;
+    max-width:850px;
+    margin:0 auto;
 }
 
 .teen-cta-buttons .btn{
-    flex:1;
+    flex:0 1 340px;
     display:flex;
-    align-items:center;
     justify-content:center;
-
+    align-items:center;
     min-height:72px;
-
-    text-align:center;
     white-space:nowrap;
-}
-
-.teen-cta-buttons .btn-primary svg{
-    width:20px;
-    height:20px;
-
-    flex-shrink:0;
-
-    margin-right:.6rem;
-}
-.teen-cta-buttons .btn{
-    flex:1;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    text-align:center;
 }
 
 .teen-cta-buttons .btn-content{
