@@ -4268,7 +4268,7 @@ html{
 
     font-family:inherit !important;
 
-    font-size:clamp(2rem,3.5vw,2.8rem) !important;
+    font-size:clamp(2rem,3.5vw,2.8rem);
 
     font-weight:800 !important;
 
