@@ -4823,3 +4823,46 @@ html{
     flex-shrink:0;
 
 }
+/* What to Expect icons */
+
+.tc-space-icon svg,
+.tc-expect-icon svg{
+
+    width:32px;
+    height:32px;
+
+    min-width:32px;
+    min-height:32px;
+
+    display:block;
+
+}
+
+/* Calm, Private Space cards */
+
+.tc-help-icon svg{
+
+    width:28px;
+    height:28px;
+
+    min-width:28px;
+    min-height:28px;
+
+    display:block;
+
+}
+
+/* FAQ plus icon */
+
+.teen-faq-icon svg,
+.faq-icon svg{
+
+    width:18px;
+    height:18px;
+
+    min-width:18px;
+    min-height:18px;
+
+    display:block;
+
+}
