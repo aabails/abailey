@@ -4912,3 +4912,31 @@ html{
 
     flex-shrink:0;
 }
+/* Teen CTA buttons */
+
+.teen-cta-buttons{
+    display:flex;
+    gap:1rem;
+    width:100%;
+}
+
+.teen-cta-buttons .btn{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:72px;
+
+    text-align:center;
+    white-space:nowrap;
+}
+
+.teen-cta-buttons .btn-primary svg{
+    width:20px;
+    height:20px;
+
+    flex-shrink:0;
+
+    margin-right:.6rem;
+}
