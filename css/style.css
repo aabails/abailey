@@ -4940,3 +4940,21 @@ html{
 
     margin-right:.6rem;
 }
+.teen-cta-buttons .btn{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.teen-cta-buttons .btn-content{
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+}
+
+.teen-cta-buttons .btn-content svg{
+    width:20px;
+    height:20px;
+    flex-shrink:0;
+}
