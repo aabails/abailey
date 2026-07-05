@@ -5948,3 +5948,35 @@ margin-top:1.5rem;
 }
 
 }
+.section-pill{
+
+    display:inline-flex;
+    align-items:center;
+    gap:.55rem;
+
+    padding:.6rem 1.1rem;
+
+    border:1px solid rgba(52,84,61,.18);
+
+    border-radius:999px;
+
+    background:#f7f7f1;
+
+    color:var(--forest);
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+}
+
+.section-pill svg{
+
+    width:18px;
+    height:18px;
+
+    flex-shrink:0;
+
+    color:var(--forest);
+
+}
