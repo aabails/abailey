@@ -6187,3 +6187,94 @@ min-width:0;
     min-width:240px;
 
 }
+.rates-cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:1rem;
+
+    max-width:850px;
+
+    margin:0 auto;
+
+    flex-wrap:wrap;
+
+}
+
+.rates-cta-buttons .btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:72px;
+
+    border-radius:999px;
+
+    white-space:nowrap;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+}
+
+.rates-cta-buttons .btn-primary{
+
+    flex:0 1 390px;
+
+}
+
+.rates-cta-buttons .btn-secondary{
+
+    flex:0 1 260px;
+
+}
+
+.rates-cta-buttons .btn-content{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.65rem;
+
+}
+
+.rates-cta-buttons .btn-content svg{
+
+    width:20px;
+
+    height:20px;
+
+    flex-shrink:0;
+
+}
+
+@media (max-width:768px){
+
+    .rates-cta-buttons{
+
+        flex-direction:column;
+
+        gap:16px;
+
+    }
+
+    .rates-cta-buttons .btn{
+
+        width:100%;
+
+        min-height:64px;
+
+        flex:none;
+
+    }
+
+}
