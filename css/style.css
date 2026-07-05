@@ -6302,3 +6302,28 @@ min-width:0;
     flex-shrink:0;
     margin:0;
 }
+.rates-cta-buttons .btn{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.rates-cta-buttons .btn-content{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:.7rem;
+
+}
+
+.rates-cta-buttons .btn-content svg{
+
+    width:20px;
+    height:20px;
+
+    flex-shrink:0;
+
+}
