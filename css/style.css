@@ -5693,97 +5693,38 @@ font-size:1.75rem;
 }
 
 }
-/*=========================================
-  INSURANCE
-=========================================*/
-
-.insurance-section{
-    padding:5.5rem 0;
-}
-
-.insurance-container{
-
-    width:min(1120px,92%);
-    margin:0 auto;
-
-    display:grid;
-    grid-template-columns:1.15fr .85fr;
-    gap:4.5rem;
-    align-items:center;
-
-}
-
-
-/* LEFT */
-
-.insurance-left .section-pill{
-    margin-bottom:1.2rem;
-}
-
-.insurance-left h2{
-
-    margin:0 0 1rem;
-
-    font-family:var(--font-heading);
-
-    font-size:clamp(2rem,3vw,2.65rem);
-
-    font-weight:600;
-
-    line-height:1.15;
-
-    color:var(--forest);
-
-    max-width:12ch;
-
-}
-
-.insurance-left p{
-
-    max-width:640px;
-
-    margin:0 0 1.25rem;
-
-    font-size:1rem;
-
-    line-height:1.8;
-
-    color:#6b766f;
-
-}
-
-.insurance-left strong{
-
-    color:var(--forest);
-
-}
-
-
-/* RIGHT CARD */
-
 .insurance-card{
+
+    width:100%;
+    max-width:460px;
+
+    justify-self:end;
 
     background:#fff;
 
-    border:1px solid rgba(23,58,39,.05);
+    border:1px solid rgba(23,58,39,.08);
 
-    border-radius:22px;
+    border-radius:28px;
 
-    padding:1.65rem 1.75rem;
+    padding:2.2rem 2.5rem;
 
-    box-shadow:0 3px 10px rgba(0,0,0,.02);
+    box-shadow:none;
 
 }
 
 .insurance-card h3{
 
-    margin:0 0 1.25rem;
+    margin:0 0 2rem;
 
-    font-size:1.3rem;
+    font-size:.92rem;
 
-    font-weight:700;
+    font-weight:600;
 
-    color:var(--forest);
+    letter-spacing:.12em;
+
+    text-transform:uppercase;
+
+    color:#4d6455;
 
 }
 
@@ -5795,111 +5736,54 @@ font-size:1.75rem;
 
     list-style:none;
 
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    column-gap:2.75rem;
+
+    row-gap:1.25rem;
+
 }
 
 .insurance-card li{
 
-    padding:.8rem 0;
+    margin:0;
 
-    font-size:.98rem;
+    padding:0;
 
-    color:#67736b;
+    border:0;
 
-    border-bottom:1px solid rgba(23,58,39,.06);
+    font-size:1rem;
+
+    line-height:1.45;
+
+    color:#59665f;
 
 }
 
-.insurance-card li:last-child{
+.insurance-card li::before{
 
-    border-bottom:none;
+    content:"•";
+
+    margin-right:.55rem;
+
+    color:#79907d;
 
 }
 
 .insurance-small{
 
-    margin-top:1.5rem;
+    margin-top:2rem;
 
-    padding-top:1.35rem;
+    padding-top:0;
 
-    border-top:1px solid rgba(23,58,39,.06);
+    border:0;
 
     font-size:.92rem;
 
-    line-height:1.75;
+    line-height:1.7;
 
-    color:#7c867f;
-
-}
-
-
-/*=========================================
-  MOBILE
-=========================================*/
-
-@media (max-width:900px){
-
-.insurance-container{
-
-grid-template-columns:1fr;
-
-gap:2.5rem;
-
-}
-
-.insurance-left h2{
-
-max-width:none;
-
-}
-
-}
-
-@media (max-width:768px){
-
-.insurance-section{
-
-padding:4.5rem 0;
-
-}
-
-.insurance-container{
-
-gap:2rem;
-
-}
-
-.insurance-left h2{
-
-font-size:2rem;
-
-}
-
-.insurance-card{
-
-padding:1.5rem;
-
-border-radius:20px;
-
-}
-
-.insurance-card h3{
-
-font-size:1.18rem;
-
-}
-
-.insurance-card li{
-
-font-size:.96rem;
-
-padding:.7rem 0;
-
-}
-
-.insurance-small{
-
-font-size:.9rem;
-
-}
+    color:#7a857d;
 
 }
