@@ -5053,3 +5053,306 @@ html{
     text-align: center;
     color: #fff;
 }
+/* ==========================================
+   RATES HERO
+========================================== */
+
+.rates-hero{
+    padding:6.5rem 0 3.5rem;
+    text-align:center;
+}
+
+.rates-container{
+    width:min(1150px,92%);
+    margin:auto;
+}
+
+.rates-hero h1{
+    margin:1rem 0 1.25rem;
+    font-size:clamp(2.9rem,6vw,4.8rem);
+    line-height:1.05;
+    color:var(--forest);
+}
+
+.rates-hero h1 span{
+    color:var(--sage);
+    font-style:italic;
+}
+
+.rates-intro{
+    max-width:760px;
+    margin:0 auto;
+    font-size:1.22rem;
+    line-height:1.75;
+    color:var(--text-soft);
+}
+
+
+/* ==========================================
+   PRICING
+========================================== */
+
+.rates-pricing{
+    padding:.5rem 0 5.5rem;
+}
+
+.rates-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:1.75rem;
+}
+
+.rate-card{
+
+    position:relative;
+
+    display:grid;
+    grid-template-columns:1fr auto;
+    grid-template-rows:auto auto;
+    column-gap:2rem;
+    row-gap:1rem;
+
+    background:#fff;
+
+    border:1px solid rgba(23,58,39,.12);
+
+    border-radius:30px;
+
+    padding:2rem 2.2rem;
+
+    transition:.28s ease;
+
+    box-shadow:
+        0 6px 18px rgba(0,0,0,.035);
+
+}
+
+.rate-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 18px 36px rgba(0,0,0,.08);
+
+}
+
+.featured{
+
+    border-color:rgba(70,126,89,.35);
+
+}
+
+.rate-badge{
+
+    position:absolute;
+
+    top:-15px;
+    left:30px;
+
+    padding:.5rem 1rem;
+
+    border-radius:999px;
+
+    background:var(--forest);
+
+    color:#fff;
+
+    font-size:.78rem;
+    font-weight:700;
+
+    text-transform:uppercase;
+    letter-spacing:.08em;
+
+}
+
+.rate-header{
+
+    display:contents;
+
+}
+
+.rate-header > div:first-child{
+
+    grid-column:1;
+    grid-row:1;
+
+}
+
+.rate-price{
+
+    grid-column:2;
+    grid-row:1;
+
+    align-self:start;
+
+    font-size:2.55rem;
+
+    font-weight:700;
+
+    line-height:1;
+
+    white-space:nowrap;
+
+    color:var(--forest);
+
+}
+
+.rate-header h2{
+
+    margin:0;
+
+    font-size:1.8rem;
+
+    font-weight:700;
+
+    line-height:1.15;
+
+    color:var(--forest);
+
+}
+
+.rate-length{
+
+    margin:.45rem 0 0;
+
+    font-size:1rem;
+
+    color:#6c746d;
+
+}
+
+.rate-card p{
+
+    grid-column:1 / -1;
+
+    margin:0;
+
+    font-size:1.02rem;
+
+    line-height:1.7;
+
+    color:var(--text-soft);
+
+}
+
+
+/* ==========================================
+   GST NOTE
+========================================== */
+
+.gst-note{
+
+    margin-top:3rem;
+
+    text-align:center;
+
+}
+
+.gst-note strong{
+
+    display:block;
+
+    margin-bottom:.55rem;
+
+    color:var(--forest);
+
+    font-size:1.08rem;
+
+}
+
+.gst-note p{
+
+    margin:0;
+
+    line-height:1.7;
+
+    color:var(--text-soft);
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:900px){
+
+    .rates-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .rates-hero{
+
+        padding:5.5rem 0 2.8rem;
+
+    }
+
+    .rates-hero h1{
+
+        font-size:clamp(2.4rem,10vw,3.5rem);
+
+    }
+
+    .rates-intro{
+
+        font-size:1.08rem;
+
+    }
+
+    .rate-card{
+
+        grid-template-columns:1fr;
+        row-gap:.8rem;
+
+        padding:1.75rem;
+
+        border-radius:26px;
+
+    }
+
+    .rate-header{
+
+        display:block;
+
+    }
+
+    .rate-price{
+
+        grid-column:auto;
+        grid-row:auto;
+
+        margin-top:.5rem;
+
+        font-size:2.15rem;
+
+    }
+
+    .rate-header h2{
+
+        font-size:1.55rem;
+
+    }
+
+    .rate-card p{
+
+        grid-column:auto;
+
+        font-size:1rem;
+
+    }
+
+    .rate-badge{
+
+        left:22px;
+
+        font-size:.74rem;
+
+    }
+
+}
