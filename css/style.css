@@ -5693,3 +5693,213 @@ font-size:1.75rem;
 }
 
 }
+/*=========================================
+  INSURANCE
+=========================================*/
+
+.insurance-section{
+    padding:5.5rem 0;
+}
+
+.insurance-container{
+
+    width:min(1120px,92%);
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    gap:4.5rem;
+    align-items:center;
+
+}
+
+
+/* LEFT */
+
+.insurance-left .section-pill{
+    margin-bottom:1.2rem;
+}
+
+.insurance-left h2{
+
+    margin:0 0 1rem;
+
+    font-family:var(--font-heading);
+
+    font-size:clamp(2rem,3vw,2.65rem);
+
+    font-weight:600;
+
+    line-height:1.15;
+
+    color:var(--forest);
+
+    max-width:12ch;
+
+}
+
+.insurance-left p{
+
+    max-width:640px;
+
+    margin:0 0 1.25rem;
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+    color:#6b766f;
+
+}
+
+.insurance-left strong{
+
+    color:var(--forest);
+
+}
+
+
+/* RIGHT CARD */
+
+.insurance-card{
+
+    background:#fff;
+
+    border:1px solid rgba(23,58,39,.05);
+
+    border-radius:22px;
+
+    padding:1.65rem 1.75rem;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.02);
+
+}
+
+.insurance-card h3{
+
+    margin:0 0 1.25rem;
+
+    font-size:1.3rem;
+
+    font-weight:700;
+
+    color:var(--forest);
+
+}
+
+.insurance-card ul{
+
+    margin:0;
+
+    padding:0;
+
+    list-style:none;
+
+}
+
+.insurance-card li{
+
+    padding:.8rem 0;
+
+    font-size:.98rem;
+
+    color:#67736b;
+
+    border-bottom:1px solid rgba(23,58,39,.06);
+
+}
+
+.insurance-card li:last-child{
+
+    border-bottom:none;
+
+}
+
+.insurance-small{
+
+    margin-top:1.5rem;
+
+    padding-top:1.35rem;
+
+    border-top:1px solid rgba(23,58,39,.06);
+
+    font-size:.92rem;
+
+    line-height:1.75;
+
+    color:#7c867f;
+
+}
+
+
+/*=========================================
+  MOBILE
+=========================================*/
+
+@media (max-width:900px){
+
+.insurance-container{
+
+grid-template-columns:1fr;
+
+gap:2.5rem;
+
+}
+
+.insurance-left h2{
+
+max-width:none;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.insurance-section{
+
+padding:4.5rem 0;
+
+}
+
+.insurance-container{
+
+gap:2rem;
+
+}
+
+.insurance-left h2{
+
+font-size:2rem;
+
+}
+
+.insurance-card{
+
+padding:1.5rem;
+
+border-radius:20px;
+
+}
+
+.insurance-card h3{
+
+font-size:1.18rem;
+
+}
+
+.insurance-card li{
+
+font-size:.96rem;
+
+padding:.7rem 0;
+
+}
+
+.insurance-small{
+
+font-size:.9rem;
+
+}
+
+}
