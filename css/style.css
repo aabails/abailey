@@ -5693,6 +5693,79 @@ font-size:1.75rem;
 }
 
 }
+/*==================================================
+  INSURANCE & DIRECT BILLING
+==================================================*/
+
+.insurance-section{
+    padding:5.5rem 0;
+}
+
+.insurance-container{
+
+    width:min(1120px,92%);
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 460px;
+    gap:5.5rem;
+
+    align-items:center;
+
+}
+
+
+/*--------------------------------------
+  LEFT COLUMN
+--------------------------------------*/
+
+.insurance-left .section-pill{
+    margin-bottom:1.35rem;
+}
+
+.insurance-left h2{
+
+    margin:0 0 1.15rem;
+
+    max-width:11ch;
+
+    font-family:var(--font-heading);
+
+    font-size:clamp(2.1rem,3vw,3rem);
+
+    font-weight:600;
+
+    line-height:1.12;
+
+    color:var(--forest);
+
+}
+
+.insurance-left p{
+
+    max-width:38rem;
+
+    margin:0 0 1.35rem;
+
+    font-size:.98rem;
+
+    line-height:1.85;
+
+    color:#66736c;
+
+}
+
+.insurance-left strong{
+
+    color:var(--forest);
+
+}
+
+
+/*--------------------------------------
+  DIRECT BILLING CARD
+--------------------------------------*/
+
 .insurance-card{
 
     width:100%;
@@ -5706,9 +5779,7 @@ font-size:1.75rem;
 
     border-radius:28px;
 
-    padding:2.2rem 2.5rem;
-
-    box-shadow:none;
+    padding:2.25rem 2.5rem;
 
 }
 
@@ -5716,7 +5787,7 @@ font-size:1.75rem;
 
     margin:0 0 2rem;
 
-    font-size:.92rem;
+    font-size:.88rem;
 
     font-weight:600;
 
@@ -5724,51 +5795,58 @@ font-size:1.75rem;
 
     text-transform:uppercase;
 
-    color:#4d6455;
+    color:#536a5a;
 
 }
 
 .insurance-card ul{
 
+    list-style:none;
+
     margin:0;
 
     padding:0;
-
-    list-style:none;
 
     display:grid;
 
     grid-template-columns:1fr 1fr;
 
-    column-gap:2.75rem;
+    column-gap:2.5rem;
 
-    row-gap:1.25rem;
+    row-gap:1.2rem;
 
 }
 
 .insurance-card li{
 
+    display:flex;
+    align-items:flex-start;
+    gap:.65rem;
+
     margin:0;
-
-    padding:0;
-
-    border:0;
 
     font-size:1rem;
 
-    line-height:1.45;
+    line-height:1.5;
 
-    color:#59665f;
+    color:#5d6962;
 
 }
 
 .insurance-card li::before{
 
-    content:"•";
+    content:"";
 
-    margin-right:.55rem;
+    width:6px;
+    height:6px;
 
-    color:#79907d;
+    margin-top:.58em;
+
+    border-radius:50%;
+
+    background:#7f947e;
+
+    flex-shrink:0;
 
 }
 
@@ -5776,14 +5854,97 @@ font-size:1.75rem;
 
     margin-top:2rem;
 
-    padding-top:0;
-
-    border:0;
-
     font-size:.92rem;
 
-    line-height:1.7;
+    line-height:1.75;
 
-    color:#7a857d;
+    color:#7a857e;
+
+}
+
+
+/*--------------------------------------
+  MOBILE
+--------------------------------------*/
+
+@media (max-width:900px){
+
+.insurance-container{
+
+grid-template-columns:1fr;
+
+gap:2.75rem;
+
+}
+
+.insurance-left h2{
+
+max-width:none;
+
+}
+
+.insurance-card{
+
+max-width:none;
+
+justify-self:stretch;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.insurance-section{
+
+padding:4.5rem 0;
+
+}
+
+.insurance-container{
+
+gap:2rem;
+
+}
+
+.insurance-left h2{
+
+font-size:2.15rem;
+
+}
+
+.insurance-left p{
+
+font-size:.96rem;
+
+}
+
+.insurance-card{
+
+padding:1.75rem;
+
+border-radius:22px;
+
+}
+
+.insurance-card ul{
+
+grid-template-columns:1fr;
+
+row-gap:1rem;
+
+}
+
+.insurance-card h3{
+
+margin-bottom:1.5rem;
+
+}
+
+.insurance-small{
+
+margin-top:1.5rem;
+
+}
 
 }
