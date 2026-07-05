@@ -4940,3 +4940,67 @@ html{
     height:20px;
     flex-shrink:0;
 }
+.teen-cta-buttons a,
+.teen-cta-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .65rem;
+
+    width: 100%;
+    min-height: 64px;
+    padding: 18px 22px;
+
+    border-radius: 999px;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    aspect-ratio: auto;
+    height: auto;
+}
+@media (max-width: 768px){
+
+.teen-cta-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.teen-cta-buttons a{
+    width:100%;
+    min-height:64px;
+    padding:18px 20px;
+}
+}
+@media (max-width: 768px) {
+
+  .hero,
+  .tc-hero {
+    min-height: auto;
+    padding: 6rem 1.5rem 4rem;
+  }
+
+  .hero-content,
+  .tc-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+  }
+
+  .hero h1,
+  .tc-hero h1 {
+    margin: 0;
+    line-height: 1.08;
+  }
+
+  .hero .btn,
+  .tc-hero .btn,
+  .hero .hero-button,
+  .tc-hero .hero-button {
+    margin-top: 0;
+    position: static;
+  }
+
+}
