@@ -6127,3 +6127,63 @@ min-width:0;
 }
 
 }
+.rates-cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:1.5rem;
+
+    flex-wrap:wrap;
+
+}
+
+.rates-cta .btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:.75rem;
+
+    height:58px;
+
+    padding:0 2rem;
+
+    border-radius:999px;
+
+    font-size:1.05rem;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+    transition:.25s ease;
+
+}
+
+.rates-cta .btn svg{
+
+    width:20px;
+    height:20px;
+
+    flex-shrink:0;
+
+}
+
+.rates-cta .btn-primary{
+
+    min-width:360px;
+
+}
+
+.rates-cta .btn-secondary{
+
+    min-width:240px;
+
+}
