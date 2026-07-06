@@ -6078,29 +6078,29 @@ margin-top:1.5rem;
 
 /* icon */
 
-.rates-cta-buttons .btn svg{
+.rates-cta-buttons .btn > svg{
+    align-self:center;
 
     width:20px;
     height:20px;
 
     display:block;
 
-    flex-shrink:0;
-
-    margin-right:.7rem;
-
+    margin:0;
 }
-
 /* keep text vertically centred */
 
-.rates-cta-buttons .btn span{
-
+.rates-cta-buttons .btn > span{
     display:flex;
     align-items:center;
     justify-content:center;
 
+    height:100%;
+
     line-height:1;
 
+    margin:0;
+    padding:0;
 }
 
 /*==================================================
