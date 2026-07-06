@@ -6193,3 +6193,55 @@ margin-top:1.5rem;
     line-height:1;
 
 }
+/* ==========================================
+   Rates CTA Button Alignment Fix
+========================================== */
+
+.rates-cta-buttons .btn{
+
+    display:flex !important;
+
+    align-items:center !important;
+
+    justify-content:center !important;
+
+    gap:.7rem !important;
+
+    min-height:58px;
+
+    padding:0 2rem !important;
+
+    line-height:1 !important;
+
+}
+
+.rates-cta-buttons .btn > svg{
+
+    width:20px;
+    height:20px;
+
+    display:block;
+
+    flex-shrink:0;
+
+    margin:0;
+
+    align-self:center;
+
+}
+
+.rates-cta-buttons .btn > span{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    line-height:1;
+
+    margin:0;
+
+    padding:0;
+
+}
