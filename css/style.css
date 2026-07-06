@@ -6377,7 +6377,7 @@ min-width:0;
 
     justify-content:center;
 
-    gap:3rem;
+    gap:.7rem;
 
 }
 
@@ -6389,5 +6389,75 @@ min-width:0;
     display:block;
 
     flex:none;
+
+}
+/* ==========================================
+   Rates CTA Buttons
+========================================== */
+
+.rates-cta-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+    flex-wrap:wrap;
+    margin-top:2rem;
+}
+
+.rates-cta-buttons .btn{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:64px;
+    padding:0 2rem;
+
+    border-radius:999px;
+
+    text-decoration:none;
+    white-space:nowrap;
+
+    font-size:1rem;
+    font-weight:600;
+    line-height:1;
+
+    box-sizing:border-box;
+}
+
+.rates-cta-buttons .btn-primary{
+    min-width:360px;
+}
+
+.rates-cta-buttons .btn-secondary{
+    min-width:240px;
+}
+
+.rates-cta-buttons .btn span{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    line-height:1;
+}
+
+.rates-cta-buttons .btn svg{
+    width:20px;
+    height:20px;
+
+    margin-right:.7rem;
+
+    display:block;
+    flex-shrink:0;
+}
+
+@media (max-width:768px){
+
+    .rates-cta-buttons{
+        flex-direction:column;
+    }
+
+    .rates-cta-buttons .btn{
+        width:100%;
+        min-width:0;
+    }
 
 }
