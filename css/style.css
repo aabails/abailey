@@ -6327,3 +6327,67 @@ min-width:0;
     flex-shrink:0;
 
 }
+/* CTA Buttons */
+
+.rates-cta-buttons{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+    flex-wrap:wrap;
+
+}
+
+.rates-cta-buttons .btn{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:68px;
+
+    padding:0 2rem;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.rates-cta-buttons .btn-primary{
+
+    min-width:360px;
+
+}
+
+.rates-cta-buttons .btn-secondary{
+
+    min-width:240px;
+
+}
+
+.rates-cta-buttons .btn-inner{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:.7rem;
+
+}
+
+.rates-cta-buttons svg{
+
+    width:20px;
+    height:20px;
+
+    display:block;
+
+    flex:none;
+
+}
