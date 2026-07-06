@@ -6763,3 +6763,44 @@ RESPONSIVE
     text-decoration:underline;
 
 }
+.contact-form .btn{
+
+    width:100%;
+
+    min-height:68px;
+
+    padding:0 2rem;
+
+}
+
+.contact-form .btn-content{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:.75rem;
+
+    margin:0 auto;
+
+}
+
+.contact-form .btn-content svg{
+
+    width:20px;
+
+    height:20px;
+
+    flex-shrink:0;
+
+    display:block;
+
+}
+
+.contact-form .btn-content span{
+
+    line-height:1;
+
+}
