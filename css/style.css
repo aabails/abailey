@@ -6145,3 +6145,51 @@ margin-top:1.5rem;
     }
 
 }
+.rates-cta-buttons .btn{
+
+    display:flex;
+
+    align-items:center !important;
+
+    justify-content:center !important;
+
+    gap:.7rem;
+
+    height:64px;
+
+    padding:0 2rem;
+
+    line-height:1;
+
+}
+
+.rates-cta-buttons .btn > *{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    line-height:1;
+
+}
+
+.rates-cta-buttons .btn svg{
+
+    display:block;
+
+    width:20px;
+    height:20px;
+
+    margin:0;
+
+}
+
+.rates-cta-buttons .btn span{
+
+    display:block;
+
+    line-height:1;
+
+}
