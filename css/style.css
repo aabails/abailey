@@ -5979,17 +5979,54 @@ margin-top:1.5rem;
 
     color:var(--forest);
 
+/*==================================================
+  CTA
+==================================================*/
+
+.rates-cta{
+
+    padding:6rem 0 6.5rem;
+
 }
+
+.rates-cta-container{
+
+    width:min(900px,92%);
+    margin:0 auto;
+    text-align:center;
+
+}
+
+.rates-cta h2{
+
+    margin:0 0 1rem;
+    font-family:var(--font-heading);
+    font-size:clamp(2.1rem,3vw,3rem);
+    font-weight:600;
+    line-height:1.15;
+    color:var(--forest);
+
+}
+
+.rates-cta p{
+
+    max-width:700px;
+    margin:0 auto 2.5rem;
+
+    font-size:1.1rem;
+    line-height:1.75;
+    color:#66736c;
+
+}
+
+/* ---------------- Buttons ---------------- */
+
 .rates-cta-buttons{
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     gap:18px;
-
     flex-wrap:wrap;
 
 }
@@ -5997,57 +6034,124 @@ margin-top:1.5rem;
 .rates-cta-buttons .btn{
 
     display:flex;
-
     align-items:center;
-
     justify-content:center;
 
     height:64px;
 
-    padding:0 30px;
+    padding:0 32px;
 
     border-radius:999px;
 
     font-size:1rem;
-
     font-weight:600;
 
+    text-align:center;
+    text-decoration:none;
     white-space:nowrap;
+
+    box-sizing:border-box;
 
 }
 
 .rates-cta-buttons .btn-primary{
 
-    min-width:340px;
+    min-width:360px;
 
 }
 
 .rates-cta-buttons .btn-secondary{
 
-    min-width:210px;
+    min-width:220px;
 
 }
+
+/* perfectly center icon + text */
 
 .rates-cta-buttons .btn-content{
 
     display:inline-flex;
 
     align-items:center;
-
     justify-content:center;
 
     gap:.7rem;
+
+    width:100%;
+    height:100%;
+
+    line-height:1;
 
 }
 
 .rates-cta-buttons .btn-content svg{
 
     width:20px;
-
     height:20px;
+
+    display:block;
 
     flex-shrink:0;
 
+}
+
+.rates-cta-buttons .btn-content span{
+
     display:block;
+    line-height:1;
+
+}
+
+/* secondary button */
+
+.rates-cta-buttons .btn-secondary{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    line-height:1;
+
+}
+
+/*==================================================
+  MOBILE
+==================================================*/
+
+@media (max-width:768px){
+
+    .rates-cta{
+
+        padding:4.5rem 0;
+
+    }
+
+    .rates-cta h2{
+
+        font-size:2rem;
+
+    }
+
+    .rates-cta p{
+
+        font-size:1rem;
+        margin-bottom:2rem;
+
+    }
+
+    .rates-cta-buttons{
+
+        flex-direction:column;
+        align-items:stretch;
+
+    }
+
+    .rates-cta-buttons .btn{
+
+        width:100%;
+        min-width:0;
+        height:64px;
+
+    }
 
 }
