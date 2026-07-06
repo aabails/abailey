@@ -5980,7 +5980,7 @@ margin-top:1.5rem;
     color:var(--forest);
 
 /*==================================================
-  CTA
+  Rates CTA
 ==================================================*/
 
 .rates-cta{
@@ -5991,8 +5991,13 @@ margin-top:1.5rem;
 
 .rates-cta-container{
 
-    width:min(900px,92%);
+    width:min(960px,92%);
     margin:0 auto;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
     text-align:center;
 
 }
@@ -6000,54 +6005,71 @@ margin-top:1.5rem;
 .rates-cta h2{
 
     margin:0 0 1rem;
-    font-family:var(--font-heading);
-    font-size:clamp(2.1rem,3vw,3rem);
+
+    font-size:clamp(2.2rem,4vw,3.5rem);
+
+    line-height:1.1;
+
     font-weight:600;
-    line-height:1.15;
+
     color:var(--forest);
 
 }
 
 .rates-cta p{
 
-    max-width:700px;
+    max-width:760px;
+
     margin:0 auto 2.5rem;
 
-    font-size:1.1rem;
+    font-size:1.15rem;
+
     line-height:1.75;
+
     color:#66736c;
 
 }
 
-/* ---------------- Buttons ---------------- */
+/*=========================
+Buttons
+=========================*/
 
 .rates-cta-buttons{
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
-    gap:18px;
+
+    gap:1.25rem;
+
     flex-wrap:wrap;
+
+    margin-top:.5rem;
 
 }
 
 .rates-cta-buttons .btn{
 
     display:flex;
+
     align-items:center;
+
     justify-content:center;
 
-    height:64px;
+    height:68px;
 
-    padding:0 32px;
+    padding:0 2rem;
 
     border-radius:999px;
 
-    font-size:1rem;
+    text-decoration:none;
+
+    font-size:1.08rem;
+
     font-weight:600;
 
-    text-align:center;
-    text-decoration:none;
     white-space:nowrap;
 
     box-sizing:border-box;
@@ -6056,102 +6078,104 @@ margin-top:1.5rem;
 
 .rates-cta-buttons .btn-primary{
 
-    min-width:360px;
+    min-width:380px;
 
 }
 
 .rates-cta-buttons .btn-secondary{
 
-    min-width:220px;
+    min-width:250px;
 
 }
 
-/* perfectly center icon + text */
+/* Primary button content */
 
-.rates-cta-buttons .btn-content{
+.rates-cta-buttons .btn-primary{
 
-    display:inline-flex;
-
-    align-items:center;
-    justify-content:center;
-
-    gap:.7rem;
-
-    width:100%;
-    height:100%;
-
-    line-height:1;
+    gap:.8rem;
 
 }
 
-.rates-cta-buttons .btn-content svg{
+.rates-cta-buttons .btn-primary svg{
 
-    width:20px;
-    height:20px;
+    width:22px;
 
-    display:block;
+    height:22px;
 
     flex-shrink:0;
 
+    display:block;
+
 }
 
-.rates-cta-buttons .btn-content span{
+.rates-cta-buttons .btn-primary span{
 
     display:block;
+
     line-height:1;
 
 }
 
-/* secondary button */
+/* Secondary button */
 
 .rates-cta-buttons .btn-secondary{
 
     display:flex;
+
     align-items:center;
+
     justify-content:center;
+
+    text-align:center;
 
     line-height:1;
 
 }
 
-/*==================================================
-  MOBILE
-==================================================*/
+/*=========================
+Mobile
+=========================*/
 
 @media (max-width:768px){
 
-    .rates-cta{
+.rates-cta{
 
-        padding:4.5rem 0;
+padding:4.5rem 0;
 
-    }
+}
 
-    .rates-cta h2{
+.rates-cta h2{
 
-        font-size:2rem;
+font-size:2rem;
 
-    }
+}
 
-    .rates-cta p{
+.rates-cta p{
 
-        font-size:1rem;
-        margin-bottom:2rem;
+font-size:1rem;
 
-    }
+margin-bottom:2rem;
 
-    .rates-cta-buttons{
+}
 
-        flex-direction:column;
-        align-items:stretch;
+.rates-cta-buttons{
 
-    }
+flex-direction:column;
 
-    .rates-cta-buttons .btn{
+width:100%;
 
-        width:100%;
-        min-width:0;
-        height:64px;
+}
 
-    }
+.rates-cta-buttons .btn{
+
+width:100%;
+
+max-width:420px;
+
+min-width:0;
+
+height:64px;
+
+}
 
 }
