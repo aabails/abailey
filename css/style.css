@@ -6804,3 +6804,93 @@ RESPONSIVE
     line-height:1;
 
 }
+.contact-card h3{
+
+    margin:0 0 2rem;
+
+    font-size:1.7rem;
+
+    font-weight:600;
+
+}
+
+.contact-method h4{
+
+    margin:0 0 .2rem;
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+    color:#8b948d;
+
+}
+
+.contact-method a,
+.contact-method p{
+
+    margin:0;
+
+    font-size:1.1rem;
+
+    font-weight:500;
+
+    line-height:1.35;
+
+    color:var(--forest);
+
+    text-decoration:none;
+
+}
+
+.contact-note{
+
+    display:block;
+
+    margin-top:.2rem;
+
+    font-size:.95rem;
+
+    color:#7a827d;
+
+}
+
+.contact-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:.35rem;
+
+    margin-top:.45rem;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    color:var(--forest);
+
+    text-decoration:none;
+
+}.contact-icon{
+
+    width:44px;
+    height:44px;
+
+}
+
+.contact-icon svg{
+
+    width:18px;
+    height:18px;
+
+}.contact-method + .contact-method{
+
+    margin-top:1.5rem;
+
+}
