@@ -5980,56 +5980,6 @@ margin-top:1.5rem;
     color:var(--forest);
 
 }
-/*==================================================
-  CTA
-==================================================*/
-
-.rates-cta{
-
-    padding:6rem 0 6.5rem;
-
-}
-
-.rates-cta-container{
-
-    width:min(900px,92%);
-
-    margin:0 auto;
-
-    text-align:center;
-
-}
-
-.rates-cta h2{
-
-    margin:0 0 1rem;
-
-    font-family:var(--font-heading);
-
-    font-size:clamp(2.1rem,3vw,3rem);
-
-    font-weight:600;
-
-    line-height:1.15;
-
-    color:var(--forest);
-
-}
-
-.rates-cta p{
-
-    max-width:700px;
-
-    margin:0 auto 2.5rem;
-
-    font-size:1.1rem;
-
-    line-height:1.75;
-
-    color:#66736c;
-
-}
-
 .rates-cta-buttons{
 
     display:flex;
@@ -6038,168 +5988,7 @@ margin-top:1.5rem;
 
     align-items:center;
 
-    gap:1rem;
-
-    flex-wrap:wrap;
-
-}
-
-.rates-cta .btn{
-
-    min-height:64px;
-
-    padding:0 2rem;
-
-    border-radius:999px;
-
-    display:inline-flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:.8rem;
-
-}
-
-.rates-cta .btn svg{
-
-    width:22px;
-    height:22px;
-
-    flex-shrink:0;
-
-}
-
-.rates-cta .btn-primary{
-
-    min-width:310px;
-
-}
-
-.rates-cta .btn-secondary{
-
-    min-width:220px;
-
-}
-
-
-/*==================================================
-  MOBILE
-==================================================*/
-
-@media (max-width:768px){
-
-.rates-cta{
-
-padding:4.5rem 0;
-
-}
-
-.rates-cta h2{
-
-font-size:2rem;
-
-}
-
-.rates-cta p{
-
-font-size:1rem;
-
-margin-bottom:2rem;
-
-}
-
-.rates-cta-buttons{
-
-flex-direction:column;
-
-align-items:stretch;
-
-}
-
-.rates-cta .btn{
-
-width:100%;
-
-min-width:0;
-
-}
-
-}
-.rates-cta-buttons{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:1.5rem;
-
-    flex-wrap:wrap;
-
-}
-
-.rates-cta .btn{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:.75rem;
-
-    height:58px;
-
-    padding:0 2rem;
-
-    border-radius:999px;
-
-    font-size:1.05rem;
-
-    font-weight:600;
-
-    white-space:nowrap;
-
-    transition:.25s ease;
-
-}
-
-.rates-cta .btn svg{
-
-    width:20px;
-    height:20px;
-
-    flex-shrink:0;
-
-}
-
-.rates-cta .btn-primary{
-
-    min-width:360px;
-
-}
-
-.rates-cta .btn-secondary{
-
-    min-width:240px;
-
-}
-.rates-cta-buttons{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:1rem;
-
-    max-width:850px;
-
-    margin:0 auto;
+    gap:18px;
 
     flex-wrap:wrap;
 
@@ -6213,108 +6002,40 @@ min-width:0;
 
     justify-content:center;
 
-    min-height:72px;
+    height:64px;
+
+    padding:0 30px;
 
     border-radius:999px;
-
-    white-space:nowrap;
 
     font-size:1rem;
 
     font-weight:600;
 
+    white-space:nowrap;
+
 }
 
 .rates-cta-buttons .btn-primary{
 
-    flex:0 1 390px;
+    min-width:340px;
 
 }
 
 .rates-cta-buttons .btn-secondary{
 
-    flex:0 1 260px;
-
-}
-
-.rates-cta-buttons .btn-content{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:.65rem;
-
-}
-
-.rates-cta-buttons .btn-content svg{
-
-    width:20px;
-
-    height:20px;
-
-    flex-shrink:0;
-
-}
-
-@media (max-width:768px){
-
-    .rates-cta-buttons{
-
-        flex-direction:column;
-
-        gap:16px;
-
-    }
-
-    .rates-cta-buttons .btn{
-
-        width:100%;
-
-        min-height:64px;
-
-        flex:none;
-
-    }
-
-}
-.rates-cta-buttons .btn{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    min-height:72px;
-    padding:0 28px;
-
-    border-radius:999px;
-}
-
-.rates-cta-buttons .btn-content{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    gap:.65rem;
-}
-
-.rates-cta-buttons .btn-content svg{
-    width:20px;
-    height:20px;
-    flex-shrink:0;
-    margin:0;
-}
-.rates-cta-buttons .btn{
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    min-width:210px;
 
 }
 
 .rates-cta-buttons .btn-content{
 
     display:inline-flex;
+
     align-items:center;
+
     justify-content:center;
+
     gap:.7rem;
 
 }
@@ -6322,8 +6043,11 @@ min-width:0;
 .rates-cta-buttons .btn-content svg{
 
     width:20px;
+
     height:20px;
 
     flex-shrink:0;
+
+    display:block;
 
 }
