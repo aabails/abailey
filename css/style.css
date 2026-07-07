@@ -5546,4 +5546,155 @@ RESPONSIVE
     }
 
 }
+/*==================================================
+  MY APPROACH
+==================================================*/
 
+.approach-section{
+
+    padding:6rem 0;
+
+}
+
+.approach-content{
+
+    max-width:980px;
+
+    margin:0 auto;
+
+}
+
+.approach-content h2{
+
+    margin:1rem 0 2rem;
+
+    font-size:clamp(2.4rem,3vw,2.9rem);
+
+    line-height:1.15;
+
+    color:var(--forest);
+
+    max-width:900px;
+
+}
+
+.approach-content p{
+
+    margin:0 0 2rem;
+
+    max-width:1000px;
+
+    font-size:1.15rem;
+
+    line-height:1.85;
+
+    color:#66736c;
+
+}
+
+.approach-content p:last-child{
+
+    margin-bottom:0;
+
+}
+
+/*==================================================
+  QUOTE
+==================================================*/
+
+.approach-quote{
+
+    margin:3rem 0;
+
+    padding:2rem 2.5rem;
+
+    background:#ffffff;
+
+    border-radius:26px;
+
+    border-left:6px solid #48664b;
+
+    box-shadow:0 12px 35px rgba(34,55,40,.05);
+
+    font-family:var(--font-heading);
+
+    font-size:clamp(1.55rem,2vw,2rem);
+
+    font-style:italic;
+
+    line-height:1.45;
+
+    color:var(--forest);
+
+}
+
+.approach-quote::before,
+.approach-quote::after{
+
+    content:none;
+
+}
+
+/*==================================================
+  LINK
+==================================================*/
+
+.approach-content a{
+
+    color:var(--forest);
+
+    font-weight:600;
+
+    text-decoration-thickness:2px;
+
+    text-underline-offset:4px;
+
+    transition:.2s;
+
+}
+
+.approach-content a:hover{
+
+    opacity:.75;
+
+}
+
+/*==================================================
+  MOBILE
+==================================================*/
+
+@media (max-width:768px){
+
+    .approach-section{
+
+        padding:4.5rem 0;
+
+    }
+
+    .approach-content h2{
+
+        font-size:2.2rem;
+
+    }
+
+    .approach-content p{
+
+        font-size:1rem;
+
+        line-height:1.8;
+
+    }
+
+    .approach-quote{
+
+        padding:1.5rem;
+
+        font-size:1.35rem;
+
+        border-left-width:5px;
+
+        margin:2.5rem 0;
+
+    }
+
+}
