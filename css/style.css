@@ -8786,3 +8786,31 @@ RESPONSIVE
     max-width:none;
 
 }
+.tc-container{
+    width:min(1200px,92%);
+    margin:0 auto;
+    padding-inline:1rem;
+    box-sizing:border-box;
+   
+}
+.final-cta-card{
+
+    position:relative;
+    overflow:hidden;
+
+    width:100%;
+    max-width:1200px;
+
+    margin:0 auto;
+
+    padding:5rem 3rem;
+
+    box-sizing:border-box;
+
+    border-radius:36px;
+
+    background:#fff;
+
+    border:1px solid #d8dfd2;
+
+}
