@@ -7181,3 +7181,81 @@ RESPONSIVE
     flex-shrink:0;
 
 }
+/* Counselling CTA Buttons */
+
+.counselling-buttons{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+    flex-wrap:wrap;
+
+}
+
+.counselling-buttons .btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:68px;
+
+    padding:0 2rem;
+
+    line-height:normal;
+
+}
+
+.counselling-buttons .btn-primary{
+
+    min-width:360px;
+
+}
+
+.counselling-buttons .btn-secondary{
+
+    min-width:240px;
+
+}
+
+.counselling-buttons .btn-content{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:.7rem;
+
+    width:100%;
+
+    height:100%;
+
+}
+
+.counselling-buttons .btn-content svg{
+
+    width:20px;
+    height:20px;
+
+    flex-shrink:0;
+
+    display:block;
+
+}
+
+.counselling-buttons .btn-content span{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    line-height:1;
+
+}
