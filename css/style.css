@@ -5736,3 +5736,18 @@ RESPONSIVE
     }
 
 }
+.training-card{
+    display:block !important;
+}
+
+.training-card h3{
+    display:block !important;
+}
+
+.training-card p{
+    display:block !important;
+}
+
+.training-icon{
+    display:flex !important;
+}
