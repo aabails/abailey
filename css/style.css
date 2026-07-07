@@ -8814,3 +8814,27 @@ RESPONSIVE
     border:1px solid #d8dfd2;
 
 }
+@media (max-width:768px){
+
+.final-cta-buttons{
+
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+
+}
+
+.final-cta-buttons .btn{
+
+    width:100%;
+    max-width:340px;
+
+    margin:0 auto;
+
+    min-width:unset;
+
+    padding:0 1.5rem;
+
+}
+
+}
