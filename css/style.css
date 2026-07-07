@@ -8126,3 +8126,243 @@ RESPONSIVE
     font-size:1.15rem;
 
 }
+/*==================================================
+  THE SPACE
+==================================================*/
+
+.space-section{
+
+    padding:6rem 0;
+
+}
+
+.space-gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:1.5rem;
+
+    margin-bottom:4rem;
+
+}
+
+.space-photo{
+
+    width:100%;
+
+    aspect-ratio:4/3;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    display:block;
+
+    box-shadow:0 20px 55px rgba(25,42,32,.08);
+
+    transition:transform .35s ease,
+               box-shadow .35s ease;
+
+}
+
+.space-photo:hover{
+
+    transform:translateY(-4px) scale(1.02);
+
+    box-shadow:0 28px 70px rgba(25,42,32,.12);
+
+}
+
+/*==================================================
+  CONTENT
+==================================================*/
+
+.space-content{
+
+    max-width:1080px;
+
+}
+
+.space-content h2{
+
+    margin:1rem 0 1.5rem;
+
+    font-size:clamp(2.4rem,3vw,2.9rem);
+
+    line-height:1.15;
+
+    color:var(--forest);
+
+}
+
+.space-content p{
+
+    max-width:1050px;
+
+    margin:0 0 1.7rem;
+
+    font-size:1.15rem;
+
+    line-height:1.85;
+
+    color:#66736c;
+
+}
+
+.space-content p:last-of-type{
+
+    margin-bottom:3rem;
+
+}
+
+/*==================================================
+  FEATURES
+==================================================*/
+
+.space-features{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1.75rem;
+
+}
+
+.space-feature{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:1.4rem;
+
+}
+
+.space-icon{
+
+    width:68px;
+
+    height:68px;
+
+    border-radius:50%;
+
+    background:#f3f5ef;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+}
+
+.space-icon svg{
+
+    width:30px;
+
+    height:30px;
+
+    color:#48664b;
+
+}
+
+.space-feature h3{
+
+    margin:0 0 .45rem;
+
+    font-size:1.45rem;
+
+    font-weight:600;
+
+    color:var(--forest);
+
+}
+
+.space-feature p{
+
+    margin:0;
+
+    font-size:1.08rem;
+
+    line-height:1.75;
+
+    color:#66736c;
+
+}
+
+/*==================================================
+  MOBILE
+==================================================*/
+
+@media (max-width:900px){
+
+    .space-gallery{
+
+        grid-template-columns:1fr;
+
+        margin-bottom:3rem;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .space-section{
+
+        padding:4.5rem 0;
+
+    }
+
+    .space-content h2{
+
+        font-size:2.2rem;
+
+    }
+
+    .space-content p{
+
+        font-size:1rem;
+
+    }
+
+    .space-feature{
+
+        gap:1rem;
+
+    }
+
+    .space-icon{
+
+        width:58px;
+
+        height:58px;
+
+    }
+
+    .space-icon svg{
+
+        width:26px;
+
+        height:26px;
+
+    }
+
+    .space-feature h3{
+
+        font-size:1.25rem;
+
+    }
+
+    .space-feature p{
+
+        font-size:1rem;
+
+    }
+
+}
