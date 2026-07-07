@@ -5003,7 +5003,7 @@ html{
 .rates-hero h1{
     margin:.75rem 0 1rem;
     font-family:var(--font-heading);
-    font-size:clamp(2.6rem,5vw,4.2rem);
+    font-size:clamp(2.4rem,3vw,2.9rem);
     font-weight:600;
     line-height:1.05;
     color:var(--forest);
