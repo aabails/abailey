@@ -3396,7 +3396,7 @@ html{
 
     .tc-section-header h2{
 
-        font-size:2.4rem;
+        font-size:2.4rem,3vw,2.9rem;
 
     }
 
@@ -5271,7 +5271,7 @@ html{
 
     .rate-header h2{
 
-        font-size:1.55rem;
+        font-size:2.4rem,3vw,2.9rem;
 
     }
 
@@ -6212,7 +6212,7 @@ HEADER
 
     margin:1rem 0 1rem;
 
-    font-size:clamp(2rem,3vw,2.6rem);
+    font-size:clamp(2.4rem,3vw,2.9rem);
 
     line-height:.95;
 
@@ -6625,7 +6625,7 @@ RESPONSIVE
 
     .contact-header h2{
 
-        font-size:2.5rem;
+        font-size:2.4rem,3vw,2.9rem;
 
     }
 
