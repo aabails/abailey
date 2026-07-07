@@ -475,7 +475,7 @@ margin-left:20px;
 }
 
 .concerns-copy h2{
-    font-size:clamp(2.8rem,5vw,4.5rem);
+    font-size:clamp(2.4rem,3vw,2.9rem);
     line-height:.95;
     letter-spacing:-.05em;
     color:#173B2A;
@@ -571,7 +571,7 @@ gap:4rem;
 
 .concerns-copy h2{
 
-font-size:3rem;
+font-size:2.3rem;
 
 }
 
@@ -840,7 +840,7 @@ border-bottom:none;
 }
 
 .concerns-copy h2{
-    font-size:clamp(2.7rem,4vw,3.6rem);
+    font-size:clamp(2.4rem,3vw,2.9rem);
     line-height:.98;
     letter-spacing:-.04em;
     color:#173B2A;
@@ -1013,7 +1013,7 @@ border-bottom:none;
 }
 
 .process-content h2{
-    font-size:3.3rem;
+    font-size:clamp(2.4rem,3vw,2.9rem);
     line-height:1.15;
     margin-bottom:30px;
     color:#fff;
@@ -1164,7 +1164,7 @@ border-bottom:none;
 
     margin:18px 0 28px;
 
-    font-size:4rem;
+    font-size:clamp(2.4rem,3vw,2.9rem);
     line-height:1.15;
 
 }
@@ -1270,7 +1270,7 @@ box-shadow:0 25px 70px rgba(0,0,0,.05);
 
 margin:22px 0 36px;
 
-font-size:4rem;
+font-size:clamp(2.4rem,3vw,2.9rem);
 
 line-height:1.15;
 
@@ -1409,7 +1409,7 @@ font-size:2.9rem;
 
 .faq-grid h2{
     margin-top:20px;
-    font-size:clamp(2.5rem,4vw,3rem);
+    font-size:clamp(2.4rem,3vw,2.9rem);
     line-height:1.15;
 }
 
@@ -1601,7 +1601,7 @@ font-size:1.45rem;
 
     color:#fff;
 
-    font-size:4.4rem;
+    font-size:clamp(2.4rem,3vw,2.9rem);
 
     line-height:1.1;
 
@@ -1663,7 +1663,7 @@ padding:100px 0;
 
 .final-cta h2{
 
-font-size:2.9rem;
+font-size:clamp(2.4rem,3vw,2.9rem);
 
 }
 
@@ -1704,7 +1704,7 @@ pointer-events:none;
 /* ---------- What Sessions Are Like ---------- */
 
 .process-content h2{
-    font-size:clamp(2.5rem, 4vw, 3.35rem);
+    font-size:clamp(2.4rem,3vw,2.9rem);
     line-height:1.15;
     margin-bottom:1.5rem;
 }
@@ -1737,7 +1737,7 @@ pointer-events:none;
 /* ---------- Who I Support ---------- */
 
 .support-content h2{
-    font-size:clamp(2.5rem, 4vw, 3.2rem);
+    font-size:clamp(2.4rem,3vw,2.9rem);
     line-height:1.15;
 }
 
@@ -1779,7 +1779,7 @@ pointer-events:none;
 /* ---------- FAQ ---------- */
 
 .faq-grid h2{
-    font-size:clamp(2.5rem, 4vw, 3rem);
+    font-size:clamp(2.4rem,3vw,2.9rem);
     line-height:1.15;
 }
 
@@ -1795,7 +1795,7 @@ pointer-events:none;
 /* ---------- Final CTA ---------- */
 
 .final-cta h2{
-    font-size:clamp(2.8rem, 5vw, 3.7rem);
+    font-size:clamp(2.4rem,3vw,2.9rem);
     line-height:1.1;
 }
 
@@ -1916,7 +1916,7 @@ pointer-events:none;
 .faq-grid h2,
 .final-cta h2{
 
-    font-size:clamp(2.5rem, 4vw, 3.3rem);
+    font-size:clamp(2.4rem,3vw,2.9rem);
     line-height:1.12;
     letter-spacing:-0.03em;
 
@@ -3150,7 +3150,7 @@ html{
 
     margin:0 0 18px;
 
-    font-size:2.4rem,3vw,2.9remrem;
+    font-size:clamp(2.4rem,3vw,2.9rem);
 
     font-weight:600;
 
@@ -3275,7 +3275,7 @@ html{
 
     margin:0 0 18px;
 
-    font-size:2.4rem,3vw,2.9remrem;
+    font-size:clamp(2.4rem,3vw,2.9rem);
 
     font-weight:600;
 
@@ -3396,7 +3396,7 @@ html{
 
     .tc-section-header h2{
 
-        font-size:2.4rem,3vw,2.9rem;
+        font-size:clamp(2.4rem,3vw,2.9rem);
 
     }
 
@@ -3539,7 +3539,7 @@ html{
 
     font-family:"Lora",serif;
 
-    font-size:3.2rem;
+    font-size:clamp(2.4rem,3vw,2.9rem);
 
     font-weight:600;
 
@@ -3788,7 +3788,7 @@ html{
 
     font-family:"Lora",serif;
 
-    font-size:3.4rem;
+    font-size:clamp(2.4rem,3vw,2.9rem);
 
     line-height:1.1;
 
@@ -3901,7 +3901,7 @@ html{
 
     font-family:"Lora",serif;
 
-    font-size:4rem;
+    font-size:clamp(2.4rem,3vw,2.9rem);
 
     line-height:1.08;
 
@@ -4060,7 +4060,7 @@ html{
 .teen-faq-header h2,
 .parents-left h2{
 
-    font-size:clamp(2.0rem,4vw,2.8rem) !important;
+    font-size:clamp(2.4rem,3vw,2.9rem) !important;
 
 }
 
@@ -4211,7 +4211,7 @@ html{
 
     font-family:inherit !important;
 
-    font-size:clamp(2rem,3.5vw,2.8rem);
+    font-size:clamp(2.4rem,3vw,2.9rem);
 
     font-weight:800 !important;
 
@@ -4227,7 +4227,7 @@ html{
 
     font-family:inherit !important;
 
-    font-size:clamp(2.3rem,4vw,3.5rem) !important;
+    font-size:clamp(2.4rem,3vw,2.9rem) !important;
 
     font-weight:800 !important;
 
@@ -4561,7 +4561,7 @@ html{
 
     font-family:inherit;
 
-    font-size:clamp(1.7rem,4vw,2.1rem);
+    font-size:clamp(2.4rem,3vw,2.9rem);
 
     font-weight:800;
 
@@ -5122,7 +5122,7 @@ html{
 
     font-family:var(--font-heading);
 
-    font-size:2rem,3vw,2.6rem;
+    font-size:clamp(2.4rem,3vw,2.9rem);
 
     font-weight:700;
 
@@ -5271,7 +5271,7 @@ html{
 
     .rate-header h2{
 
-        font-size:2.4rem,3vw,2.9rem;
+        font-size:clamp(2.4rem,3vw,2.9rem);
 
     }
 
@@ -5324,7 +5324,7 @@ html{
 
 .payment-header h2{
     margin:0 0 .5rem;
-    font-size:clamp(2rem,3vw,2.6rem);
+    font-size:clamp(2.4rem,3vw,2.9rem);
     font-family:var(--font-heading);
     font-weight:600;
     color:var(--forest);
@@ -5664,7 +5664,7 @@ font-size:1.75rem;
 
     font-family:var(--font-heading);
 
-    font-size:clamp(2.1rem,3vw,3rem);
+    font-size:clamp(2.4rem,3vw,2.9rem);
 
     font-weight:600;
 
@@ -5937,7 +5937,7 @@ margin-top:1.5rem;
 
     font-family:var(--font-heading);
 
-    font-size:clamp(2.1rem,3vw,3rem);
+    font-size:clamp(2.4rem,3vw,2.9rem);
 
     font-weight:600;
 
@@ -6625,7 +6625,7 @@ RESPONSIVE
 
     .contact-header h2{
 
-        font-size:2.4rem,3vw,2.9rem;
+        font-size:clamp(2.4rem,3vw,2.9rem);
 
     }
 
