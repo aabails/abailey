@@ -5225,6 +5225,282 @@ RESPONSIVE
         text-align:center;
     }
 }
+/*==================================================
+  MEET INTRO
+==================================================*/
 
+.meet-intro{
+
+    padding:6rem 0 7rem;
+
+}
+
+.meet-grid{
+
+    display:grid;
+
+    grid-template-columns:1.05fr .9fr;
+
+    align-items:center;
+
+    gap:5rem;
+
+}
+
+/*==================================================
+  COPY
+==================================================*/
+
+.meet-copy h2{
+
+    margin:0 0 2rem;
+
+    max-width:620px;
+
+    font-size:clamp(2.4rem,3vw,2.9rem);
+
+    line-height:1.15;
+
+    color:var(--forest);
+
+}
+
+.meet-copy h2 span{
+
+    display:block;
+
+    margin-top:.15em;
+
+    font-family:var(--font-heading);
+
+    font-style:italic;
+
+    font-weight:600;
+
+    color:#35593c;
+
+}
+
+.meet-copy p{
+
+    max-width:620px;
+
+    margin:0 0 2.5rem;
+
+    font-size:1.15rem;
+
+    line-height:1.85;
+
+    color:#66736c;
+
+}
+
+/*==================================================
+  BUTTONS
+==================================================*/
+
+.meet-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+    flex-wrap:wrap;
+
+}
+
+.meet-buttons .btn-primary{
+
+    min-width:345px;
+
+}
+
+.meet-buttons .btn-secondary{
+
+    min-width:180px;
+
+}
+
+/*==================================================
+  PHOTO
+==================================================*/
+
+.meet-photo{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.meet-photo img{
+
+    width:100%;
+
+    max-width:620px;
+
+    aspect-ratio:3/4;
+
+    object-fit:cover;
+
+    border-radius:34px;
+
+    box-shadow:0 30px 70px rgba(28,45,32,.10);
+
+}
+
+.meet-location{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:.65rem;
+
+    margin-top:1.4rem;
+
+    font-size:.98rem;
+
+    color:#7b857d;
+
+}
+
+.meet-location svg{
+
+    width:18px;
+
+    height:18px;
+
+    color:#5f7a65;
+
+    flex-shrink:0;
+
+}
+
+/*==================================================
+  HOVER
+==================================================*/
+
+.meet-photo img{
+
+    transition:transform .35s ease;
+
+}
+
+.meet-photo:hover img{
+
+    transform:translateY(-4px);
+
+}
+
+/*==================================================
+  MOBILE
+==================================================*/
+
+@media (max-width:900px){
+
+    .meet-grid{
+
+        grid-template-columns:1fr;
+
+        gap:3.5rem;
+
+    }
+
+    .meet-copy{
+
+        order:2;
+
+        text-align:center;
+
+    }
+
+    .meet-copy h2,
+
+    .meet-copy p{
+
+        max-width:700px;
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+    .meet-buttons{
+
+        justify-content:center;
+
+    }
+
+    .meet-photo{
+
+        order:1;
+
+    }
+
+    .meet-photo img{
+
+        max-width:520px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .meet-intro{
+
+        padding:4.5rem 0;
+
+    }
+
+    .meet-copy h2{
+
+        font-size:2.2rem;
+
+    }
+
+    .meet-copy p{
+
+        font-size:1rem;
+
+    }
+
+    .meet-buttons{
+
+        flex-direction:column;
+
+        gap:16px;
+
+    }
+
+    .meet-buttons .btn{
+
+        width:100%;
+
+        max-width:340px;
+
+        min-width:0;
+
+        margin:0 auto;
+
+    }
+
+    .meet-location{
+
+        font-size:.92rem;
+
+        text-align:center;
+
+    }
+
+}
 
   
