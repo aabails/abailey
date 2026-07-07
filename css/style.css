@@ -8635,3 +8635,33 @@ RESPONSIVE
     }
 
 }
+.final-cta .section-pill{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:.65rem;
+
+    padding:.6rem 1.15rem;
+
+    border-radius:999px;
+
+    background:#faf9f5;
+
+    border:1px solid #d8dfd2;
+
+    color:#173822;
+
+    font-size:.95rem;
+    font-weight:600;
+
+}
+
+.final-cta .section-pill svg{
+
+    width:18px;
+    height:18px;
+
+    color:#173822;
+
+}
