@@ -5122,7 +5122,7 @@ html{
 
     font-family:var(--font-heading);
 
-    font-size:1.9rem;
+    font-size:2rem,3vw,2.6rem;
 
     font-weight:700;
 
@@ -6212,7 +6212,7 @@ HEADER
 
     margin:1rem 0 1rem;
 
-    font-size:clamp(2.75rem,5vw,4.4rem);
+    font-size:clamp(2rem,3vw,2.6rem);
 
     line-height:.95;
 
