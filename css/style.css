@@ -5550,204 +5550,275 @@ RESPONSIVE
   TRAINING & CREDENTIALS
 ==================================================*/
 
-.training-section{
+.abcred-section{
+
     padding:7rem 0;
+    background:#faf7f2;
+
 }
 
-.training-header{
+.abcred-header{
+
     max-width:760px;
-    margin-bottom:3.5rem;
+    margin-bottom:4rem;
+
 }
 
-.training-header h2{
-    margin:1rem 0 1.5rem;
-    font-size:clamp(2.4rem,3vw,2.9rem);
-    line-height:1.15;
-    color:var(--forest);
+.abcred-eyebrow{
+
+    display:block;
+
+    margin-bottom:1.25rem;
+
+    font-size:.92rem;
+    font-weight:700;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+
+    color:#46664b;
+
 }
 
-.training-header p{
-    font-size:1.15rem;
-    line-height:1.85;
-    color:#66736c;
-}
+.abcred-header h2{
 
-.training-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:2rem;
-    margin-bottom:3rem;
+    margin:0;
+
+    font-size:clamp(2.8rem,5vw,4.3rem);
+    line-height:1.08;
+    font-weight:700;
+
+    color:#173822;
+
 }
 
 /*==================================================
-  TRAINING CARDS
+GRID
 ==================================================*/
 
-.training-card{
-    background:#fff;
-    border:1px solid #d8dfd2;
-    border-radius:30px;
-    padding:2.5rem;
-    transition:.25s ease;
+.abcred-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:2rem;
+
+    margin-bottom:4rem;
+
 }
 
-.training-card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 18px 40px rgba(27,56,36,.08);
+/*==================================================
+CARD
+==================================================*/
+
+.abcred-card{
+
+    padding:2.6rem;
+
+    background:#fcfaf6;
+
+    border:1px solid #d8ddd2;
+    border-radius:34px;
+
+    transition:.28s ease;
+
 }
 
-.training-icon{
+.abcred-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 22px 50px rgba(28,45,33,.08);
+
+}
+
+/*==================================================
+ICON
+==================================================*/
+
+.abcred-icon{
+
     width:72px;
     height:72px;
-    margin-bottom:1.75rem;
-    border-radius:50%;
-    background:#f4f5ef;
+
+    margin-bottom:2rem;
+
     display:flex;
     align-items:center;
     justify-content:center;
+
+    border-radius:50%;
+
+    background:#f0ece5;
+
 }
 
-.training-icon svg{
-    width:34px;
-    height:34px;
-    color:#48664b;
-}
+.abcred-icon svg{
 
-.training-card h3{
-    margin:0 0 1rem;
-    font-size:1.75rem;
-    line-height:1.25;
-    color:var(--forest);
-}
+    width:32px;
+    height:32px;
 
-.training-card p{
-    margin:0;
-    font-size:1.08rem;
-    line-height:1.8;
-    color:#66736c;
+    stroke:#46664b;
+
 }
 
 /*==================================================
-  BCACC CARD
+TEXT
 ==================================================*/
 
-.bcacc-card{
+.abcred-card h3{
+
+    margin:0 0 1.1rem;
+
+    font-size:1.9rem;
+    line-height:1.2;
+    font-weight:650;
+
+    color:#173822;
+
+}
+
+.abcred-card p{
+
+    margin:0;
+
+    font-size:1.15rem;
+    line-height:1.8;
+
+    color:#647268;
+
+}
+
+/*==================================================
+BCACC
+==================================================*/
+
+.abcred-bcacc{
+
     display:flex;
     align-items:center;
-    gap:2.5rem;
-    padding:2.5rem;
-    background:#fff;
-    border:1px solid #d8dfd2;
-    border-radius:30px;
-    box-shadow:0 18px 45px rgba(27,56,36,.06);
+    gap:3rem;
+
+    padding:2.75rem 3rem;
+
+    background:#ffffff;
+
+    border:1px solid #d8ddd2;
+    border-radius:34px;
+
 }
 
-.bcacc-card img{
-    width:150px;
+.abcred-bcacc img{
+
+    width:145px;
     height:auto;
+
     flex-shrink:0;
+
 }
 
-.bcacc-content{
-    flex:1;
+.abcred-bcacc-content h3{
+
+    margin:0 0 .9rem;
+
+    font-size:1.7rem;
+    line-height:1.2;
+
+    color:#173822;
+
 }
 
-.bcacc-content h3{
-    margin:0 0 1rem;
-    font-size:2rem;
-    color:var(--forest);
-    line-height:1.25;
-}
+.abcred-bcacc-content p{
 
-.bcacc-content p{
     margin:0;
+
     font-size:1.08rem;
-    line-height:1.85;
-    color:#66736c;
+    line-height:1.8;
+
+    color:#647268;
+
 }
 
 /*==================================================
-  MOBILE
+TABLET
 ==================================================*/
 
-@media (max-width:1000px){
+@media (max-width:1100px){
 
-    .training-grid{
+    .abcred-grid{
+
         grid-template-columns:1fr;
-    }
 
-    .bcacc-card{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    .bcacc-card img{
-        width:120px;
     }
 
 }
+
+/*==================================================
+MOBILE
+==================================================*/
 
 @media (max-width:768px){
 
-    .training-section{
+    .abcred-section{
+
         padding:5rem 0;
+
     }
 
-    .training-header h2{
-        font-size:2.2rem;
+    .abcred-header{
+
+        margin-bottom:3rem;
+
     }
 
-    .training-header p{
-        font-size:1rem;
+    .abcred-header h2{
+
+        font-size:2.45rem;
+
     }
 
-    .training-card{
+    .abcred-card{
+
         padding:2rem;
+
+        border-radius:26px;
+
     }
 
-    .training-icon{
-        width:64px;
-        height:64px;
+    .abcred-card h3{
+
+        font-size:1.55rem;
+
     }
 
-    .training-icon svg{
-        width:30px;
-        height:30px;
+    .abcred-card p{
+
+        font-size:1rem;
+
     }
 
-    .training-card h3{
+    .abcred-bcacc{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:2.5rem 2rem;
+
+        gap:2rem;
+
+        border-radius:26px;
+
+    }
+
+    .abcred-bcacc img{
+
+        width:120px;
+
+    }
+
+    .abcred-bcacc-content h3{
+
         font-size:1.45rem;
+
     }
 
-    .training-card p{
-        font-size:1rem;
-    }
-
-    .bcacc-card{
-        padding:2rem;
-    }
-
-    .bcacc-content h3{
-        font-size:1.6rem;
-    }
-
-    .bcacc-content p{
-        font-size:1rem;
-    }
-
-}
-.training-card{
-    display:block !important;
-}
-
-.training-card h3{
-    display:block !important;
-}
-
-.training-card p{
-    display:block !important;
-}
-
-.training-icon{
-    display:flex !important;
 }
