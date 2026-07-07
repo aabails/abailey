@@ -5558,7 +5558,7 @@ RESPONSIVE
 
 .approach-content{
 
-    max-width:980px;
+    max-width:1040px;
 
     margin:0 auto;
 
@@ -5602,29 +5602,49 @@ RESPONSIVE
   QUOTE
 ==================================================*/
 
+/*==================================================
+  SIGNATURE QUOTE
+==================================================*/
+
 .approach-quote{
 
-    margin:3rem 0;
+    position:relative;
 
-    padding:2rem 2.5rem;
+    margin:3.5rem 0;
 
-    background:#ffffff;
+    padding:2.4rem 2.8rem;
 
-    border-radius:26px;
+    background:#fcfbf8;
 
-    border-left:6px solid #48664b;
+    border-left:8px solid #48664b;
 
-    box-shadow:0 12px 35px rgba(34,55,40,.05);
+    border-radius:28px;
+
+    box-shadow:0 14px 38px rgba(30,48,36,.05);
 
     font-family:var(--font-heading);
 
-    font-size:clamp(1.55rem,2vw,2rem);
+    font-size:clamp(1.8rem,2.4vw,2.15rem);
 
     font-style:italic;
 
-    line-height:1.45;
+    font-weight:500;
+
+    line-height:1.35;
 
     color:var(--forest);
+
+}
+.approach-quote + p{
+
+    margin-top:3rem;
+
+}
+
+.approach-quote::before,
+.approach-quote::after{
+
+    content:none;
 
 }
 
