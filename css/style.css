@@ -8737,3 +8737,24 @@ RESPONSIVE
     }
 
 }
+/* MOBILE CTA OVERRIDE */
+@media (max-width: 768px) {
+
+    a.btn.btn-light {
+        display: inline-flex !important;
+        width: fit-content !important;
+        max-width: calc(100% - 2rem) !important;
+        margin: 0 auto !important;
+        padding: 1rem 1.5rem !important;
+        box-sizing: border-box !important;
+    }
+
+    a.btn.btn-light .btn-content {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: .75rem !important;
+        width: auto !important;
+    }
+
+}
