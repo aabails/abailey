@@ -8826,8 +8826,8 @@ RESPONSIVE
 
 .final-cta-buttons .btn{
 
-    width:60%;
-    max-width:200px;//360
+    width:60% !important;
+    max-width:200px !important;//360
 
     margin:0 auto;
 
