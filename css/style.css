@@ -8758,3 +8758,17 @@ RESPONSIVE
     }
 
 }
+@media (max-width: 768px) {
+
+    .btn.btn-light {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .btn.btn-light .btn-content span {
+        white-space: normal;
+        text-align: center;
+        line-height: 1.35;
+    }
+
+}
