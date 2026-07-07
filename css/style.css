@@ -4501,7 +4501,7 @@ html{
 
 .tc-title{
 
-    font-size:clamp(2.5rem, 4.8vw, 3.0rem) !important;
+    font-size:clamp(2.4rem, 3vw, 2.9rem) !important;
 
     line-height:.96 !important;
 
