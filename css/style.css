@@ -6894,3 +6894,232 @@ RESPONSIVE
     margin-top:1.5rem;
 
 }
+/*==================================================
+  COUNSELLING INTRO
+==================================================*/
+
+.counselling-intro{
+
+    padding:5rem 0 5.5rem;
+
+}
+
+.counselling-header{
+
+    max-width:860px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+}
+
+.counselling-header h2{
+
+    margin:0 0 1.25rem;
+
+    font-size:clamp(2.4rem,3vw,2.9rem);
+
+    line-height:1.08;
+
+    font-weight:600;
+
+    color:var(--forest);
+
+}
+
+.counselling-header h2 span{
+
+    font-family:var(--font-heading);
+
+    font-style:italic;
+
+    font-weight:500;
+
+    color:#6d876f;
+
+}
+
+.counselling-header p{
+
+    max-width:720px;
+
+    margin:0 auto;
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    color:#66736c;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:1rem;
+
+    margin-top:2.5rem;
+
+    flex-wrap:wrap;
+
+}
+
+/*==================================================
+  HIGHLIGHT CARDS
+==================================================*/
+
+.counselling-highlights{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:1.5rem;
+
+    margin-top:4rem;
+
+}
+
+.highlight-card{
+
+    background:#fff;
+
+    border:1px solid rgba(36,66,49,.12);
+
+    border-radius:26px;
+
+    padding:2.4rem;
+
+    box-shadow:0 18px 45px rgba(24,40,31,.05);
+
+    transition:.25s ease;
+
+}
+
+.highlight-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 24px 60px rgba(24,40,31,.08);
+
+}
+
+.highlight-icon{
+
+    width:58px;
+
+    height:58px;
+
+    margin-bottom:1.5rem;
+
+    border-radius:50%;
+
+    background:#eef4ee;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:var(--forest);
+
+}
+
+.highlight-icon svg{
+
+    width:24px;
+
+    height:24px;
+
+}
+
+.highlight-card h3{
+
+    margin:0 0 .9rem;
+
+    font-size:1.45rem;
+
+    font-weight:600;
+
+    line-height:1.3;
+
+    color:var(--forest);
+
+}
+
+.highlight-card p{
+
+    margin:0;
+
+    font-size:1.08rem;
+
+    line-height:1.8;
+
+    color:#66736c;
+
+}
+
+/*==================================================
+  MOBILE
+==================================================*/
+
+@media (max-width:900px){
+
+    .counselling-highlights{
+
+        grid-template-columns:1fr;
+
+        gap:1.25rem;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .counselling-intro{
+
+        padding:4rem 0;
+
+    }
+
+    .counselling-header h2{
+
+        font-size:2.25rem;
+
+    }
+
+    .counselling-header p{
+
+        font-size:1rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .hero-buttons .btn{
+
+        width:100%;
+
+    }
+
+    .highlight-card{
+
+        padding:2rem;
+
+    }
+
+}
