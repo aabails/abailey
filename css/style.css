@@ -5000,7 +5000,7 @@ html{
     margin:auto;
 }
 
-.rates-hero h1{
+.rates-hero h2{
     margin:.75rem 0 1rem;
     font-family:var(--font-heading);
     font-size:clamp(2.4rem,3vw,2.9rem);
@@ -5009,7 +5009,7 @@ html{
     color:var(--forest);
 }
 
-.rates-hero h1 span{
+.rates-hero h2 span{
     font-style:italic;
     color:#5f7c66;   /* slightly lighter than the main heading */
     font-weight:600;
