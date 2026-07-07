@@ -5718,3 +5718,312 @@ RESPONSIVE
     }
 
 }
+/*==================================================
+  TRAINING & CREDENTIALS
+==================================================*/
+
+.credentials-section{
+
+    padding:6rem 0;
+
+}
+
+.credentials-header{
+
+    max-width:760px;
+
+    margin-bottom:3.5rem;
+
+}
+
+.credentials-header h2{
+
+    margin:1rem 0 1.5rem;
+
+    font-size:clamp(2.4rem,3vw,2.9rem);
+
+    line-height:1.15;
+
+    color:var(--forest);
+
+}
+
+.credentials-header p{
+
+    font-size:1.15rem;
+
+    line-height:1.85;
+
+    color:#66736c;
+
+}
+
+/*==================================================
+  GRID
+==================================================*/
+
+.credentials-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:2rem;
+
+    margin-bottom:2.5rem;
+
+}
+
+/*==================================================
+  CARD
+==================================================*/
+
+.credential-card{
+
+    background:#fff;
+
+    border:1px solid #d8dfd2;
+
+    border-radius:28px;
+
+    padding:2.5rem;
+
+    box-shadow:0 12px 36px rgba(30,48,36,.05);
+
+    transition:.25s ease;
+
+}
+
+.credential-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 22px 50px rgba(30,48,36,.08);
+
+}
+
+.credential-icon{
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:50%;
+
+    background:#f5f6f1;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:1.8rem;
+
+}
+
+.credential-icon svg{
+
+    width:34px;
+
+    height:34px;
+
+    color:#48664b;
+
+}
+
+.credential-card h3{
+
+    margin:0 0 1rem;
+
+    font-size:1.75rem;
+
+    line-height:1.25;
+
+    color:var(--forest);
+
+}
+
+.credential-card p{
+
+    margin:0;
+
+    font-size:1.08rem;
+
+    line-height:1.8;
+
+    color:#66736c;
+
+}
+
+/*==================================================
+  BCACC CARD
+==================================================*/
+
+.bcacc-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:2.5rem;
+
+    padding:2.5rem;
+
+    background:#fff;
+
+    border:1px solid #d8dfd2;
+
+    border-radius:28px;
+
+    box-shadow:0 12px 36px rgba(30,48,36,.05);
+
+}
+
+.bcacc-card img{
+
+    width:120px;
+
+    height:auto;
+
+    flex-shrink:0;
+
+}
+
+.bcacc-content{
+
+    flex:1;
+
+}
+
+.bcacc-content h3{
+
+    margin:0 0 .8rem;
+
+    font-size:1.55rem;
+
+    color:var(--forest);
+
+}
+
+.bcacc-content p{
+
+    margin:0;
+
+    font-size:1.08rem;
+
+    line-height:1.8;
+
+    color:#66736c;
+
+}
+
+/*==================================================
+  MOBILE
+==================================================*/
+
+@media (max-width:1024px){
+
+    .credentials-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .credentials-section{
+
+        padding:4.5rem 0;
+
+    }
+
+    .credentials-header{
+
+        margin-bottom:2.5rem;
+
+    }
+
+    .credentials-header h2{
+
+        font-size:2.2rem;
+
+    }
+
+    .credentials-header p{
+
+        font-size:1rem;
+
+    }
+
+    .credential-card{
+
+        padding:2rem;
+
+    }
+
+    .credential-icon{
+
+        width:64px;
+
+        height:64px;
+
+        margin-bottom:1.4rem;
+
+    }
+
+    .credential-icon svg{
+
+        width:30px;
+
+        height:30px;
+
+    }
+
+    .credential-card h3{
+
+        font-size:1.45rem;
+
+    }
+
+    .credential-card p{
+
+        font-size:1rem;
+
+    }
+
+    .bcacc-card{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        text-align:center;
+
+        gap:1.5rem;
+
+        padding:2rem;
+
+    }
+
+    .bcacc-card img{
+
+        width:95px;
+
+    }
+
+    .bcacc-content h3{
+
+        font-size:1.35rem;
+
+    }
+
+    .bcacc-content p{
+
+        font-size:1rem;
+
+    }
+
+}
