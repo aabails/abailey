@@ -7499,3 +7499,219 @@ RESPONSIVE
     }
 
 }
+/*==================================================
+  THEORETICAL ORIENTATION
+==================================================*/
+
+.approaches-section{
+
+    padding:6rem 0;
+
+}
+
+.approaches-header{
+
+    max-width:860px;
+
+    margin-bottom:3.5rem;
+
+}
+
+.approaches-header h2{
+
+    margin:0 0 1.4rem;
+
+    font-size:clamp(2.4rem,3vw,2.9rem);
+
+    line-height:1.12;
+
+    color:var(--forest);
+
+}
+
+.approaches-header p{
+
+    max-width:760px;
+
+    margin:0;
+
+    font-size:1.15rem;
+
+    line-height:1.85;
+
+    color:#66736c;
+
+}
+
+/*==================================================
+  GRID
+==================================================*/
+
+.approaches-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,minmax(0,1fr));
+
+    gap:1.5rem;
+
+}
+
+/*==================================================
+  CARD
+==================================================*/
+
+.approach-card{
+
+    background:#fff;
+
+    border:1px solid rgba(36,66,49,.12);
+
+    border-radius:26px;
+
+    padding:2rem;
+
+    box-shadow:0 16px 42px rgba(24,40,31,.05);
+
+    transition:.25s ease;
+
+}
+
+.approach-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 22px 55px rgba(24,40,31,.08);
+
+}
+
+.approach-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.85rem;
+
+    margin-bottom:.9rem;
+
+}
+
+.approach-title i{
+
+    font-size:1.45rem;
+
+    color:#6d876f;
+
+    flex-shrink:0;
+
+}
+
+.approach-title h3{
+
+    margin:0;
+
+    font-size:1.5rem;
+
+    font-weight:600;
+
+    line-height:1.25;
+
+    color:var(--forest);
+
+}
+
+.approach-card p{
+
+    margin:0;
+
+    padding-left:2.3rem;
+
+    font-size:1.08rem;
+
+    line-height:1.75;
+
+    color:#66736c;
+
+}
+
+/*==================================================
+  MOBILE
+==================================================*/
+
+@media (max-width:900px){
+
+    .approaches-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .approaches-section{
+
+        padding:4.5rem 0;
+
+    }
+
+    .approaches-header{
+
+        margin-bottom:2.5rem;
+
+    }
+
+    .approaches-header h2{
+
+        font-size:2.2rem;
+
+    }
+
+    .approaches-header p{
+
+        font-size:1rem;
+
+    }
+
+    .approach-card{
+
+        padding:1.6rem;
+
+    }
+
+    .approach-title h3{
+
+        font-size:1.3rem;
+
+    }
+
+    .approach-card p{
+
+        padding-left:2rem;
+
+        font-size:1rem;
+
+    }
+
+}
+.approach-title{
+
+    display:grid;
+
+    grid-template-columns:28px 1fr;
+
+    align-items:center;
+
+    column-gap:.85rem;
+
+}
+
+.approach-card p{
+
+    margin:.4rem 0 0 2.85rem;
+
+    padding:0;
+
+}
