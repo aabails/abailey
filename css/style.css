@@ -7123,3 +7123,61 @@ RESPONSIVE
     }
 
 }
+.counselling-buttons{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+    flex-wrap:wrap;
+
+}
+
+.counselling-buttons .btn{
+
+    min-height:68px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:0 2rem;
+
+}
+
+.counselling-buttons .btn-primary{
+
+    min-width:360px;
+
+}
+
+.counselling-buttons .btn-secondary{
+
+    min-width:240px;
+
+}
+
+.counselling-buttons .btn-content{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:.7rem;
+
+    margin:0 auto;
+
+}
+
+.counselling-buttons .btn-content svg{
+
+    width:20px;
+    height:20px;
+
+    display:block;
+
+    flex-shrink:0;
+
+}
