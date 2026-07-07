@@ -5329,38 +5329,67 @@ RESPONSIVE
 
 .meet-photo{
 
+    position:relative;
+
     display:flex;
-
     flex-direction:column;
-
     align-items:center;
 
 }
+.meet-photo::before{
 
+    content:"";
+
+    position:absolute;
+
+    width:540px;
+    height:540px;
+
+    top:50%;
+    right:-80px;
+
+    transform:translateY(-50%);
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        circle,
+        rgba(126,167,125,.14) 0%,
+        rgba(126,167,125,.08) 38%,
+        transparent 72%
+    );
+
+    z-index:0;
+    pointer-events:none;
+
+}
 .meet-photo img{
 
-    width:100%;
+    position:relative;
+    z-index:2;
 
+    width:100%;
     max-width:620px;
 
-    aspect-ratio:3/4;
+    aspect-ratio:4/5;
 
     object-fit:cover;
 
     border-radius:34px;
 
-    box-shadow:0 30px 70px rgba(28,45,32,.10);
+    box-shadow:
+       0 10px 30px rgba(20,35,24,.06);
 
 }
 
 .meet-location{
 
+    position:relative;
+    z-index:2;
+
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     gap:.65rem;
 
     margin-top:1.4rem;
@@ -5450,6 +5479,21 @@ RESPONSIVE
         max-width:520px;
 
     }
+   @media (max-width:900px){
+
+    .meet-photo::before{
+
+        width:380px;
+        height:380px;
+
+        right:50%;
+        top:45%;
+
+        transform:translate(50%,-50%);
+
+    }
+
+}
 
 }
 
