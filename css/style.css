@@ -5122,7 +5122,7 @@ html{
 
     font-family:var(--font-heading);
 
-    font-size:clamp(2.4rem,3vw,2.9rem);
+    font-size:clamp(2.0rem,3vw,2.3rem);
 
     font-weight:700;
 
