@@ -5209,4 +5209,22 @@ RESPONSIVE
     min-width:unset;
     padding:0 1.5rem;
   }
+     .teen-highlight .btn-light{
+
+        width:100%;
+        min-width:0;
+        max-width:100%;
+
+        box-sizing:border-box;
+
+    }
+
+    .teen-highlight .btn-content{
+
+        white-space:normal;
+        text-align:center;
+    }
 }
+
+
+  
