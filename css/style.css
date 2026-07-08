@@ -6253,3 +6253,29 @@ MOBILE
     }
 
 }
+/* HOMEPAGE TRUST BAR MOBILE FIX */
+@media (max-width: 768px) {
+
+    .trust-bar {
+        overflow: hidden;
+    }
+
+    .trust-bar-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .trust-item {
+        width: 100% !important;
+        min-width: 0 !important;
+        justify-content: flex-start !important;
+        border-right: none !important;
+        box-sizing: border-box;
+    }
+
+    .trust-text {
+        min-width: 0;
+    }
+}
