@@ -6657,7 +6657,7 @@ TEXT
 
     color:#173822;
 
-    font-size:clamp(2.4rem,4vw,3.4rem);
+    font-size:clamp(2.4rem,3vw,2.9rem);
 
     line-height:1.12;
 
@@ -6674,7 +6674,7 @@ TEXT
 
     color:#66736c;
 
-    font-size:1.18rem;
+    font-size:1.08rem;
 
     line-height:1.75;
 
