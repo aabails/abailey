@@ -22,11 +22,9 @@
 /* =====================================================
    HERO
 ===================================================== */
-
 .hero-intro {
     padding: 70px 20px 55px;
 }
-
 .hero-container {
     max-width: 1240px;
     margin: auto;
@@ -35,7 +33,6 @@
     gap: 70px;
     align-items: center;
 }
-
 .hero-badge {
     display: inline-flex;
     align-items: center;
@@ -48,146 +45,144 @@
     color: #365240;
     margin-bottom: 35px;
 }
-
 .dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background: #5f8b60;
 }
-
 .hero-copy h1 {
     margin-bottom: 18px;
     line-height: 1.05;
 }
-
 .hero-copy h1 span {
     font-style: italic;
 }
-
 .hero-description {
     margin: 18px 0 32px;
     line-height: 1.65;
 }
-
 .hero-image {
     position: relative;
 }
-
 .hero-image img {
     width: 85%;
     display: block;
     border-radius: 38px;
     box-shadow: 0 25px 60px rgba(0,0,0,.12);
 }
-
 .btn-primary:hover {
     transform: translateY(-2px);
 }
-
 .credential-card strong {
     display: block;
     color: #173b2a;
     margin-bottom: 8px;
 }
-
 .credential-card p {
     margin: 0;
     color: #6c756d;
     line-height: 1.6;
 }
-
-/* =====================================================
-   SUPPORT TAGS
-===================================================== */
-
-.support-tags {
-    margin-top: 0;
-    gap: 12px;
+.support-list{
+    margin-top:1.5rem;
 }
-
-.support-tags span {
-    padding: .7rem 1.15rem;
+.support-list-title{
+    margin:0 0 1rem;
+    font-size:.85rem;
+    font-weight:700;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:#6b756d;
 }
+.support-list ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:.9rem 2.5rem;
+}
+.support-list li{
+    display:flex;
+    align-items:center;
+    gap:.75rem;
 
+    color:#304538;
+    font-size:1rem;
+}
+.support-list li::before{
+    content:"";
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:#6E8E6A;
+    flex-shrink:0;
+}
+@media (max-width:768px){
+    .support-list ul{
+        grid-template-columns:1fr;
+        gap:.75rem;
+    }
+}
 /* =====================================================
    HERO RESPONSIVE
 ===================================================== */
-
 @media (max-width:1000px) {
-
     .hero-container {
         grid-template-columns: 1fr;
     }
-
     .hero-copy {
         order: 2;
     }
-
     .hero-image {
         order: 1;
         max-width: 450px;
         margin: auto;
     }
-
     .hero-copy h1 {
         font-size: 3rem;
     }
-
     .hero-description {
         font-size: 1.15rem;
     }
-
     .credential-card {
         left: 20px;
         bottom: 20px;
         width: 280px;
     }
-
 }
-
 @media (max-width:768px) {
-
     .hero-intro {
         padding: 50px 20px 40px;
     }
-
     .hero-copy {
         max-width: 100%;
     }
-
     .hero-copy h1 {
         margin-bottom: 16px;
     }
-
     .hero-description {
         max-width: 100%;
         margin: 16px 0 24px;
         font-size: 1.05rem;
         line-height: 1.6;
     }
-
     .support-tags {
         gap: 10px;
     }
-
 }
-
 @media (max-width:600px) {
-
     .hero-copy h1 {
         font-size: 2.4rem;
     }
-
     .hero-buttons {
         flex-direction: column;
     }
-
     .btn-primary,
     .btn-secondary {
         text-align: center;
     }
-
     .credential-card {
         position: relative;
         left: auto;
@@ -195,38 +190,28 @@
         margin-top: -40px;
         margin-left: 20px;
     }
-
 }
-
 /* =====================================================
    CONCERNS RESPONSIVE
 ===================================================== */
-
 @media (max-width:980px) {
-
     .concerns-grid {
         grid-template-columns: 1fr;
         gap: 4rem;
     }
-
     .concerns-copy h2 {
         font-size: 2.3rem;
     }
-
     .section-intro {
         font-size: 1.15rem;
     }
-
     .concerns-list span:last-child {
         font-size: 1.1rem;
     }
-
     .concerns-list li {
         padding: 1.5rem;
     }
-
 }
-
 /* =====================================================
    TRUST BAR
 ===================================================== */
@@ -366,7 +351,6 @@
   box-shadow:
         0 4px 16px rgba(0,0,0,.04);
 }
-
 .concerns-list li:hover {
   transform:translateY(-3px);
   border-color:#7B947D;
