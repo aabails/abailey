@@ -499,7 +499,7 @@
   }
 }
 .support-section {
-  padding:120px 0;
+  padding:90px 0;
 }
 .support-grid {
   display:grid;
@@ -822,8 +822,8 @@ transparent 70%);
 .support-section,
 .consult-section,
 .faq-section {
-  padding-top:95px;
-  padding-bottom:95px;
+  padding-top:80px;
+  padding-bottom:80px;
 }.problem-content h2,
 .process-content h2,
 .support-content h2,
