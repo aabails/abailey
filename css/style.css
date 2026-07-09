@@ -1021,18 +1021,9 @@ html {
   font-weight:600;
   transition:.25s ease;
 }
-
 .btn-secondary:hover {
   background:#f8f8f5;
-}@media (max-width:768px) {
-  .btn-primary,
-    .btn-secondary {
-    width:100%;
-    justify-content:center;
-  }
 }
-
-
 
 .tc-hero {
   position:relative;
@@ -1053,27 +1044,19 @@ html {
             #ffffff 100%
         );
 }
-
 .tc-grid {
   display:grid;
   grid-template-columns:1.05fr .82fr;
   gap:80px;
   align-items:center;
 }
-
-
-
 .tc-content {
   max-width:720px;
 }
-
-
-
 .tc-title {
   margin:0;
   color:#173726;
 }
-
 .tc-title-accent {
   display:block;
 }
@@ -1510,7 +1493,7 @@ html {
 
 
 
-..teen-faq-icon {
+.teen-faq-icon {
     width:42px;
     height:42px;
     display:flex;
@@ -1563,10 +1546,6 @@ html {
   }
   .teen-faq-answer p {
     font-size:1rem;
-  }
-  .teen-faq-icon {
-    width:38px;
-    height:38px;
   }
 }
 
@@ -2205,25 +2184,6 @@ html {
 
 .teen-faq-icon svg,
 .faq-icon svg {
-  width:18px;
-  height:18px;
-  min-width:18px;
-  min-height:18px;
-  display:block;
-}
-
-
-
-.teen-faq-icon {
-  width:22px;
-  height:22px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-shrink:0;
-}
-
-.teen-faq-icon svg {
   width:18px;
   height:18px;
   min-width:18px;
