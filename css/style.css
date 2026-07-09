@@ -1530,8 +1530,11 @@ html {
 }
 
 .teen-faq-item[open] .teen-faq-icon {
-    background:#173726;
-    color:#fff;
+  .teen-faq-item[open] .teen-faq-icon {
+    background: #173726;
+    color: #fff;
+    border-radius: 50%;
+}
 }
 
 .teen-faq-item[open] .teen-faq-icon svg {
