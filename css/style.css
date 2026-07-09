@@ -1529,13 +1529,12 @@ html {
     transition:transform .25s ease;
 }
 
-.teen-faq-item[open] .teen-faq-icon {
   .teen-faq-item[open] .teen-faq-icon {
     background: #173726;
     color: #fff;
     border-radius: 50%;
 }
-}
+
 
 .teen-faq-item[open] .teen-faq-icon svg {
     transform:rotate(45deg);
