@@ -1510,20 +1510,32 @@ html {
 
 
 
-.teen-faq-icon {
-  border-radius:50%;
-  background:#edf5ee;
-  color:#2f5d43;
-  transition:.25s ease;
+..teen-faq-icon {
+    width:42px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+    border-radius:50%;
+    background:#edf5ee;
+    color:#2f5d43;
+    transition:all .25s ease;
 }
 
-.teen-faq-item[open] .faq-icon {
-  background:#173726;
-  color:#fff;
+.teen-faq-icon svg {
+    width:18px;
+    height:18px;
+    transition:transform .25s ease;
 }
 
-.teen-faq-item[open] .faq-icon i {
-  transform:rotate(45deg);
+.teen-faq-item[open] .teen-faq-icon {
+    background:#173726;
+    color:#fff;
+}
+
+.teen-faq-item[open] .teen-faq-icon svg {
+    transform:rotate(45deg);
 }
 
 
