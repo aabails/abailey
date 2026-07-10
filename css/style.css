@@ -3411,11 +3411,6 @@ html {
 .final-cta {
   padding:6rem 0;
 }
-.final-cta-card {
-  text-align:center;
-  box-shadow:0 24px 70px rgba(35,55,40,.06);
-    padding: 2.5rem 3rem;
-}
 .final-cta-card::before {
   content:"";
   position:absolute;
@@ -3490,10 +3485,7 @@ html {
   .final-cta {
     padding:4rem 0;
   }
-  .final-cta-card {
-    padding:3rem 1.5rem;
-    border-radius:28px;
-  }
+
   .final-cta h2 {
     font-size:2rem;
     color:#173822;
@@ -3619,17 +3611,6 @@ html {
   padding-inline:1rem;
   box-sizing:border-box;
 }
-.final-cta-card {
-  position:relative;
-  overflow:hidden;
-  width:100%;
-  max-width:1200px;
-  margin:0 auto;
-  padding:3rem 1rem;
-  box-sizing:border-box;
-  border-radius:36px;
-  background:#fff;
-  border:1px solid #d8dfd2;
 }@media (max-width:768px) {
   .final-cta-buttons {
     display:flex;
@@ -4170,7 +4151,7 @@ html {
     overflow:hidden;
     max-width:1200px;
     margin:0 auto;
-    padding:5.5rem 3rem;
+    padding:3.5rem 2rem;
     text-align:center;
     background:#fcfbf8;
     border:1px solid #d8ddd2;
