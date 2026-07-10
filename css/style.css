@@ -85,7 +85,8 @@
     line-height: 1.6;
 }
 .support-list{
-    margin-top:0rem;
+   align-self: start;
+    padding-top: 4rem;
 }
 .support-list-title{
     margin:0 0 1rem;
@@ -507,6 +508,7 @@
   gap:40px;
   align-items:start;
 }
+
 .support-content h2 {
   margin:18px 0 28px;
 }
