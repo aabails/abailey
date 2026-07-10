@@ -74,12 +74,12 @@
 .btn-primary:hover {
     transform: translateY(-2px);
 }
-.credential-card strong {
+.-card strong {
     display: block;
     color: #173b2a;
     margin-bottom: 4px;
 }
-.credential-card p {
+.-card p {
     margin: 0;
     color: #6c756d;
     line-height: 1.1;
@@ -179,7 +179,7 @@
     .btn-secondary {
         text-align: center;
     }
-    .credential-card {
+    .-card {
         position: relative;
         left: auto;
         bottom: auto;
@@ -832,7 +832,7 @@ transparent 70%);
   line-height:1.12;
   letter-spacing:-0.03em;
 }
-.credential-card {
+.-card {
   position:absolute;
   left:-40px;
   bottom:-40px;
@@ -3822,7 +3822,7 @@ html {
 .credential-icon{
     width:72px;
     height:72px;
-    margin:0 auto 1.5rem;
+    margin:0 auto 1rem;
     border-radius:50%;
     background:#edf5ec;
     display:flex;
