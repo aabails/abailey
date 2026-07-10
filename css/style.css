@@ -4710,7 +4710,9 @@ Mobile
 }.thanks-check{
     overflow:hidden;
 }
-
+.thanks-section {
+    background: hotpink !important;
+}
 .thanks-icon{
     overflow:hidden;
 }
