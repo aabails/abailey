@@ -839,9 +839,9 @@ transparent 70%);
   display:flex;
   align-items:center;
   gap:16px;
-  width:390px;
+  width:370px;
   background:#fff;
-  padding:18px 22px;
+  padding:15px 19px;//18 22
   border-radius:28px;
   border:1px solid rgba(27,58,40,.08);
   box-shadow:
@@ -3842,7 +3842,7 @@ html {
 .credential-card p{
     margin:0;
     font-size:1.05rem;
-    line-height:1.8;
+    line-height:1.2;
     color:#66736c;
 }@media (max-width:768px) {
     .approach-section,
