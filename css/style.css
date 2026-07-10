@@ -838,7 +838,7 @@ transparent 70%);
   bottom:-40px;
   display:flex;
   align-items:center;
-  gap:16px;
+  gap:12px;
   width:340px;
   background:#fff;
   padding:10px 14px;
@@ -3809,7 +3809,7 @@ html {
 .credential-card{
     background:#fff;
     border-radius:28px;
-    padding:2.5rem;
+    padding:2.1rem;
     text-align:center;
     border:1px solid rgba(40,60,45,.08);
     box-shadow:0 14px 40px rgba(28,44,33,.05);
@@ -3841,7 +3841,7 @@ html {
 }
 .credential-card p{
     margin:0;
-    font-size:.8rem;
+    font-size:1.0rem;
     line-height:1.2;
     color:#66736c;
 }@media (max-width:768px) {
