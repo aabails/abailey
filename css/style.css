@@ -839,10 +839,10 @@ transparent 70%);
   display:flex;
   align-items:center;
   gap:16px;
-  width:370px;
+  width:320px;
   background:#fff;
-  padding:15px 19px;//18 22
-  border-radius:22px;//28
+  padding:15px 19px;
+  border-radius:28px;
   border:1px solid rgba(27,58,40,.08);
   box-shadow:
         0 14px 36px rgba(18,37,24,.10);
