@@ -4454,3 +4454,102 @@ html {
         font-size: 1.08rem;
     }
 }
+/* =====================================================
+   HOW I WORK CARD
+===================================================== */
+
+.how-i-work-card {
+    margin-top: 4rem;
+    padding: 3rem;
+    background: #fff;
+    border: 1px solid rgba(36,66,49,.12);
+    border-radius: 28px;
+    box-shadow: 0 18px 50px rgba(24,40,31,.05);
+}
+
+.how-i-work-label {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: #6d876f;
+}
+
+.how-i-work-card h3 {
+    margin: .35rem 0 1.25rem;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--forest);
+}
+
+.how-i-work-card p {
+    margin: 0;
+    max-width: 860px;
+    font-size: 1.12rem;
+    line-height: 1.9;
+    color: #66736c;
+}
+
+.how-i-work-credential {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1.2rem 1.5rem;
+    background: #f8f6f1;
+    border-radius: 18px;
+    border: 1px solid rgba(36,66,49,.08);
+}
+
+.how-i-work-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #eef4ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--forest);
+    flex-shrink: 0;
+}
+
+.how-i-work-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.how-i-work-text strong {
+    display: block;
+    margin-bottom: .15rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--forest);
+}
+
+.how-i-work-text span {
+    display: block;
+    font-size: .98rem;
+    color: #66736c;
+}
+
+@media (max-width:768px) {
+
+    .how-i-work-card {
+        padding: 2rem;
+        margin-top: 3rem;
+    }
+
+    .how-i-work-card h3 {
+        font-size: 1.7rem;
+    }
+
+    .how-i-work-credential {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+}
