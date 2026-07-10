@@ -834,15 +834,15 @@ transparent 70%);
 }
 .credential-card {
   position:absolute;
-  left:-20px;
-  bottom:-20px;
+  left:-40px;
+  bottom:-40px;
   display:flex;
   align-items:center;
   gap:16px;
   width:370px;
   background:#fff;
   padding:15px 19px;//18 22
-  border-radius:28px;
+  border-radius:22px;//28
   border:1px solid rgba(27,58,40,.08);
   box-shadow:
         0 14px 36px rgba(18,37,24,.10);
@@ -3842,7 +3842,7 @@ html {
 .credential-card p{
     margin:0;
     font-size:1.05rem;
-    line-height:1.2;
+    line-height:1.4;
     color:#66736c;
 }@media (max-width:768px) {
     .approach-section,
@@ -3855,7 +3855,7 @@ html {
     }
     .approach-card,
     .credential-card{
-        padding:0rem;
+        padding:2rem;
     }
 }
 .abcred-section{
