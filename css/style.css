@@ -23,7 +23,7 @@
    HERO
 ===================================================== */
 .hero-intro {
-    padding: 70px 20px 55px;
+    padding: 20px 20px 55px;
 }
 .hero-container {
     max-width: 1240px;
@@ -31,7 +31,7 @@
     display: grid;
     grid-template-columns: 1.05fr .95fr;
     gap: 70px;
-    align-items: start;
+    align-items: center;
 }
 .hero-badge {
     display: inline-flex;
