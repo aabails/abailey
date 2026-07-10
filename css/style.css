@@ -3659,11 +3659,11 @@ html {
 .meet-grid{
     display:grid;
     grid-template-columns:1.05fr .9fr;
-    align-items:center;
+    align-items:start;
     gap:5rem;
 }
 .meet-copy h2{
-    margin:-20 0 2rem;
+    margin:0 0 2rem;
     max-width:620px;
     font-size:clamp(2.4rem,3vw,2.9rem);
     line-height:1.15;
