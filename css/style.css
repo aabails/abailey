@@ -3414,6 +3414,7 @@ html {
 .final-cta-card {
   text-align:center;
   box-shadow:0 24px 70px rgba(35,55,40,.06);
+    padding: 2.5rem 3rem;
 }
 .final-cta-card::before {
   content:"";
