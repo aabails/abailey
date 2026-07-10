@@ -3663,7 +3663,7 @@ html {
     gap:5rem;
 }
 .meet-copy h2{
-    margin:0 0 0rem;
+    margin:-20 0 2rem;
     max-width:620px;
     font-size:clamp(2.4rem,3vw,2.9rem);
     line-height:1.15;
