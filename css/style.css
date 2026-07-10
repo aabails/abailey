@@ -186,6 +186,16 @@
         margin-top: -40px;
         margin-left: 20px;
     }
+    .credential-card h3{
+    margin:0 0 1rem;
+    font-size:1.2rem;
+    color:var(--forest);
+}
+.credential-card p{
+    margin:0;
+    font-size:.85rem;
+    line-height:1.0;
+    color:#66736c;
 }
 /* =====================================================
    CONCERNS RESPONSIVE
