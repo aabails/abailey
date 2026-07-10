@@ -147,11 +147,6 @@
     .hero-description {
         font-size: 1.15rem;
     }
-    .credential-card {
-        left: 20px;
-        bottom: 20px;
-        width: 280px;
-    }
 }
 @media (max-width:768px) {
     .hero-intro {
@@ -3860,7 +3855,7 @@ html {
     }
     .approach-card,
     .credential-card{
-        padding:2rem;
+        padding:0rem;
     }
 }
 .abcred-section{
