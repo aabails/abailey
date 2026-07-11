@@ -5411,3 +5411,140 @@ html{
     }
 
 }
+/* ==========================================
+   READING & VIDEOS
+========================================== */
+
+.resreading{
+
+    padding:90px 0;
+
+}
+
+.resreading-container{
+
+    width:min(1120px,92%);
+    margin:auto;
+
+}
+
+.resreading-heading{
+
+    display:flex;
+    align-items:flex-start;
+    gap:24px;
+
+    margin-bottom:60px;
+
+}
+
+.resreading-icon{
+
+    width:72px;
+    height:72px;
+
+    flex-shrink:0;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#F3F1E8;
+    color:#31553E;
+
+}
+
+.resreading-icon svg{
+
+    width:30px;
+    height:30px;
+
+}
+
+.resreading-label{
+
+    display:block;
+
+    margin-bottom:18px;
+
+    font-family:"Cabin",sans-serif;
+    font-size:.95rem;
+    font-weight:600;
+
+    text-transform:uppercase;
+    letter-spacing:.24em;
+
+    color:#43634F;
+
+}
+
+.resreading-heading h2{
+
+    margin:0;
+
+    font-family:"Cabin",sans-serif;
+    font-size:clamp(2.6rem,5vw,4rem);
+    line-height:1.08;
+
+    color:#183A28;
+
+}
+
+.resreading-heading p{
+
+    margin:24px 0 0;
+
+    max-width:760px;
+
+    font-family:"Cabin",sans-serif;
+    font-size:1.45rem;
+    line-height:1.7;
+
+    color:#5E6C63;
+
+}
+
+@media (max-width:900px){
+
+    .resreading{
+
+        padding:70px 0;
+
+    }
+
+    .resreading-heading{
+
+        gap:18px;
+        margin-bottom:42px;
+
+    }
+
+    .resreading-icon{
+
+        width:58px;
+        height:58px;
+
+    }
+
+    .resreading-icon svg{
+
+        width:24px;
+        height:24px;
+
+    }
+
+    .resreading-heading h2{
+
+        font-size:2.5rem;
+
+    }
+
+    .resreading-heading p{
+
+        font-size:1.2rem;
+
+    }
+
+}
