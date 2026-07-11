@@ -5548,3 +5548,443 @@ html{
     }
 
 }
+/* ==========================================
+   APPS
+========================================== */
+
+.resapps{
+
+    padding:90px 0 120px;
+
+}
+
+.resapps-container{
+
+    width:min(1120px,92%);
+    margin:auto;
+
+}
+
+.resapps-heading{
+
+    display:flex;
+    align-items:flex-start;
+    gap:24px;
+
+    margin-bottom:60px;
+
+}
+
+.resapps-icon{
+
+    width:72px;
+    height:72px;
+
+    flex-shrink:0;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#F3F1E8;
+    color:#31553E;
+
+}
+
+.resapps-icon svg{
+
+    width:28px;
+    height:28px;
+
+}
+
+.resapps-label{
+
+    display:block;
+
+    margin-bottom:18px;
+
+    font-family:"Cabin",sans-serif;
+    font-size:.95rem;
+    font-weight:600;
+
+    text-transform:uppercase;
+    letter-spacing:.24em;
+
+    color:#43634F;
+
+}
+
+.resapps-heading h2{
+
+    margin:0;
+
+    font-family:"Cabin",sans-serif;
+    font-size:clamp(2.6rem,5vw,4rem);
+    line-height:1.08;
+
+    color:#183A28;
+
+}
+
+.resapps-heading p{
+
+    margin:24px 0 0;
+
+    max-width:760px;
+
+    font-family:"Cabin",sans-serif;
+    font-size:1.45rem;
+    line-height:1.7;
+
+    color:#5E6C63;
+
+}
+
+/* Bottom Note */
+
+.resapps-note{
+
+    margin-top:70px;
+
+    display:flex;
+    align-items:flex-start;
+    gap:28px;
+
+    padding:40px;
+
+    border-radius:34px;
+
+    background:#FCFBF6;
+
+    border:1px solid rgba(39,70,49,.14);
+
+}
+
+.resapps-note-icon{
+
+    width:64px;
+    height:64px;
+
+    flex-shrink:0;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#F3F1E8;
+
+    color:#31553E;
+
+}
+
+.resapps-note-icon svg{
+
+    width:28px;
+    height:28px;
+
+}
+
+.resapps-note p{
+
+    margin:0;
+
+    font-family:"Cabin",sans-serif;
+    font-size:1.28rem;
+    line-height:1.8;
+
+    color:#5F6C64;
+
+}
+
+@media (max-width:900px){
+
+    .resapps{
+
+        padding:70px 0 90px;
+
+    }
+
+    .resapps-heading{
+
+        gap:18px;
+        margin-bottom:42px;
+
+    }
+
+    .resapps-icon{
+
+        width:58px;
+        height:58px;
+
+    }
+
+    .resapps-icon svg{
+
+        width:24px;
+        height:24px;
+
+    }
+
+    .resapps-heading h2{
+
+        font-size:2.5rem;
+
+    }
+
+    .resapps-heading p{
+
+        font-size:1.2rem;
+
+    }
+
+    .resapps-note{
+
+        flex-direction:column;
+
+        gap:22px;
+
+        padding:30px;
+
+        border-radius:28px;
+
+    }
+
+    .resapps-note p{
+
+        font-size:1.1rem;
+
+        line-height:1.7;
+
+    }
+
+}
+/* ==========================================
+   RESOURCES CTA
+========================================== */
+
+.rescta{
+
+    padding:40px 0 120px;
+
+}
+
+.rescta-card{
+
+    width:min(1120px,92%);
+    margin:auto;
+
+    padding:80px 60px;
+
+    text-align:center;
+
+    border-radius:42px;
+
+    background:
+        radial-gradient(circle at top left,
+        rgba(246,244,231,.9),
+        rgba(252,251,246,1));
+
+    border:1px solid rgba(39,70,49,.14);
+
+}
+
+.rescta-pill{
+
+    display:inline-flex;
+    align-items:center;
+    gap:14px;
+
+    padding:14px 26px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(39,70,49,.18);
+
+    background:#FCFBF6;
+
+    font-family:"Cabin",sans-serif;
+    font-size:1.1rem;
+    font-weight:500;
+
+    color:#35553F;
+
+}
+
+.rescta-pill svg{
+
+    width:24px;
+    height:24px;
+
+}
+
+.rescta h2{
+
+    max-width:780px;
+
+    margin:44px auto 0;
+
+    font-family:"Cabin",sans-serif;
+    font-size:clamp(3rem,5vw,4.6rem);
+    font-weight:700;
+    line-height:1.1;
+
+    color:#183A28;
+
+}
+
+.rescta p{
+
+    max-width:760px;
+
+    margin:42px auto 0;
+
+    font-family:"Cabin",sans-serif;
+    font-size:1.6rem;
+    line-height:1.75;
+
+    color:#5F6C64;
+
+}
+
+.rescta-buttons{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    gap:28px;
+
+    margin-top:60px;
+
+}
+
+.rescta-primary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+
+    min-width:560px;
+
+    padding:26px 46px;
+
+    border-radius:999px;
+
+    background:#183A28;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-family:"Cabin",sans-serif;
+    font-size:1.8rem;
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.rescta-primary:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 16px 36px rgba(24,58,40,.18);
+
+}
+
+.rescta-primary svg{
+
+    width:32px;
+    height:32px;
+
+}
+
+.rescta-secondary{
+
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    min-width:420px;
+
+    padding:24px 38px;
+
+    border-radius:999px;
+
+    border:2px solid rgba(39,70,49,.18);
+
+    background:#fff;
+
+    color:#183A28;
+
+    text-decoration:none;
+
+    font-family:"Cabin",sans-serif;
+    font-size:1.65rem;
+    font-weight:500;
+
+    transition:.25s;
+
+}
+
+.rescta-secondary:hover{
+
+    background:#183A28;
+    color:#fff;
+
+}
+
+@media (max-width:900px){
+
+    .rescta{
+
+        padding:20px 0 80px;
+
+    }
+
+    .rescta-card{
+
+        padding:48px 28px;
+
+        border-radius:30px;
+
+    }
+
+    .rescta h2{
+
+        font-size:2.6rem;
+
+    }
+
+    .rescta p{
+
+        font-size:1.2rem;
+
+    }
+
+    .rescta-primary,
+    .rescta-secondary{
+
+        min-width:100%;
+        width:100%;
+
+        font-size:1.2rem;
+
+        padding:18px 24px;
+
+    }
+
+    .rescta-primary svg{
+
+        width:24px;
+        height:24px;
+
+    }
+
+}
