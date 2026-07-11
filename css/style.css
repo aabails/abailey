@@ -5988,3 +5988,242 @@ html{
     }
 
 }
+/* ==========================================
+   CRISIS SECTION
+========================================== */
+
+.rescrisis{
+
+    padding:0 0 90px;
+
+}
+
+.rescrisis-card{
+
+    width:min(1120px,92%);
+    margin:auto;
+
+    padding:52px;
+
+    background:#173526;
+
+    border-radius:36px;
+
+}
+
+.rescrisis-icon{
+
+    width:108px;
+    height:108px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    color:#fff;
+
+}
+
+.rescrisis-icon svg{
+
+    width:44px;
+    height:44px;
+
+}
+
+.rescrisis-label{
+
+    display:block;
+
+    margin:48px 0 18px;
+
+    font-family:"Cabin",sans-serif;
+    font-size:.95rem;
+    font-weight:500;
+
+    letter-spacing:.35em;
+    text-transform:uppercase;
+
+    color:rgba(255,255,255,.72);
+
+}
+
+.rescrisis h2{
+
+    margin:0;
+
+    font-family:"Cabin",sans-serif;
+    font-size:3.25rem;
+    line-height:1.1;
+
+    color:#fff;
+
+}
+
+.rescrisis p{
+
+    max-width:700px;
+
+    margin:28px 0 44px;
+
+    font-family:"Cabin",sans-serif;
+    font-size:1.45rem;
+    line-height:1.8;
+
+    color:rgba(255,255,255,.82);
+
+}
+
+.rescrisis-phone{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+
+    width:100%;
+
+    padding:24px 32px;
+
+    border-radius:999px;
+
+    background:#fff;
+
+    color:#173526;
+
+    text-decoration:none;
+
+    font-family:"Cabin",sans-serif;
+    font-size:2rem;
+    font-weight:700;
+
+}
+
+.rescrisis-phone svg{
+
+    width:28px;
+    height:28px;
+
+}
+
+.rescrisis-link{
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    margin-top:26px;
+
+    color:rgba(255,255,255,.92);
+
+    text-decoration:none;
+
+    font-family:"Cabin",sans-serif;
+    font-size:1.3rem;
+
+}
+
+.rescrisis-link svg{
+
+    width:18px;
+    height:18px;
+
+}
+
+.rescrisis-secondary{
+
+    margin-top:30px;
+    padding-top:28px;
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+    font-family:"Cabin",sans-serif;
+    font-size:1.05rem;
+    line-height:1.7;
+
+    color:rgba(255,255,255,.72);
+
+}
+
+.rescrisis-secondary a{
+
+    color:#fff;
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+@media (max-width:900px){
+
+    .rescrisis{
+
+        padding:0 0 70px;
+
+    }
+
+    .rescrisis-card{
+
+        padding:36px 26px;
+
+        border-radius:30px;
+
+    }
+
+    .rescrisis-icon{
+
+        width:78px;
+        height:78px;
+
+    }
+
+    .rescrisis-icon svg{
+
+        width:34px;
+        height:34px;
+
+    }
+
+    .rescrisis-label{
+
+        margin:34px 0 14px;
+
+        letter-spacing:.28em;
+
+        font-size:.82rem;
+
+    }
+
+    .rescrisis h2{
+
+        font-size:2.3rem;
+
+    }
+
+    .rescrisis p{
+
+        font-size:1.15rem;
+
+        line-height:1.75;
+
+    }
+
+    .rescrisis-phone{
+
+        padding:20px;
+
+        font-size:1.15rem;
+
+    }
+
+    .rescrisis-link{
+
+        font-size:1.1rem;
+
+    }
+
+}
