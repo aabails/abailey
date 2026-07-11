@@ -140,7 +140,13 @@
         order: 1;
         max-width: 450px;
         margin: auto;
+          display: flex;
+    justify-content: center;
     }
+  .hero-image img {
+    display: block;
+    margin: 0 auto;
+  }
     .hero-copy h1 {
         font-size: 3rem;
     }
