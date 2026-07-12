@@ -1071,7 +1071,15 @@ html {
     flex-direction:column;
   }
   .tc-btn {
-    width:100%;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    width:100% !important;
+    height:64px !important;
+    min-height:64px !important;
+    max-height:64px !important;
+    padding:0 24px !important;
+    overflow:hidden !important;
   }
   .tc-card-inner {
     padding:34px;
