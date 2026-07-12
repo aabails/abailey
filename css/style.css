@@ -6029,3 +6029,12 @@ html{
     }
 
 }
+.tc-hero .teen-cta-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}@media (max-width: 768px) {
+    .tc-hero .teen-cta-buttons {
+        flex-direction: column;
+    }
+}
