@@ -6039,38 +6039,6 @@ html{
         flex-direction: column;
     }
 }
-.text-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    color: var(--primary);
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.text-link svg {
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-    transition: transform 0.2s ease;
-}
-
-.text-link:hover svg {
-    transform: translateX(4px);
-}
-.inline-link {
-    color: var(--primary);
-    font-weight: 600;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    transition: border-color 0.2s ease, color 0.2s ease;
-}
-
-.inline-link:hover {
-    border-bottom-color: currentColor;
-}
-/* Default links (light backgrounds) */
 .text-link,
 .text-link:visited {
     display: inline-flex;
@@ -6097,19 +6065,24 @@ html{
     transform: translateX(4px);
 }
 
-/* Override for dark green sections */
-.space-section .text-link,
-.space-section .text-link:visited {
-    color: #E7E3D6;
-}
-
-.space-section .text-link:hover {
-    color: #FFFFFF;
-}.text-link-light,
+/* Light version for dark backgrounds */
+.text-link-light,
 .text-link-light:visited {
     color: #E7E3D6;
 }
 
 .text-link-light:hover {
     color: #FFFFFF;
+}
+
+.inline-link {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.inline-link:hover {
+    border-bottom-color: currentColor;
 }
