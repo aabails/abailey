@@ -6038,3 +6038,23 @@ html{
         flex-direction: column;
     }
 }
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.text-link svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+.text-link:hover svg {
+    transform: translateX(4px);
+}
