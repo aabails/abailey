@@ -6039,6 +6039,7 @@ html{
         flex-direction: column;
     }
 }
+/* Standalone link */
 .text-link,
 .text-link:visited {
     display: inline-flex;
@@ -6065,24 +6066,16 @@ html{
     transform: translateX(4px);
 }
 
-/* Light version for dark backgrounds */
+/* Inline link on dark background */
 .text-link-light,
 .text-link-light:visited {
     color: #E7E3D6;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease;
 }
 
 .text-link-light:hover {
     color: #FFFFFF;
-}
-
-.inline-link {
-    color: var(--primary);
-    font-weight: 600;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    transition: border-color 0.2s ease, color 0.2s ease;
-}
-
-.inline-link:hover {
-    border-bottom-color: currentColor;
 }
