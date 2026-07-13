@@ -3403,6 +3403,7 @@ html {
 }@media (max-width:900px) {
   .space-gallery {
     grid-template-columns:1fr;
+    gap: 1rem; 
     margin-bottom:3rem;
   }
 }@media (max-width:768px) {
