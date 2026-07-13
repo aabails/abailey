@@ -6070,3 +6070,39 @@ html{
 .inline-link:hover {
     border-bottom-color: currentColor;
 }
+/* Default links (light backgrounds) */
+.text-link,
+.text-link:visited {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: #234332;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.text-link svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+.text-link:hover {
+    color: #3B5F4B;
+}
+
+.text-link:hover svg {
+    transform: translateX(4px);
+}
+
+/* Override for dark green sections */
+.space-section .text-link,
+.space-section .text-link:visited {
+    color: #E7E3D6;
+}
+
+.space-section .text-link:hover {
+    color: #FFFFFF;
+}
