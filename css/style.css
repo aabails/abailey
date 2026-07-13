@@ -6105,4 +6105,11 @@ html{
 
 .space-section .text-link:hover {
     color: #FFFFFF;
+}.text-link-light,
+.text-link-light:visited {
+    color: #E7E3D6;
+}
+
+.text-link-light:hover {
+    color: #FFFFFF;
 }
