@@ -6058,3 +6058,14 @@ html{
 .text-link:hover svg {
     transform: translateX(4px);
 }
+.inline-link {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.inline-link:hover {
+    border-bottom-color: currentColor;
+}
