@@ -208,3 +208,140 @@
     }
 
 }
+/* ------------------------------------------------ */
+/* APPROACH                                         */
+/* ------------------------------------------------ */
+
+.service-approach{
+
+    padding:90px 0;
+
+}
+
+.approach-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:32px;
+
+}
+
+.approach-card{
+
+    padding:42px;
+
+    border-radius:30px;
+
+    border:1px solid rgba(25,65,45,.12);
+
+    background:#fff;
+
+    transition:.25s;
+
+}
+
+.approach-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+}
+
+.approach-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:var(--forest-green);
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:28px;
+
+}
+
+.approach-icon svg{
+
+    width:30px;
+
+    height:30px;
+
+}
+
+.approach-card h3{
+
+    margin-bottom:18px;
+
+}
+
+.approach-card p{
+
+    margin:0;
+
+    line-height:1.8;
+
+}
+
+/* ------------------------------------------------ */
+/* QUOTE                                            */
+/* ------------------------------------------------ */
+
+.service-quote{
+
+    padding:40px 0 100px;
+
+}
+
+.service-quote blockquote{
+
+    background:var(--forest-green);
+
+    color:white;
+
+    padding:70px;
+
+    border-radius:36px;
+
+    font-size:2rem;
+
+    line-height:1.6;
+
+    font-style:italic;
+
+    font-weight:300;
+
+    text-align:center;
+
+    margin:0;
+
+}
+
+@media (max-width:900px){
+
+    .approach-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .service-quote blockquote{
+
+        padding:40px 28px;
+
+        font-size:1.45rem;
+
+    }
+
+}
