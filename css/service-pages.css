@@ -293,7 +293,38 @@
     line-height:1.8;
 
 }
+.approach-icon{
 
+    width:70px;
+    height:70px;
+
+    border-radius:50%;
+
+    background:var(--forest-green);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:28px;
+
+    color:#fff;
+
+    flex-shrink:0;
+}
+
+.approach-icon svg{
+
+    display:block;
+
+    width:32px;
+    height:32px;
+
+    stroke:currentColor;
+    fill:none;
+
+    overflow:visible;
+}
 /* ------------------------------------------------ */
 /* QUOTE                                            */
 /* ------------------------------------------------ */
