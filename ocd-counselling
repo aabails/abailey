@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>OCD OCD Counselling in Brentwood Bay & Greater Victoria | Aaron Bailey Counselling</title>
+
+  <meta name="description" content="OCD counselling for teens and adults in Brentwood Bay, Sidney, Saanich and Greater Victoria." />
+
+  <link rel="canonical" href="https://abailey.ca/ocd-counselling"/>
+
+  <meta property="og:title" content="OCD Counselling in Brentwood Bay & Greater Victoria | Aaron Bailey Counselling"/>
+  <meta property="og:description" content="Trauma-informed counselling for youth and adults in Greater Victoria. Anxiety, ADHD, OCD, grief, and life transitions."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://abailey.ca/counselling"/>
+  <meta property="og:image" content="https://abailey.ca/images/banner.jpg"/>
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link
+  rel="preload"
+  as="image"
+  href="/images/banner-768.webp"
+  imagesrcset="
+    /images/banner-768.webp 768w,
+    /images/banner-1200.webp 1200w,
+    /images/banner-1800.webp 1800w
+  "
+  imagesizes="100vw"
+/>
+
+  <!-- Styles -->
+  <link rel="preload" as="style" href="/css/site.css"/>
+  <link rel="stylesheet" href="/css/site.css"/>
+  <link rel="stylesheet" href="/css/style.css"/>
+
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+  <link rel="manifest" href="/site.webmanifest"/>
+  <meta name="theme-color" content="#FAF7F2"/>
+
+  <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D9R50PPY0C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D9R50PPY0C');
+  </script>
+</head>
+
+<body>
+<div class="topbar">
+<div class="wrap">
+<a class="brand" href="/">
+<img
+  src="/images/logo-70.webp"
+  srcset="/images/logo-70.webp 1x,
+          /images/logo-140.webp 2x"
+  width="70"
+  height="70"
+  alt="Aaron Bailey Counsellor"
+  loading="eager"
+  decoding="async">
+  <span aria-label="Site title" class="brand-text">
+<span class="brand-line">Aaron Bailey</span>
+<span class="brand-line">Counselling</span>
+</span>
+<span class="rcc-badge" aria-label="Registered Clinical Counsellor">RCC</span></a>
+<button aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu" class="hamburger" data-menu-toggle=""> <span class="sr-only"> <span class="label-open">Open Menu</span> <span class="label-close">Close Menu</span> </span> <span aria-hidden="true" class="burger"> <span class="line"></span> <span class="line"></span> <span class="line"></span> </span></button>
+<nav class="nav" data-menu="" id="primary-nav"><a class="nav-link" href="/">Home</a><a class="nav-link" href="/meet-aaron">Meet Aaron</a><a aria-current="page" class="nav-link" href="/counselling">Counselling</a><a class="nav-link" href="/teen-counselling-victoria">Teen Counselling</a><a class="nav-link" href="/rates-services">Rates &amp; Services</a><a class="nav-link" href="/resources">Resources</a><a class="nav-link" href="/contact">Contact</a></nav>
+</div>
+</div>
+<header class="hero"><picture>
+  <!-- Mobile first -->
+  <source
+    srcset="/images/banner-768.webp"
+    media="(max-width: 768px)"
+    type="image/webp"
+  />
+
+  <!-- Tablet / desktop -->
+  <source
+    srcset="/images/banner-1200.webp 1200w, /images/banner-1800.webp 1800w"
+    type="image/webp"
+  />
+
+  <img
+  src="/images/banner-1200.webp"
+  alt="Youth and teen counselling in Brentwood Bay"
+  class="hero-bg"
+  fetchpriority="high"
+  loading="eager"
+  decoding="async"
+  width="1280"
+  height="853"
+/>
+
+</picture>
+
+<div class="hero-overlay">
+<h1 class="hero-title">Counselling in Brentwood Bay & Victoria, BC</h1>
+<a class="cta" href="/contact#contact-form">Book a Free Consultation</a>
+</div>
+</header>
+<div class="below-hero-cta">
+<div class="wrap">
+</div>
+</div>
+  
+<section class="counselling-intro">
+  <div class="tc-container">
+    <div class="counselling-header">
+      <h2>OCD Counselling</h2>
+      <p>CONTENT COMING</p>
+    </div>
+  </div>
+</section>
+
+<section class="service-section"><div class="tc-container"><h2>Understanding OCD</h2><p>CONTENT COMING</p></div></section>
+<section class="service-section"><div class="tc-container"><h2>Obsessions & Compulsions</h2><p>CONTENT COMING</p></div></section>
+<section class="service-section"><div class="tc-container"><h2>How Counselling Can Help</h2><p>CONTENT COMING</p></div></section>
+<section class="service-section"><div class="tc-container"><h2>My Approach</h2><p>CONTENT COMING</p></div></section>
+<section class="service-section"><div class="tc-container"><h2>OCD in Teens</h2><p>CONTENT COMING</p></div></section>
+<section class="service-section"><div class="tc-container"><h2>Frequently Asked Questions</h2><p>CONTENT COMING</p></div></section>
+<section class="service-section"><div class="tc-container"><h2>Related Services</h2><p>CONTENT COMING</p></div></section>
+<section class="final-cta">
+ <div class="tc-container">
+    <div class="final-cta-card">
+
+        <span class="section-pill">
+
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true">
+
+                <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>
+
+            </svg>
+
+            <span>A quiet first step</span>
+
+        </span>
+
+        <h2>
+
+            Not sure where to start?<br>
+
+            Start with a conversation.
+
+        </h2>
+
+        <p>
+
+            A free 15-minute consultation gives you the chance to ask
+            questions, talk about what you're looking for, and see whether
+            counselling feels like the right fit—without any pressure or
+            obligation.
+
+        </p>
+
+        <div class="final-cta-buttons">
+
+            <a href="/contact#contact-form" class="btn btn-primary">
+
+                <span class="btn-content">
+
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true">
+
+                        <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+
+                        <path d="M16 2v4"></path>
+
+                        <path d="M8 2v4"></path>
+
+                        <path d="M3 10h18"></path>
+
+                    </svg>
+
+                    <span>Book a free consultation</span>
+
+                </span>
+
+            </a>
+
+            <a href="/rates-services" class="btn btn-secondary">
+
+                <span class="btn-content">
+
+                    <span>See rates</span>
+
+                </span>
+
+            </a>
+
+        </div>
+ </div>
+
+    </div>
+
+</section>
+<footer class="footer">
+<div class="wrap">
+<div>
+<h4>Contact</h4>
+<p><a href="mailto:info@abailey.ca">info@abailey.ca</a></p>
+<p><a href="tel:+17785575504">(778)-557-5504</a></p>
+</div>
+<div>
+<h4>Location</h4>
+<p>Brentwood Bay, BC (Greater Victoria)</p>
+</div>
+<div>
+<h4>Quick Links</h4>
+<ul><li><a href="/">Home</a></li><li><a href="/meet-aaron">Meet Aaron</a></li><li><a href="/counselling">Counselling</a></li><li><a href="/teen-counselling-victoria">Teen Counselling</a></li><li><a href="/rates-services">Rates &amp; Services</a></li><li><a href="/resources">Resources</a></li><li><a href="/contact">Contact</a></li></ul>
+</div>
+<div class="copyright">© 2026 Aaron Bailey Counselling</div>
+<div class="footer-crisis" id="crisis-resources"><h4>If you're in crisis</h4><p>For emergencies, call 911 or go to the nearest emergency department.</p><ul><li>Vancouver Island Crisis Line: 1-888-494-3888</li><li>Kids Help Phone: 1-800-668-6868 (text 686868)</li></ul></div></div>
+</footer>
+<script defer="" src="/js/site.js"></script>
+</body>
+</html>
