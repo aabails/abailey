@@ -110,26 +110,550 @@
 </div>
 </div>
   
-<section class="counselling-intro">
-  <div class="tc-container">
-    <div class="counselling-header">
-      <h2>Grief &amp; Loss Counselling</h2>
-      <p>CONTENT COMING</p>
+<section class="service-hero">
+
+    <div class="tc-container">
+
+        <nav class="service-breadcrumb">
+
+            <a href="/counselling">
+
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     width="18"
+                     height="18"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+
+                    <path d="M19 12H5"></path>
+                    <path d="m12 19-7-7 7-7"></path>
+
+                </svg>
+
+                Counselling
+
+            </a>
+
+            <span class="breadcrumb-pill">
+                Grief &amp; loss
+            </span>
+
+        </nav>
+
+        <div class="service-hero-content">
+
+            <h1>
+                Grief isn't a problem to solve.
+                <span><em>It's a love with nowhere to go.</em></span>
+            </h1>
+
+            <p class="service-intro">
+
+                Whether you're grieving the death of someone you love, the loss
+                of a pet, the end of a relationship, or a quieter loss that no
+                one else seems to see—you don't have to carry it alone.
+                Counselling offers a place where grief doesn't have to be
+                rushed, explained, or carried by yourself.
+
+            </p>
+
+            <div class="service-buttons">
+
+                <a href="/contact#contact-form" class="btn btn-primary">
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="18"
+                         height="18"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+
+                        <path d="M8 2v4"></path>
+                        <path d="M16 2v4"></path>
+                        <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                        <path d="M3 10h18"></path>
+
+                    </svg>
+
+                    Book a free 15-min consult
+
+                </a>
+
+                <a href="/rates-services" class="btn btn-secondary">
+
+                    Rates &amp; coverage
+
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
-  </div>
+
+</section><section class="service-features">
+
+    <div class="tc-container">
+
+        <div class="section-heading">
+
+            <h2>Losses worth grieving</h2>
+
+            <p>
+                All kinds of loss belong here—not just the ones society names.
+            </p>
+
+        </div>
+
+        <div class="feature-grid">
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+
+                    <!-- Broken Heart -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+
+                        <path d="M12 21l-1.4-1.3C5.2 14.8 2 11.9 2 8.3A4.3 4.3 0 0 1 6.3 4c1.8 0 3.5.9 4.5 2.3L12 8l1.2-1.7A5.4 5.4 0 0 1 17.7 4 4.3 4.3 0 0 1 22 8.3c0 3.6-3.2 6.5-8.6 11.4z"/>
+                        <path d="m12 8-2 4 3 1-1 4"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Death of a loved one</h3>
+
+                <p>
+
+                    A parent, partner, sibling, child, friend, or anyone whose
+                    absence has changed your world. Grief doesn't follow a
+                    timeline.
+
+                </p>
+
+            </article>
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+
+                    <!-- Leaf -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2">
+
+                        <path d="M20 4c-6 0-11 3-13 8-1 2-.8 4.2.7 5.7s3.7 1.7 5.7.7c5-2 8-7 8-13z"/>
+                        <path d="M8 16c2-2 5-5 9-7"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Pet loss</h3>
+
+                <p>
+
+                    The loss of an animal companion can be just as profound as
+                    any other grief—and it deserves to be taken seriously.
+
+                </p>
+
+            </article>
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+
+                    <!-- Broken Link -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2">
+
+                        <path d="M10 13a5 5 0 0 1 0-7l1-1a5 5 0 0 1 7 7l-1 1"/>
+                        <path d="M14 11a5 5 0 0 1 0 7l-1 1a5 5 0 1 1-7-7l1-1"/>
+                        <path d="M8 16l8-8"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Breakups &amp; divorce</h3>
+
+                <p>
+
+                    The end of an important relationship is a real loss—even
+                    when it was the right decision.
+
+                </p>
+
+            </article>
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+
+                    <!-- House -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2">
+
+                        <path d="M3 11.5 12 4l9 7.5"/>
+                        <path d="M5 10v10h14V10"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Life changes</h3>
+
+                <p>
+
+                    Retirement, job loss, moving, infertility, an empty nest,
+                    or the version of life you thought you'd have.
+
+                </p>
+
+            </article>
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+
+                    <!-- Sparkles -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2">
+
+                        <path d="M12 3l1.2 3.8L17 8l-3.8 1.2L12 13l-1.2-3.8L7 8l3.8-1.2z"/>
+                        <path d="M19 3v4"/>
+                        <path d="M21 5h-4"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Anticipatory grief</h3>
+
+                <p>
+
+                    Grieving someone who's still here—a diagnosis, dementia,
+                    declining health, or a long goodbye.
+
+                </p>
+
+            </article>
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+
+                    <!-- Journal -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2">
+
+                        <rect x="6" y="3" width="12" height="18" rx="2"/>
+                        <path d="M10 8h4"/>
+                        <path d="M10 12h4"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>When grief feels stuck</h3>
+
+                <p>
+
+                    Sometimes grief becomes tangled with trauma, guilt,
+                    anxiety, or unfinished goodbyes. Counselling can help
+                    untangle those experiences at your own pace.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section><section class="service-approach">
+
+    <div class="tc-container">
+
+        <div class="section-heading">
+
+            <h2>How we'll work together</h2>
+
+            <p>
+                There isn't a right way to grieve. We'll find your way together.
+            </p>
+
+        </div>
+
+        <div class="approach-grid">
+
+            <article class="approach-card">
+
+                <div class="approach-icon">
+
+                    <!-- Heart Hands -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2">
+
+                        <path d="M12 20s-6-3.5-8-8a4 4 0 0 1 7-3l1 1 1-1a4 4 0 0 1 7 3c-2 4.5-8 8-8 8"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Permission to grieve</h3>
+
+                <p>
+
+                    You don't have to be strong, positive, or "move on."
+                    Counselling offers space to experience your grief without
+                    judgment or pressure.
+
+                </p>
+
+            </article>
+
+            <article class="approach-card">
+
+                <div class="approach-icon">
+
+                    <!-- Compass -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2">
+
+                        <circle cx="12" cy="12" r="9"/>
+                        <path d="m15.5 8.5-2.5 7-7 2.5 2.5-7"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Making meaning, slowly</h3>
+
+                <p>
+
+                    Over time we'll explore memories, story, and meaning—and
+                    how this relationship continues to shape who you are.
+
+                </p>
+
+            </article>
+
+            <article class="approach-card">
+
+                <div class="approach-icon">
+
+                    <!-- Leaf -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2">
+
+                        <path d="M20 4c-6 0-11 3-13 8-1 2-.8 4.2.7 5.7s3.7 1.7 5.7.7c5-2 8-7 8-13z"/>
+                        <path d="M8 16c2-2 5-5 9-7"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Rebuilding capacity</h3>
+
+                <p>
+
+                    Together we'll find gentle ways to care for sleep, routine,
+                    relationships, and the moments when grief feels especially
+                    heavy.
+
+                </p>
+
+            </article>
+
+            <article class="approach-card">
+
+                <div class="approach-icon">
+
+                    <!-- Sun -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2">
+
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M5 19l1.5-1.5"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Carrying grief with you</h3>
+
+                <p>
+
+                    The goal isn't forgetting someone you love. It's finding a
+                    way to carry that love while slowly making room for life
+                    again.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section><section class="service-quote">
+
+    <div class="tc-container">
+
+        <div class="quote-box">
+
+            <blockquote>
+
+                “Grief isn't something you get over.
+                It's something you learn to carry—with love.”
+
+            </blockquote>
+
+        </div>
+
+    </div>
+
+</section><section class="service-faq">
+
+    <div class="tc-container">
+
+        <div class="section-heading">
+
+            <h2>Common Questions</h2>
+
+            <p>
+                A few questions people often ask before starting grief counselling.
+            </p>
+
+        </div>
+
+        <div class="faq-list">
+
+            <details open>
+
+                <summary>
+                    How soon after a loss should I come in?
+                </summary>
+
+                <p>
+
+                    Whenever you're ready. Some people reach out in the first
+                    few weeks, while others come months or years later when a
+                    loss begins to feel heavy again. There isn't a right time.
+
+                </p>
+
+            </details>
+
+            <details>
+
+                <summary>
+                    Will I have to talk about exactly what happened?
+                </summary>
+
+                <p>
+
+                    Only if you want to. We'll work at your pace, and you never
+                    have to share more than feels safe or helpful.
+
+                </p>
+
+            </details>
+
+            <details>
+
+                <summary>
+                    I'm grieving a pet. Is that okay to bring here?
+                </summary>
+
+                <p>
+
+                    Absolutely. The loss of a beloved animal is real grief and
+                    deserves the same care, compassion, and space as any other
+                    significant loss.
+
+                </p>
+
+            </details>
+
+            <details>
+
+                <summary>
+                    Is walk-and-talk counselling suitable for grief?
+                </summary>
+
+                <p>
+
+                    For many people, yes. Walking outdoors can create a gentle,
+                    grounding space for difficult emotions. If it feels like a
+                    good fit, we can incorporate walk-and-talk sessions into
+                    your counselling.
+
+                </p>
+
+            </details>
+
+            <details>
+
+                <summary>
+                    Will grief ever completely go away?
+                </summary>
+
+                <p>
+
+                    Grief often changes rather than disappears. Counselling
+                    isn't about forgetting someone you love—it's about finding
+                    a way to carry both your grief and your life forward.
+
+                </p>
+
+            </details>
+
+        </div>
+
+    </div>
+
 </section>
-
-<section class="service-section"><div class="tc-container"><h2>Understanding Grief</h2><p>CONTENT COMING</p></div></section>
-
-<section class="service-section"><div class="tc-container"><h2>Different Types of Loss</h2><p>CONTENT COMING</p></div></section>
-
-<section class="service-section"><div class="tc-container"><h2>How Counselling Can Help</h2><p>CONTENT COMING</p></div></section>
-
-<section class="service-section"><div class="tc-container"><h2>Supporting Teens Through Grief</h2><p>CONTENT COMING</p></div></section>
-
-<section class="service-section"><div class="tc-container"><h2>Frequently Asked Questions</h2><p>CONTENT COMING</p></div></section>
-
-<section class="service-section"><div class="tc-container"><h2>Related Services</h2><p>CONTENT COMING</p></div></section>
 <section class="final-cta">
  <div class="tc-container">
     <div class="final-cta-card">
