@@ -6232,3 +6232,9 @@ MOBILE
     }
 
 }
+.directory-card:focus-visible{
+
+    outline:3px solid rgba(35,74,48,.25);
+    outline-offset:4px;
+
+}
