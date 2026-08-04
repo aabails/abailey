@@ -6238,3 +6238,25 @@ MOBILE
     outline-offset:4px;
 
 }
+/* Contextual service links on homepage */
+.support-explore {
+  margin-top: 1rem;
+}
+
+.support-explore a,
+.support-list a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(35, 79, 58, 0.35);
+  text-underline-offset: 4px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.support-explore a:hover,
+.support-explore a:focus-visible,
+.support-list a:hover,
+.support-list a:focus-visible {
+  text-decoration-color: currentColor;
+}
